@@ -508,6 +508,24 @@
     let activeCategory = 'ALL';
     let deferredPrompt = null;
 
+    // Category order aligned with cost centers
+    const CATEGORY_ORDER = [
+      'ALL',
+      'GENERAL',
+      'PA2',
+      'PA2 - TC CELLS',
+      'PA2 - PAINT AND PRINT',
+      'PA2 BI-METAL',
+      'PA2 OMT',
+      'PA3 - LASERS',
+      'PA3 - BRAZERS',
+      'PA3 - COATING',
+      'PA3 - GRINDERS',
+      'PA3 - FINAL WASH',
+      'PA3 - MARKING',
+      'PA3 - RING PACK'
+    ];
+
     const searchInput = document.getElementById('searchInput');
     const clearBtn = document.getElementById('clearBtn');
     const resultsEl = document.getElementById('results');
@@ -523,8 +541,9 @@
         allParts = await res.json();
         // Add unique IDs
         allParts.forEach((p, i) => p._id = i);
-        // Extract categories
-        categories = ['ALL', ...new Set(allParts.map(p => p.category))];
+        // Use fixed category order; filter to only those with parts + empty allowed ones
+        const usedCats = new Set(allParts.map(p => p.category));
+        categories = CATEGORY_ORDER.filter(c => c === 'ALL' || usedCats.has(c) || ['PA2 BI-METAL','PA2 OMT'].includes(c));
         renderChips();
         renderResults(allParts);
       } catch (e) {
@@ -570,6 +589,7 @@
       if (query) {
         const terms = query.split(/\s+/);
         filtered = filtered.filter(p => {
+          const ccText = p.cost_center ? `${p.cost_center.name} ${p.cost_center.code}` : '';
           const text = [
             p.sap_id,
             p.name,
@@ -577,7 +597,8 @@
             p.bin,
             p.manufacturer,
             p.model_number,
-            p.description
+            p.description,
+            ccText
           ].filter(Boolean).join(' ').toLowerCase();
           return terms.every(t => text.includes(t));
         });
@@ -621,8 +642,7 @@
         grouped[p.category].push(p);
       });
 
-      const order = categories.filter(c => c !== 'ALL' && grouped[c]);
-      if (grouped['GENERAL'] && !order.includes('GENERAL')) order.unshift('GENERAL');
+      const order = CATEGORY_ORDER.filter(c => c !== 'ALL' && grouped[c]);
 
       resultsEl.innerHTML = order.map(cat => {
         const items = grouped[cat];
@@ -647,6 +667,9 @@
       const imageHtml = p.image
         ? `<img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent='No image'">`
         : 'No image';
+      const ccText = p.cost_center
+        ? `<span style="color:var(--accent);font-size:11px;font-weight:600;">${p.cost_center.name} · ${p.cost_center.code}</span>`
+        : '';
 
       return `
         <div class="card" data-id="${p._id}">
@@ -655,6 +678,7 @@
             <div class="card-body">
               <div class="card-name">${highlight(p.name, query)}</div>
               <div class="card-sap ${sapClass}">${highlight(sapText, query)}</div>
+              ${ccText}
               <div class="card-meta">
                 ${p.bin ? `<span>&#128230; ${highlight(p.bin, query)}</span>` : ''}
                 ${p.manufacturer ? `<span>&#127981; ${highlight(p.manufacturer, query)}</span>` : ''}
@@ -686,6 +710,7 @@
         { label: 'SAP ID', value: p.sap_id || 'Not assigned', mono: true },
         { label: 'Part Name', value: p.name },
         { label: 'Machine / Area', value: p.category },
+        { label: 'Cost Center', value: p.cost_center ? `${p.cost_center.name} (${p.cost_center.code})` : 'Not assigned' },
         { label: 'Bin Location', value: p.bin || 'N/A' },
         { label: 'Manufacturer', value: p.manufacturer || 'N/A' },
         { label: 'Model #', value: p.model_number || 'N/A', mono: true },
