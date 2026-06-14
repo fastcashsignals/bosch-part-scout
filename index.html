@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0f0f0f">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <title>Bosch Part Scout</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --surface: #1a1a1a;
+      --surface-hover: #242424;
+      --border: #2a2a2a;
+      --text: #e8e8e8;
+      --text-secondary: #888;
+      --accent: #00d4aa;
+      --accent-dim: #00d4aa22;
+      --danger: #ff4757;
+      --warning: #ffa502;
+      --chip-bg: #252525;
+      --chip-active: var(--accent-dim);
+      --chip-active-text: var(--accent);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      height: 100%;
+      overflow-x: hidden;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 16px 8px;
+    }
+
+    .header-top {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .logo {
+      width: 36px;
+      height: 36px;
+      background: var(--accent);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+      color: #000;
+      flex-shrink: 0;
+    }
+
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .subtitle {
+      font-size: 11px;
+      color: var(--text-secondary);
+      margin-top: -2px;
+    }
+
+    .part-count {
+      margin-left: auto;
+      font-size: 11px;
+      color: var(--text-secondary);
+      background: var(--surface);
+      padding: 4px 10px;
+      border-radius: 20px;
+      white-space: nowrap;
+    }
+
+    /* Search */
+    .search-wrap {
+      position: relative;
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-secondary);
+      font-size: 16px;
+    }
+
+    .search-input {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 40px 12px 40px;
+      color: var(--text);
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-input::placeholder {
+      color: var(--text-secondary);
+    }
+
+    .clear-btn {
+      position: absolute;
+      right: 12px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: var(--text-secondary);
+      font-size: 18px;
+      cursor: pointer;
+      padding: 4px;
+      display: none;
+    }
+
+    .clear-btn.visible { display: block; }
+
+    /* Category chips */
+    .chips {
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 16px;
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+      background: var(--bg);
+      position: sticky;
+      top: 113px;
+      z-index: 99;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .chips::-webkit-scrollbar { display: none; }
+
+    .chip {
+      flex-shrink: 0;
+      padding: 7px 14px;
+      border-radius: 20px;
+      background: var(--chip-bg);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+      transition: all 0.15s;
+      user-select: none;
+    }
+
+    .chip:active { transform: scale(0.95); }
+
+    .chip.active {
+      background: var(--chip-active);
+      border-color: var(--accent);
+      color: var(--chip-active-text);
+    }
+
+    /* Results */
+    .results {
+      padding: 8px 16px 40px;
+    }
+
+    .category-header {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin: 20px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .category-header:first-child { margin-top: 4px; }
+
+    .category-count {
+      font-size: 11px;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    /* Cards */
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      transition: background 0.15s;
+    }
+
+    .card:active { background: var(--surface-hover); }
+
+    .card-top {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+
+    .card-image {
+      width: 64px;
+      height: 64px;
+      border-radius: 10px;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 10px;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .card-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .card-body {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .card-name {
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 1.3;
+      margin-bottom: 4px;
+    }
+
+    .card-sap {
+      font-size: 13px;
+      font-family: 'SF Mono', Monaco, monospace;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .card-sap.missing {
+      color: var(--warning);
+    }
+
+    .card-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 12px;
+      font-size: 12px;
+      color: var(--text-secondary);
+    }
+
+    .card-meta span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .card-desc {
+      margin-top: 8px;
+      font-size: 12px;
+      color: var(--text-secondary);
+      line-height: 1.4;
+      padding-top: 8px;
+      border-top: 1px solid var(--border);
+    }
+
+    .highlight {
+      background: rgba(0, 212, 170, 0.2);
+      color: var(--accent);
+      border-radius: 3px;
+      padding: 0 2px;
+    }
+
+    /* Empty state */
+    .empty {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--text-secondary);
+    }
+
+    .empty-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+      opacity: 0.4;
+    }
+
+    .empty h3 {
+      font-size: 18px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
+    .empty p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    /* Modal / Detail view */
+    .modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.85);
+      backdrop-filter: blur(8px);
+      z-index: 200;
+      display: none;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .modal-overlay.open { display: flex; }
+
+    .modal {
+      background: var(--surface);
+      border-radius: 20px 20px 0 0;
+      width: 100%;
+      max-height: 85vh;
+      overflow-y: auto;
+      padding: 20px;
+      animation: slideUp 0.25s ease-out;
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(100%); }
+      to { transform: translateY(0); }
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .modal-image {
+      width: 100%;
+      height: 200px;
+      background: var(--bg);
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text-secondary);
+      font-size: 12px;
+      margin-bottom: 16px;
+      border: 1px solid var(--border);
+      overflow: hidden;
+    }
+
+    .modal-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .modal-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .modal-sap {
+      font-family: 'SF Mono', Monaco, monospace;
+      font-size: 16px;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .detail-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .detail-label {
+      color: var(--text-secondary);
+      font-size: 14px;
+    }
+
+    .detail-value {
+      font-size: 14px;
+      font-weight: 600;
+      text-align: right;
+      max-width: 60%;
+    }
+
+    .detail-value.mono {
+      font-family: 'SF Mono', Monaco, monospace;
+      color: var(--accent);
+    }
+
+    /* Install prompt */
+    .install-banner {
+      display: none;
+      background: var(--surface);
+      border: 1px solid var(--accent);
+      border-radius: 12px;
+      padding: 14px 16px;
+      margin: 8px 16px 0;
+      font-size: 13px;
+    }
+
+    .install-banner.show { display: flex; }
+
+    .install-text { flex: 1; }
+
+    .install-btn {
+      background: var(--accent);
+      color: #000;
+      border: none;
+      border-radius: 8px;
+      padding: 8px 16px;
+      font-weight: 700;
+      font-size: 13px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div class="header-top">
+      <div class="logo">PS</div>
+      <div>
+        <div class="title">Bosch Part Scout</div>
+        <div class="subtitle">Find parts fast. Get machines running.</div>
+      </div>
+      <div class="part-count" id="partCount">0 parts</div>
+    </div>
+    <div class="search-wrap">
+      <span class="search-icon">&#128269;</span>
+      <input type="text" class="search-input" id="searchInput" placeholder="Search parts, bins, machines, SAP IDs..." autocomplete="off">
+      <button class="clear-btn" id="clearBtn">&#10005;</button>
+    </div>
+  </div>
+
+  <div class="install-banner" id="installBanner">
+    <div class="install-text">
+      <strong>Add to Home Screen</strong><br>
+      Install Bosch Part Scout for instant access
+    </div>
+    <button class="install-btn" id="installBtn">Install</button>
+  </div>
+
+  <div class="chips" id="chips"></div>
+
+  <div class="results" id="results">
+    <div class="empty">
+      <div class="empty-icon">&#128295;</div>
+      <h3>Loading parts...</h3>
+      <p>One sec while we gear up.</p>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+      <div class="modal-image" id="modalImage">No image yet</div>
+      <div class="modal-title" id="modalTitle"></div>
+      <div class="modal-sap" id="modalSap"></div>
+      <div id="modalDetails"></div>
+    </div>
+  </div>
+
+  <script>
+    let allParts = [];
+    let categories = [];
+    let activeCategory = 'ALL';
+    let deferredPrompt = null;
+
+    const searchInput = document.getElementById('searchInput');
+    const clearBtn = document.getElementById('clearBtn');
+    const resultsEl = document.getElementById('results');
+    const chipsEl = document.getElementById('chips');
+    const partCountEl = document.getElementById('partCount');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const modalClose = document.getElementById('modalClose');
+
+    // Load parts
+    async function loadParts() {
+      try {
+        const res = await fetch('parts.json');
+        allParts = await res.json();
+        // Add unique IDs
+        allParts.forEach((p, i) => p._id = i);
+        // Extract categories
+        categories = ['ALL', ...new Set(allParts.map(p => p.category))];
+        renderChips();
+        renderResults(allParts);
+      } catch (e) {
+        resultsEl.innerHTML = `
+          <div class="empty">
+            <div class="empty-icon">&#9888;</div>
+            <h3>Failed to load parts</h3>
+            <p>Check your connection and refresh.</p>
+          </div>
+        `;
+      }
+    }
+
+    // Render category chips
+    function renderChips() {
+      chipsEl.innerHTML = categories.map(cat => {
+        const count = cat === 'ALL' ? allParts.length : allParts.filter(p => p.category === cat).length;
+        return `<button class="chip ${cat === activeCategory ? 'active' : ''}" data-cat="${cat}">${cat} <span style="opacity:0.6">(${count})</span></button>`;
+      }).join('');
+
+      chipsEl.querySelectorAll('.chip').forEach(btn => {
+        btn.addEventListener('click', () => {
+          activeCategory = btn.dataset.cat;
+          renderChips();
+          doSearch();
+        });
+      });
+    }
+
+    // Fuzzy search
+    function doSearch() {
+      const query = searchInput.value.trim().toLowerCase();
+      clearBtn.classList.toggle('visible', query.length > 0);
+
+      let filtered = allParts;
+
+      // Category filter
+      if (activeCategory !== 'ALL') {
+        filtered = filtered.filter(p => p.category === activeCategory);
+      }
+
+      // Text search
+      if (query) {
+        const terms = query.split(/\s+/);
+        filtered = filtered.filter(p => {
+          const text = [
+            p.sap_id,
+            p.name,
+            p.category,
+            p.bin,
+            p.manufacturer,
+            p.model_number,
+            p.description
+          ].filter(Boolean).join(' ').toLowerCase();
+          return terms.every(t => text.includes(t));
+        });
+      }
+
+      renderResults(filtered, query);
+    }
+
+    // Highlight matching text
+    function highlight(text, query) {
+      if (!query || !text) return text || '';
+      const terms = query.split(/\s+/).filter(t => t.length > 1);
+      if (!terms.length) return text;
+      let html = text;
+      terms.forEach(term => {
+        const re = new RegExp(`(${term.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+        html = html.replace(re, '<span class="highlight">$1</span>');
+      });
+      return html;
+    }
+
+    // Render results grouped by category
+    function renderResults(parts, query = '') {
+      partCountEl.textContent = `${parts.length} part${parts.length !== 1 ? 's' : ''}`;
+
+      if (!parts.length) {
+        resultsEl.innerHTML = `
+          <div class="empty">
+            <div class="empty-icon">&#128269;</div>
+            <h3>No parts found</h3>
+            <p>Try a different search term or category filter.</p>
+          </div>
+        `;
+        return;
+      }
+
+      // Group by category
+      const grouped = {};
+      parts.forEach(p => {
+        if (!grouped[p.category]) grouped[p.category] = [];
+        grouped[p.category].push(p);
+      });
+
+      const order = categories.filter(c => c !== 'ALL' && grouped[c]);
+      if (grouped['GENERAL'] && !order.includes('GENERAL')) order.unshift('GENERAL');
+
+      resultsEl.innerHTML = order.map(cat => {
+        const items = grouped[cat];
+        return `
+          <div class="category-header">
+            ${cat}
+            <span class="category-count">${items.length}</span>
+          </div>
+          ${items.map(p => renderCard(p, query)).join('')}
+        `;
+      }).join('');
+
+      // Attach click handlers
+      document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', () => openModal(parseInt(card.dataset.id)));
+      });
+    }
+
+    function renderCard(p, query) {
+      const sapText = p.sap_id || 'NO SAP ID';
+      const sapClass = p.sap_id ? '' : 'missing';
+      const imageHtml = p.image
+        ? `<img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent='No image'">`
+        : 'No image';
+
+      return `
+        <div class="card" data-id="${p._id}">
+          <div class="card-top">
+            <div class="card-image">${imageHtml}</div>
+            <div class="card-body">
+              <div class="card-name">${highlight(p.name, query)}</div>
+              <div class="card-sap ${sapClass}">${highlight(sapText, query)}</div>
+              <div class="card-meta">
+                ${p.bin ? `<span>&#128230; ${highlight(p.bin, query)}</span>` : ''}
+                ${p.manufacturer ? `<span>&#127981; ${highlight(p.manufacturer, query)}</span>` : ''}
+              </div>
+            </div>
+          </div>
+          ${p.description ? `<div class="card-desc">${highlight(p.description, query)}</div>` : ''}
+        </div>
+      `;
+    }
+
+    // Modal
+    function openModal(id) {
+      const p = allParts.find(x => x._id === id);
+      if (!p) return;
+
+      document.getElementById('modalTitle').textContent = p.name;
+      document.getElementById('modalSap').textContent = p.sap_id || 'NO SAP ID';
+      document.getElementById('modalSap').className = 'modal-sap ' + (p.sap_id ? '' : 'missing');
+
+      const imgEl = document.getElementById('modalImage');
+      if (p.image) {
+        imgEl.innerHTML = `<img src="${p.image}" alt="${p.name}">`;
+      } else {
+        imgEl.textContent = 'No image yet — tap to add photo';
+      }
+
+      const details = [
+        { label: 'SAP ID', value: p.sap_id || 'Not assigned', mono: true },
+        { label: 'Part Name', value: p.name },
+        { label: 'Machine / Area', value: p.category },
+        { label: 'Bin Location', value: p.bin || 'N/A' },
+        { label: 'Manufacturer', value: p.manufacturer || 'N/A' },
+        { label: 'Model #', value: p.model_number || 'N/A', mono: true },
+        { label: 'Description', value: p.description || 'N/A' }
+      ];
+
+      document.getElementById('modalDetails').innerHTML = details.map(d => `
+        <div class="detail-row">
+          <span class="detail-label">${d.label}</span>
+          <span class="detail-value ${d.mono ? 'mono' : ''}">${d.value}</span>
+        </div>
+      `).join('');
+
+      modalOverlay.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modalOverlay.classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    modalOverlay.addEventListener('click', e => {
+      if (e.target === modalOverlay) closeModal();
+    });
+    modalClose.addEventListener('click', closeModal);
+
+    // Events
+    searchInput.addEventListener('input', doSearch);
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      doSearch();
+      searchInput.focus();
+    });
+
+    // PWA install
+    window.addEventListener('beforeinstallprompt', e => {
+      e.preventDefault();
+      deferredPrompt = e;
+      document.getElementById('installBanner').classList.add('show');
+    });
+
+    document.getElementById('installBtn').addEventListener('click', async () => {
+      if (!deferredPrompt) return;
+      deferredPrompt.prompt();
+      const { outcome } = await deferredPrompt.userChoice;
+      if (outcome === 'accepted') {
+        document.getElementById('installBanner').classList.remove('show');
+      }
+      deferredPrompt = null;
+    });
+
+    // Service worker
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    }
+
+    // Init
+    loadParts();
+  </script>
+</body>
+</html>

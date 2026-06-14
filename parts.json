@@ -1,0 +1,902 @@
+[
+  {
+    "sap_id": "3610003762",
+    "name": "Hydraulic Oil",
+    "category": "GENERAL",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Hydraulic oil"
+  },
+  {
+    "sap_id": "3610002553",
+    "name": "Contact Cleaner",
+    "category": "GENERAL",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Contact cleaner"
+  },
+  {
+    "sap_id": "3610004958",
+    "name": "Hang Tag",
+    "category": "GENERAL",
+    "bin": null,
+    "manufacturer": "Festo",
+    "model_number": null,
+    "description": "Filter hang tag"
+  },
+  {
+    "sap_id": "3610002439",
+    "name": "Master Link",
+    "category": "GENERAL",
+    "bin": "0127A03",
+    "manufacturer": null,
+    "model_number": "#35318781",
+    "description": "8mm master link (used on mag conveyors)"
+  },
+  {
+    "sap_id": "3610004228",
+    "name": "Flashlight",
+    "category": "GENERAL",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Blue flashlight"
+  },
+  {
+    "sap_id": "3610007599",
+    "name": "Tool",
+    "category": "GENERAL",
+    "bin": "0211D05",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Tooth for shrink machine"
+  },
+  {
+    "sap_id": "3610001597",
+    "name": "Bearing",
+    "category": "GENERAL",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Bearing for loader drum assembly (RSB paint lines and wash)"
+  },
+  {
+    "sap_id": "3610008263",
+    "name": "Ejector",
+    "category": "GENERAL",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Ejector for loader drum assembly"
+  },
+  {
+    "sap_id": "3610001634",
+    "name": "Spring",
+    "category": "GENERAL",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Spring on ejector for loader drum assembly"
+  },
+  {
+    "sap_id": "3610008619",
+    "name": "Magnet",
+    "category": "GENERAL",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Magnet for drum loader"
+  },
+  {
+    "sap_id": "3610001663",
+    "name": "Wedge",
+    "category": "GENERAL",
+    "bin": "0126M09",
+    "manufacturer": null,
+    "model_number": "#W685105044",
+    "description": "Loader Block"
+  },
+  {
+    "sap_id": "3610007599",
+    "name": "Pusher",
+    "category": "PA2",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Belt blade pusher (Shrink tunnel)"
+  },
+  {
+    "sap_id": "3610003741",
+    "name": "Filter",
+    "category": "PA2",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Bag filter for Faudi"
+  },
+  {
+    "sap_id": "3610003741",
+    "name": "Filter",
+    "category": "PA2 - TC CELLS",
+    "bin": "0307101",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "FES Bag Filters"
+  },
+  {
+    "sap_id": "3610001777",
+    "name": "Sensor",
+    "category": "PA2 - TC CELLS",
+    "bin": "0128B03",
+    "manufacturer": "Schunk",
+    "model_number": "#0301474, IN 40-S-M8-PNP",
+    "description": "Larger round sensor (Clamping)"
+  },
+  {
+    "sap_id": "3610001738",
+    "name": "Sensor",
+    "category": "PA2 - TC CELLS",
+    "bin": "0128B02",
+    "manufacturer": "IFM",
+    "model_number": "#MK5328",
+    "description": "Vertical slide sensor"
+  },
+  {
+    "sap_id": "3610003760",
+    "name": "Cable",
+    "category": "PA2 - TC CELLS",
+    "bin": "0128J03",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Sensor extension cable"
+  },
+  {
+    "sap_id": "3610001839",
+    "name": "Vertical Slide",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Vertical slide"
+  },
+  {
+    "sap_id": "3610001737",
+    "name": "Sensor",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Larger sensor (Robot door open and close cylinder)"
+  },
+  {
+    "sap_id": "3610002031",
+    "name": "Sensor Cable",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": "#M8 EVC143",
+    "description": "Long 3-wire Prox cable M8"
+  },
+  {
+    "sap_id": "3610003347",
+    "name": "Coolant Additive",
+    "category": "PA2 - TC CELLS",
+    "bin": "0406101",
+    "manufacturer": null,
+    "model_number": "#Hycut CF 21 EP",
+    "description": "Additive for Faudi"
+  },
+  {
+    "sap_id": "3610003348",
+    "name": "Coolant Additive",
+    "category": "PA2 - TC CELLS",
+    "bin": "0406101",
+    "manufacturer": null,
+    "model_number": "#Additiv HM",
+    "description": "Additive for Faudi"
+  },
+  {
+    "sap_id": "3610006730",
+    "name": "Cooling Additive",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": "#Syntilo 68",
+    "description": "Additive for Faudi"
+  },
+  {
+    "sap_id": "3610003358",
+    "name": "Gripper",
+    "category": "PA2 - TC CELLS",
+    "bin": "0128E01",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Robot gripper tip"
+  },
+  {
+    "sap_id": "3610002018",
+    "name": "Gripper",
+    "category": "PA2 - TC CELLS",
+    "bin": "0128B04",
+    "manufacturer": "Schunk",
+    "model_number": "#3.610.002.018",
+    "description": "Robot gripper vertical cylinder"
+  },
+  {
+    "sap_id": "3610001708",
+    "name": "Arbor",
+    "category": "PA2 - TC CELLS",
+    "bin": "0128B05",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Grinding wheel arbor"
+  },
+  {
+    "sap_id": "3610002185",
+    "name": "Parallel Gripper",
+    "category": "PA2 - TC CELLS",
+    "bin": "0128F02",
+    "manufacturer": "Schunk",
+    "model_number": "#MPG32 340011",
+    "description": "Parallel gripper"
+  },
+  {
+    "sap_id": "3610002213",
+    "name": "Gripper Finger",
+    "category": "PA2 - TC CELLS",
+    "bin": "0128E09",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Gripper pins for carbide teeth"
+  },
+  {
+    "sap_id": "3610005103",
+    "name": "Air Fitting",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": "Festo",
+    "model_number": null,
+    "description": "Air fitting for tip handler M3 x 4mm (90 deg)"
+  },
+  {
+    "sap_id": "3610002654",
+    "name": "Air Fitting",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "M5 x 4mm (90 deg)"
+  },
+  {
+    "sap_id": "3610007998",
+    "name": "Sensor",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Vibrating bowl rail sensor"
+  },
+  {
+    "sap_id": "3610001617",
+    "name": "Chain",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Mag conveyor chain with master link"
+  },
+  {
+    "sap_id": "3610002571",
+    "name": "Shaft Coupling",
+    "category": "PA2 - TC CELLS",
+    "bin": "0109P01",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Coupling for blade clamp"
+  },
+  {
+    "sap_id": "3610001852",
+    "name": "Linear Slide",
+    "category": "PA2 - TC CELLS",
+    "bin": "03134020",
+    "manufacturer": "Rexroth",
+    "model_number": "#R055711787",
+    "description": "Horizontal Axis 2 and 5 slide"
+  },
+  {
+    "sap_id": "3610007520",
+    "name": "Drive Belt",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "X-axis Station 2,4 / Z-axis Stations 2,3,4"
+  },
+  {
+    "sap_id": "3610002116",
+    "name": "Drive Belt",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Axis 3"
+  },
+  {
+    "sap_id": "3610002167",
+    "name": "Drive Belt",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "X-axis Station 3"
+  },
+  {
+    "sap_id": "3610001778",
+    "name": "Motor Pulley",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Axis 3 X"
+  },
+  {
+    "sap_id": "3610003277",
+    "name": "Cylinder",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Air cylinder for exit pins"
+  },
+  {
+    "sap_id": "3610008324",
+    "name": "I/O Block Cable",
+    "category": "PA2 - TC CELLS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "I/O block cable"
+  },
+  {
+    "sap_id": "3610003550",
+    "name": "Filter",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": "0131B04",
+    "manufacturer": "Pall",
+    "model_number": "#500391",
+    "description": "Ink filter for printer"
+  },
+  {
+    "sap_id": "3610003549",
+    "name": "Filter",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": "0131H02",
+    "manufacturer": "Pall",
+    "model_number": "#500499 (LCF-59400)",
+    "description": "Vent filter for printer"
+  },
+  {
+    "sap_id": "3610001663",
+    "name": "Wedge",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": "0126M09",
+    "manufacturer": null,
+    "model_number": "#W685105044",
+    "description": "Loader Block"
+  },
+  {
+    "sap_id": "3610004169",
+    "name": "Line Filter",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": "0136B03",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Filter for Paint mixology"
+  },
+  {
+    "sap_id": "3610005443",
+    "name": "Spring",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": "0126P05",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Spring for filter"
+  },
+  {
+    "sap_id": "3610001579",
+    "name": "Cylinder",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": "0127A04",
+    "manufacturer": "SMC",
+    "model_number": "#CDJP2B16-15D",
+    "description": "Air cylinder for mag conveyor"
+  },
+  {
+    "sap_id": null,
+    "name": "Mist Collector",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Mist collector unit"
+  },
+  {
+    "sap_id": "3610004278",
+    "name": "Filter",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": "0140D04",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Filter for mist collector"
+  },
+  {
+    "sap_id": "3610003560",
+    "name": "Belt",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": "0127C04",
+    "manufacturer": "Gates",
+    "model_number": "#4LK350",
+    "description": "Belt for mist collector fan"
+  },
+  {
+    "sap_id": "3610004184",
+    "name": "UV Lamp",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "UV lamp for exit conveyor"
+  },
+  {
+    "sap_id": "3610006240",
+    "name": "Wear Plate",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Carbide wear plate for mag conveyor"
+  },
+  {
+    "sap_id": "3610004209",
+    "name": "Edge Guide",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Edge guide for mag conveyor (no carbide)"
+  },
+  {
+    "sap_id": "3610004955",
+    "name": "Belt",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Blade loader drive motor belt"
+  },
+  {
+    "sap_id": "3610002004",
+    "name": "Pulley",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": "#W070159330",
+    "description": "Blade loader drive motor pulley"
+  },
+  {
+    "sap_id": "3610007211",
+    "name": "Pipe",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Paint tote adapter"
+  },
+  {
+    "sap_id": "3610001647",
+    "name": "Block",
+    "category": "PA2 - PAINT AND PRINT",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": "#W685113411",
+    "description": "Reversing blade knock-off block"
+  },
+  {
+    "sap_id": "3610002934",
+    "name": "Proximity Sensor",
+    "category": "PA3 - COATING",
+    "bin": "0136I02",
+    "manufacturer": "Festo",
+    "model_number": "#SME-8M-DS-24V-K-0",
+    "description": "Cylinder proximity"
+  },
+  {
+    "sap_id": "3610004380",
+    "name": "Roller",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Lower rubber roller assembly - Phosphate"
+  },
+  {
+    "sap_id": "3610003886",
+    "name": "Bearing Assembly",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Lower rubber roller end bearing assembly - Phosphate"
+  },
+  {
+    "sap_id": "3610002343",
+    "name": "Bushing",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "White bushings for end of rollers"
+  },
+  {
+    "sap_id": "3610004218",
+    "name": "Support Plate",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Chain guide support 165mm"
+  },
+  {
+    "sap_id": "3610004219",
+    "name": "Guide Plate",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Chain guide 165mm plastic"
+  },
+  {
+    "sap_id": "3610004677",
+    "name": "Mounting Bracket",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Chain guide support 152mm"
+  },
+  {
+    "sap_id": "3610004678",
+    "name": "Chain Guide",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": "#3.07.65.460",
+    "description": "Chain guide 152mm plastic"
+  },
+  {
+    "sap_id": "3610002828",
+    "name": "Chain Tensioner Housing",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Chain tensioner housing"
+  },
+  {
+    "sap_id": "3610003209",
+    "name": "Pivot Chain Tension",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Pin for tensioner - Phosphate"
+  },
+  {
+    "sap_id": "3610002829",
+    "name": "Toothed Gear",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": "#3.07.65.476",
+    "description": "Chain drive gear Z10 (Phosphate tensioner sprocket) - Also used for lower chain guide"
+  },
+  {
+    "sap_id": "3610002830",
+    "name": "Bearing",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Bearings for tensioner - Phosphate - Also used for lower chain guide"
+  },
+  {
+    "sap_id": "3610004548",
+    "name": "Snap Ring",
+    "category": "PA3 - COATING",
+    "bin": "0114F07",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Snap ring for tensioner - Also used for lower chain guide"
+  },
+  {
+    "sap_id": "3610004550",
+    "name": "Chain Drive Pin",
+    "category": "PA3 - COATING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Pin for lower chain guide sprocket"
+  },
+  {
+    "sap_id": "3610002305",
+    "name": "Diaphragm Pump",
+    "category": "PA3 - COATING",
+    "bin": "0301301",
+    "manufacturer": "Wagner",
+    "model_number": "#U550.STSS7-A",
+    "description": "Circulating pump for paint system"
+  },
+  {
+    "sap_id": "3610004972",
+    "name": "Motor",
+    "category": "PA3 - COATING",
+    "bin": "0113E01",
+    "manufacturer": "Sew-Eurodrive",
+    "model_number": "#SA37 DRN71MS4",
+    "description": "Conveyor gear motor"
+  },
+  {
+    "sap_id": "3610001834",
+    "name": "Sensor",
+    "category": "PA3 - BRAZERS",
+    "bin": "0137K03",
+    "manufacturer": "IFM Electronic",
+    "model_number": "#E21107",
+    "description": "Fiber optic sensor for conveyor"
+  },
+  {
+    "sap_id": "3610003684",
+    "name": "Wire Wheel",
+    "category": "PA3 - BRAZERS",
+    "bin": "304204",
+    "manufacturer": "Norton",
+    "model_number": "#39025",
+    "description": "8\" wire wheels for pedestal grinders and wire wheel machine"
+  },
+  {
+    "sap_id": "3610003303",
+    "name": "Suction Cup Kit",
+    "category": "PA3 - LASERS",
+    "bin": "4",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Suction cup for robot head"
+  },
+  {
+    "sap_id": "3610003349",
+    "name": "Suction Cup Assembly",
+    "category": "PA3 - LASERS",
+    "bin": "4",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Suction cup assembly for robot head"
+  },
+  {
+    "sap_id": null,
+    "name": "Spacer",
+    "category": "PA3 - LASERS",
+    "bin": "4",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Suction cup spacer for robot head"
+  },
+  {
+    "sap_id": "3610003341",
+    "name": "Magnet",
+    "category": "PA3 - LASERS",
+    "bin": "0125K05",
+    "manufacturer": "Applyca SRL",
+    "model_number": "#AP00001C-AF_A",
+    "description": "Magnet for robot head"
+  },
+  {
+    "sap_id": "3610003793",
+    "name": "Robot Spring",
+    "category": "PA3 - GRINDERS",
+    "bin": "0124B01",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Robot spring"
+  },
+  {
+    "sap_id": "3610003109",
+    "name": "Pressure Switch",
+    "category": "PA3 - GRINDERS",
+    "bin": "0104P03",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Pressure switch"
+  },
+  {
+    "sap_id": "3610003757",
+    "name": "Marposs",
+    "category": "PA3 - GRINDERS",
+    "bin": "0143G02",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Marposs component"
+  },
+  {
+    "sap_id": "3610003762",
+    "name": "Hydraulic Oil",
+    "category": "PA3 - GRINDERS",
+    "bin": "0404101",
+    "manufacturer": "Castrol",
+    "model_number": "#HYSPIN AWS 32",
+    "description": "Hydraulic oil"
+  },
+  {
+    "sap_id": "3610003217",
+    "name": "Oil",
+    "category": "PA3 - GRINDERS",
+    "bin": null,
+    "manufacturer": "Mobil",
+    "model_number": "#Vactra 2",
+    "description": "Lubricating oil drum"
+  },
+  {
+    "sap_id": "3610006066",
+    "name": "Hydraulic Filter",
+    "category": "PA3 - GRINDERS",
+    "bin": "0307406",
+    "manufacturer": "UFI",
+    "model_number": "#ERA32NFD",
+    "description": "Filter for hydraulic oil tank"
+  },
+  {
+    "sap_id": "3610003084",
+    "name": "Forked Light Barrier",
+    "category": "PA3 - GRINDERS",
+    "bin": "0104P02",
+    "manufacturer": "di-soric",
+    "model_number": "#LGU-031",
+    "description": "Photo eye for scanner"
+  },
+  {
+    "sap_id": "3610006236",
+    "name": "Solenoid Valve",
+    "category": "PA3 - GRINDERS",
+    "bin": "0201A04",
+    "manufacturer": "Festo",
+    "model_number": "#VSNC-FC-M52-MD-G14-F",
+    "description": "Coolant valve"
+  },
+  {
+    "sap_id": "3610008290",
+    "name": "Silencer",
+    "category": "PA3 - GRINDERS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Silencer for coolant valve"
+  },
+  {
+    "sap_id": "3610003702",
+    "name": "Silencer",
+    "category": "PA3 - FINAL WASH",
+    "bin": "0136H04",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Large blue muffler"
+  },
+  {
+    "sap_id": "3610003517",
+    "name": "Silencer",
+    "category": "PA3 - FINAL WASH",
+    "bin": "0136A02",
+    "manufacturer": null,
+    "model_number": "#161419",
+    "description": "Small blue muffler"
+  },
+  {
+    "sap_id": "3610005100",
+    "name": "Roller",
+    "category": "PA3 - MARKING",
+    "bin": "0119D03",
+    "manufacturer": "Zebra",
+    "model_number": "#P1046696",
+    "description": "2 rollers for labeler"
+  },
+  {
+    "sap_id": "3610005101",
+    "name": "Roller",
+    "category": "PA3 - MARKING",
+    "bin": "0119D02",
+    "manufacturer": "Zebra",
+    "model_number": null,
+    "description": "End roller for labeler"
+  },
+  {
+    "sap_id": "3610002914",
+    "name": "Inductive Position Switch",
+    "category": "PA3 - MARKING",
+    "bin": "0104J05",
+    "manufacturer": "Baumer",
+    "model_number": "#K341 20P17A3/S35L",
+    "description": "Belt blade position sensor"
+  },
+  {
+    "sap_id": "3610001737",
+    "name": "Proximity Sensor",
+    "category": "PA3 - MARKING",
+    "bin": "0128B01",
+    "manufacturer": "IFM",
+    "model_number": "#MK5101",
+    "description": "Up/down cylinder sensor for tipper 1"
+  },
+  {
+    "sap_id": "3610002921",
+    "name": "Dual-Action Pneumatic Cylinder",
+    "category": "PA3 - MARKING",
+    "bin": "0138K01",
+    "manufacturer": "Festo",
+    "model_number": "#DSBC-40-40-PPV",
+    "description": "Cylinder for up/down on tipper"
+  },
+  {
+    "sap_id": "3610003795",
+    "name": "Anchor Pin",
+    "category": "PA3 - RING PACK",
+    "bin": "0124B09",
+    "manufacturer": "Sistec",
+    "model_number": "#101190000120S",
+    "description": "Centering pin on table"
+  },
+  {
+    "sap_id": "3610003796",
+    "name": "Flange",
+    "category": "PA3 - RING PACK",
+    "bin": "0124A10",
+    "manufacturer": "Sistec",
+    "model_number": "#102160001010S",
+    "description": "Brass flange for centering pin on table"
+  },
+  {
+    "sap_id": "3610004729",
+    "name": "Photo Sensor",
+    "category": "PA3 - RING PACK",
+    "bin": null,
+    "manufacturer": "Sick",
+    "model_number": "#1069073",
+    "description": "Blister sensor Zone 1"
+  },
+  {
+    "sap_id": "3610003702",
+    "name": "Pneumatic Muffler",
+    "category": "PA3 - RING PACK",
+    "bin": "0136H04",
+    "manufacturer": "Festo",
+    "model_number": "#165004",
+    "description": "Large muffler"
+  },
+  {
+    "sap_id": null,
+    "name": "Thermal Transfer Ribbon",
+    "category": "PA3 - RING PACK",
+    "bin": "0405202",
+    "manufacturer": null,
+    "model_number": "#12340007271 IIM FRD13072",
+    "description": "Ribbon for label machine (on top of cabinet beside storage machine)"
+  },
+  {
+    "sap_id": "3610004068",
+    "name": "Transducer",
+    "category": "PA3 - RING PACK",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Sensor for blister measurer"
+  }
+]
