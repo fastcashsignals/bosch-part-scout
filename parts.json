@@ -2,12 +2,12 @@
   {
     "sap_id": "3610003762",
     "name": "Hydraulic Oil",
-    "category": "GENERAL",
+    "category": "PA2 - TC CELLS",
     "bin": null,
     "manufacturer": null,
     "model_number": null,
     "description": "Hydraulic oil",
-    "cost_center_code": "GENERAL",
+    "cost_center_code": "000085C217",
     "image": "images/3610003762.jpg"
   },
   {
@@ -793,12 +793,12 @@
   {
     "sap_id": "3610003762",
     "name": "Hydraulic Oil",
-    "category": "PA3 - GRINDERS",
+    "category": "PA2 - TC CELLS",
     "bin": "0404101",
     "manufacturer": "Castrol",
     "model_number": "#HYSPIN AWS 32",
     "description": "Hydraulic oil",
-    "cost_center_code": "000085C309",
+    "cost_center_code": "000085C217",
     "image": "images/3610003762.jpg"
   },
   {
