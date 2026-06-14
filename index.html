@@ -21,9 +21,6 @@
       --accent-dim: #00d4aa22;
       --danger: #ff4757;
       --warning: #ffa502;
-      --chip-bg: #252525;
-      --chip-active: var(--accent-dim);
-      --chip-active-text: var(--accent);
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -44,7 +41,7 @@
       z-index: 100;
       background: var(--bg);
       border-bottom: 1px solid var(--border);
-      padding: 12px 16px 8px;
+      padding: 12px 16px 10px;
     }
 
     .header-top {
@@ -93,6 +90,7 @@
     /* Search */
     .search-wrap {
       position: relative;
+      margin-bottom: 10px;
     }
 
     .search-icon {
@@ -140,44 +138,40 @@
 
     .clear-btn.visible { display: block; }
 
-    /* Category chips */
-    .chips {
-      display: flex;
-      gap: 8px;
-      overflow-x: auto;
-      padding: 10px 16px;
-      scrollbar-width: none;
-      -ms-overflow-style: none;
-      background: var(--bg);
-      position: sticky;
-      top: 113px;
-      z-index: 99;
-      border-bottom: 1px solid var(--border);
-    }
-
-    .chips::-webkit-scrollbar { display: none; }
-
-    .chip {
-      flex-shrink: 0;
-      padding: 7px 14px;
-      border-radius: 20px;
-      background: var(--chip-bg);
+    /* Machine selector */
+    .machine-select {
+      width: 100%;
+      background: var(--surface);
       border: 1px solid var(--border);
-      color: var(--text-secondary);
-      font-size: 12px;
+      border-radius: 12px;
+      padding: 12px 14px;
+      color: var(--text);
+      font-size: 15px;
       font-weight: 600;
-      cursor: pointer;
-      white-space: nowrap;
-      transition: all 0.15s;
-      user-select: none;
+      outline: none;
+      appearance: none;
+      -webkit-appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23888'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 12px center;
     }
 
-    .chip:active { transform: scale(0.95); }
-
-    .chip.active {
-      background: var(--chip-active);
+    .machine-select:focus {
       border-color: var(--accent);
-      color: var(--chip-active-text);
+    }
+
+    .machine-select option,
+    .machine-select optgroup {
+      background: #1a1a1a;
+      color: #e8e8e8;
+      font-size: 15px;
+    }
+
+    .machine-select optgroup {
+      color: var(--accent);
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
     }
 
     /* Results */
@@ -185,7 +179,7 @@
       padding: 8px 16px 40px;
     }
 
-    .category-header {
+    .machine-header {
       font-size: 13px;
       font-weight: 700;
       color: var(--accent);
@@ -199,9 +193,9 @@
       gap: 8px;
     }
 
-    .category-header:first-child { margin-top: 4px; }
+    .machine-header:first-child { margin-top: 4px; }
 
-    .category-count {
+    .machine-count {
       font-size: 11px;
       color: var(--text-secondary);
       font-weight: 500;
@@ -271,6 +265,14 @@
       color: var(--warning);
     }
 
+    .card-cc {
+      font-size: 11px;
+      font-weight: 600;
+      color: var(--accent);
+      margin-bottom: 4px;
+      opacity: 0.85;
+    }
+
     .card-meta {
       display: flex;
       flex-wrap: wrap;
@@ -325,7 +327,7 @@
       line-height: 1.5;
     }
 
-    /* Modal / Detail view */
+    /* Modal */
     .modal-overlay {
       position: fixed;
       inset: 0;
@@ -347,6 +349,7 @@
       overflow-y: auto;
       padding: 20px;
       animation: slideUp 0.25s ease-out;
+      position: relative;
     }
 
     @keyframes slideUp {
@@ -405,6 +408,8 @@
       font-weight: 600;
       margin-bottom: 16px;
     }
+
+    .modal-sap.missing { color: var(--warning); }
 
     .detail-row {
       display: flex;
@@ -469,9 +474,43 @@
     </div>
     <div class="search-wrap">
       <span class="search-icon">&#128269;</span>
-      <input type="text" class="search-input" id="searchInput" placeholder="Search parts, bins, machines, SAP IDs..." autocomplete="off">
+      <input type="text" class="search-input" id="searchInput" placeholder="Search parts, bins, SAP IDs, keywords..." autocomplete="off">
       <button class="clear-btn" id="clearBtn">&#10005;</button>
     </div>
+    <select class="machine-select" id="machineSelect">
+      <option value="ALL">All Machines</option>
+      <option value="GENERAL">GENERAL</option>
+      <optgroup label="PA2">
+        <option value="000085C216">Punch/Grind/Sand/Stamping</option>
+        <option value="000085C217">TC/Wash/Temper/SS</option>
+        <option value="000085C218">Coating/Printing</option>
+        <option value="000085C219">Hangtag Packaging</option>
+        <option value="000085C220">Clamshell Packaging</option>
+        <option value="000085C221">Man. Packaging v. RSB</option>
+        <option value="000085C229">RF Sealing VS RSB</option>
+        <option value="000085C230">Ultrasonic Cleaner</option>
+        <option value="000085C231">Shrink Tunnel</option>
+      </optgroup>
+      <optgroup label="PA3">
+        <option value="000085C301">CSB Laser</option>
+        <option value="000085C303">CSB Annealing</option>
+        <option value="000085C306">CSB Brazing</option>
+        <option value="000085C308">CSB Coating/Phosphate</option>
+        <option value="000085C309">CSB Grinding</option>
+        <option value="000085C310">CSB Final Wash</option>
+        <option value="000085C311">CSB Marking</option>
+        <option value="000085C312">CSB Packaging Ring Pack</option>
+        <option value="000085C313">CSB Packaging Clamshell</option>
+        <option value="000085C314">CSB Packaging Manual</option>
+      </optgroup>
+      <optgroup label="TEF">
+        <option value="000085C082">Direct - General</option>
+        <option value="000085C083">TEF Equipment</option>
+        <option value="000085C092">TEF Direct - PA2 RSB</option>
+        <option value="000085C095">TEF Direct - PA2 OMT</option>
+        <option value="000085C093">TEF Direct - PA3 CSB</option>
+      </optgroup>
+    </select>
   </div>
 
   <div class="install-banner" id="installBanner">
@@ -481,8 +520,6 @@
     </div>
     <button class="install-btn" id="installBtn">Install</button>
   </div>
-
-  <div class="chips" id="chips"></div>
 
   <div class="results" id="results">
     <div class="empty">
@@ -504,48 +541,62 @@
 
   <script>
     let allParts = [];
-    let categories = [];
-    let activeCategory = 'ALL';
     let deferredPrompt = null;
 
-    // Category order aligned with cost centers
-    const CATEGORY_ORDER = [
-      'ALL',
+    const COST_CENTERS = {
+      'GENERAL': { name: 'GENERAL', code: 'GENERAL', group: '' },
+      '000085C216': { name: 'Punch/Grind/Sand/Stamping', code: '000085C216', group: 'PA2' },
+      '000085C217': { name: 'TC/Wash/Temper/SS', code: '000085C217', group: 'PA2' },
+      '000085C218': { name: 'Coating/Printing', code: '000085C218', group: 'PA2' },
+      '000085C219': { name: 'Hangtag Packaging', code: '000085C219', group: 'PA2' },
+      '000085C220': { name: 'Clamshell Packaging', code: '000085C220', group: 'PA2' },
+      '000085C221': { name: 'Man. Packaging v. RSB', code: '000085C221', group: 'PA2' },
+      '000085C229': { name: 'RF Sealing VS RSB', code: '000085C229', group: 'PA2' },
+      '000085C230': { name: 'Ultrasonic Cleaner', code: '000085C230', group: 'PA2' },
+      '000085C231': { name: 'Shrink Tunnel', code: '000085C231', group: 'PA2' },
+      '000085C301': { name: 'CSB Laser', code: '000085C301', group: 'PA3' },
+      '000085C303': { name: 'CSB Annealing', code: '000085C303', group: 'PA3' },
+      '000085C306': { name: 'CSB Brazing', code: '000085C306', group: 'PA3' },
+      '000085C308': { name: 'CSB Coating/Phosphate', code: '000085C308', group: 'PA3' },
+      '000085C309': { name: 'CSB Grinding', code: '000085C309', group: 'PA3' },
+      '000085C310': { name: 'CSB Final Wash', code: '000085C310', group: 'PA3' },
+      '000085C311': { name: 'CSB Marking', code: '000085C311', group: 'PA3' },
+      '000085C312': { name: 'CSB Packaging Ring Pack', code: '000085C312', group: 'PA3' },
+      '000085C313': { name: 'CSB Packaging Clamshell', code: '000085C313', group: 'PA3' },
+      '000085C314': { name: 'CSB Packaging Manual', code: '000085C314', group: 'PA3' },
+      '000085C082': { name: 'Direct - General', code: '000085C082', group: 'TEF' },
+      '000085C083': { name: 'TEF Equipment', code: '000085C083', group: 'TEF' },
+      '000085C092': { name: 'TEF Direct - PA2 RSB', code: '000085C092', group: 'TEF' },
+      '000085C095': { name: 'TEF Direct - PA2 OMT', code: '000085C095', group: 'TEF' },
+      '000085C093': { name: 'TEF Direct - PA3 CSB', code: '000085C093', group: 'TEF' },
+    };
+
+    // Category display order
+    const GROUP_ORDER = ['PA2', 'PA3', 'TEF'];
+    const CC_ORDER = [
       'GENERAL',
-      'PA2',
-      'PA2 - TC CELLS',
-      'PA2 - PAINT AND PRINT',
-      'PA2 BI-METAL',
-      'PA2 OMT',
-      'PA3 - LASERS',
-      'PA3 - BRAZERS',
-      'PA3 - COATING',
-      'PA3 - GRINDERS',
-      'PA3 - FINAL WASH',
-      'PA3 - MARKING',
-      'PA3 - RING PACK'
+      '000085C216', '000085C217', '000085C218', '000085C219', '000085C220',
+      '000085C221', '000085C229', '000085C230', '000085C231',
+      '000085C301', '000085C303', '000085C306', '000085C308', '000085C309',
+      '000085C310', '000085C311', '000085C312', '000085C313', '000085C314',
+      '000085C082', '000085C083', '000085C092', '000085C095', '000085C093'
     ];
 
     const searchInput = document.getElementById('searchInput');
     const clearBtn = document.getElementById('clearBtn');
+    const machineSelect = document.getElementById('machineSelect');
     const resultsEl = document.getElementById('results');
-    const chipsEl = document.getElementById('chips');
     const partCountEl = document.getElementById('partCount');
     const modalOverlay = document.getElementById('modalOverlay');
     const modalClose = document.getElementById('modalClose');
 
-    // Load parts
     async function loadParts() {
       try {
         const res = await fetch('parts.json');
         allParts = await res.json();
-        // Add unique IDs
         allParts.forEach((p, i) => p._id = i);
-        // Use fixed category order; filter to only those with parts + empty allowed ones
-        const usedCats = new Set(allParts.map(p => p.category));
-        categories = CATEGORY_ORDER.filter(c => c === 'ALL' || usedCats.has(c) || ['PA2 BI-METAL','PA2 OMT'].includes(c));
-        renderChips();
-        renderResults(allParts);
+        updateDropdownCounts();
+        doSearch();
       } catch (e) {
         resultsEl.innerHTML = `
           <div class="empty">
@@ -557,39 +608,42 @@
       }
     }
 
-    // Render category chips
-    function renderChips() {
-      chipsEl.innerHTML = categories.map(cat => {
-        const count = cat === 'ALL' ? allParts.length : allParts.filter(p => p.category === cat).length;
-        return `<button class="chip ${cat === activeCategory ? 'active' : ''}" data-cat="${cat}">${cat} <span style="opacity:0.6">(${count})</span></button>`;
-      }).join('');
+    function updateDropdownCounts() {
+      const counts = {};
+      allParts.forEach(p => {
+        counts[p.cost_center_code] = (counts[p.cost_center_code] || 0) + 1;
+      });
 
-      chipsEl.querySelectorAll('.chip').forEach(btn => {
-        btn.addEventListener('click', () => {
-          activeCategory = btn.dataset.cat;
-          renderChips();
-          doSearch();
-        });
+      Array.from(machineSelect.options).forEach(opt => {
+        if (opt.value === 'ALL') {
+          opt.textContent = `All Machines (${allParts.length})`;
+        } else if (opt.value === 'GENERAL') {
+          opt.textContent = `GENERAL (${counts['GENERAL'] || 0})`;
+        } else if (COST_CENTERS[opt.value]) {
+          const count = counts[opt.value] || 0;
+          opt.textContent = `${COST_CENTERS[opt.value].name} (${count})`;
+        }
       });
     }
 
-    // Fuzzy search
     function doSearch() {
       const query = searchInput.value.trim().toLowerCase();
+      const selectedCC = machineSelect.value;
       clearBtn.classList.toggle('visible', query.length > 0);
 
       let filtered = allParts;
 
-      // Category filter
-      if (activeCategory !== 'ALL') {
-        filtered = filtered.filter(p => p.category === activeCategory);
+      // Machine filter
+      if (selectedCC !== 'ALL') {
+        filtered = filtered.filter(p => p.cost_center_code === selectedCC);
       }
 
       // Text search
       if (query) {
         const terms = query.split(/\s+/);
         filtered = filtered.filter(p => {
-          const ccText = p.cost_center ? `${p.cost_center.name} ${p.cost_center.code}` : '';
+          const cc = COST_CENTERS[p.cost_center_code];
+          const ccText = cc ? `${cc.name} ${cc.code}` : '';
           const text = [
             p.sap_id,
             p.name,
@@ -604,10 +658,9 @@
         });
       }
 
-      renderResults(filtered, query);
+      renderResults(filtered, query, selectedCC);
     }
 
-    // Highlight matching text
     function highlight(text, query) {
       if (!query || !text) return text || '';
       const terms = query.split(/\s+/).filter(t => t.length > 1);
@@ -620,8 +673,7 @@
       return html;
     }
 
-    // Render results grouped by category
-    function renderResults(parts, query = '') {
+    function renderResults(parts, query, selectedCC) {
       partCountEl.textContent = `${parts.length} part${parts.length !== 1 ? 's' : ''}`;
 
       if (!parts.length) {
@@ -629,33 +681,43 @@
           <div class="empty">
             <div class="empty-icon">&#128269;</div>
             <h3>No parts found</h3>
-            <p>Try a different search term or category filter.</p>
+            <p>Try a different search or machine.</p>
           </div>
         `;
         return;
       }
 
-      // Group by category
+      // Group by cost center
       const grouped = {};
       parts.forEach(p => {
-        if (!grouped[p.category]) grouped[p.category] = [];
-        grouped[p.category].push(p);
+        const cc = p.cost_center_code || 'UNKNOWN';
+        if (!grouped[cc]) grouped[cc] = [];
+        grouped[cc].push(p);
       });
 
-      const order = CATEGORY_ORDER.filter(c => c !== 'ALL' && grouped[c]);
+      // Order groups
+      let order;
+      if (selectedCC !== 'ALL') {
+        // Single machine selected — just show that group
+        order = [selectedCC];
+      } else {
+        // All — use fixed order
+        order = CC_ORDER.filter(cc => grouped[cc]);
+      }
 
-      resultsEl.innerHTML = order.map(cat => {
-        const items = grouped[cat];
+      resultsEl.innerHTML = order.map(cc => {
+        const items = grouped[cc];
+        const ccInfo = COST_CENTERS[cc];
+        const headerText = ccInfo ? `${ccInfo.name} · ${ccInfo.code}` : cc;
         return `
-          <div class="category-header">
-            ${cat}
-            <span class="category-count">${items.length}</span>
+          <div class="machine-header">
+            ${headerText}
+            <span class="machine-count">${items.length}</span>
           </div>
           ${items.map(p => renderCard(p, query)).join('')}
         `;
       }).join('');
 
-      // Attach click handlers
       document.querySelectorAll('.card').forEach(card => {
         card.addEventListener('click', () => openModal(parseInt(card.dataset.id)));
       });
@@ -667,9 +729,6 @@
       const imageHtml = p.image
         ? `<img src="${p.image}" alt="${p.name}" loading="lazy" onerror="this.style.display='none';this.parentElement.textContent='No image'">`
         : 'No image';
-      const ccText = p.cost_center
-        ? `<span style="color:var(--accent);font-size:11px;font-weight:600;">${p.cost_center.name} · ${p.cost_center.code}</span>`
-        : '';
 
       return `
         <div class="card" data-id="${p._id}">
@@ -678,7 +737,6 @@
             <div class="card-body">
               <div class="card-name">${highlight(p.name, query)}</div>
               <div class="card-sap ${sapClass}">${highlight(sapText, query)}</div>
-              ${ccText}
               <div class="card-meta">
                 ${p.bin ? `<span>&#128230; ${highlight(p.bin, query)}</span>` : ''}
                 ${p.manufacturer ? `<span>&#127981; ${highlight(p.manufacturer, query)}</span>` : ''}
@@ -690,10 +748,11 @@
       `;
     }
 
-    // Modal
     function openModal(id) {
       const p = allParts.find(x => x._id === id);
       if (!p) return;
+
+      const cc = COST_CENTERS[p.cost_center_code];
 
       document.getElementById('modalTitle').textContent = p.name;
       document.getElementById('modalSap').textContent = p.sap_id || 'NO SAP ID';
@@ -703,14 +762,13 @@
       if (p.image) {
         imgEl.innerHTML = `<img src="${p.image}" alt="${p.name}">`;
       } else {
-        imgEl.textContent = 'No image yet — tap to add photo';
+        imgEl.textContent = 'No image yet — send photo to add';
       }
 
       const details = [
         { label: 'SAP ID', value: p.sap_id || 'Not assigned', mono: true },
         { label: 'Part Name', value: p.name },
-        { label: 'Machine / Area', value: p.category },
-        { label: 'Cost Center', value: p.cost_center ? `${p.cost_center.name} (${p.cost_center.code})` : 'Not assigned' },
+        { label: 'Cost Center', value: cc ? `${cc.name} (${cc.code})` : 'Not assigned' },
         { label: 'Bin Location', value: p.bin || 'N/A' },
         { label: 'Manufacturer', value: p.manufacturer || 'N/A' },
         { label: 'Model #', value: p.model_number || 'N/A', mono: true },
@@ -738,8 +796,8 @@
     });
     modalClose.addEventListener('click', closeModal);
 
-    // Events
     searchInput.addEventListener('input', doSearch);
+    machineSelect.addEventListener('change', doSearch);
     clearBtn.addEventListener('click', () => {
       searchInput.value = '';
       doSearch();
@@ -763,12 +821,10 @@
       deferredPrompt = null;
     });
 
-    // Service worker
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js').catch(() => {});
     }
 
-    // Init
     loadParts();
   </script>
 </body>

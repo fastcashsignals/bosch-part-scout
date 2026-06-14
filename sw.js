@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bps-v2';
+const CACHE_NAME = 'bps-v3';
 const ASSETS = [
   '/bosch-part-scout/',
   '/bosch-part-scout/index.html',
