@@ -1,16 +1,5 @@
 [
   {
-    "sap_id": "3610003762",
-    "name": "Hydraulic Oil",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Hydraulic oil",
-    "cost_center_code": "000085C217",
-    "image": "images/3610003762.jpg"
-  },
-  {
     "sap_id": "3610002553",
     "name": "Contact Cleaner",
     "category": "TEF - General",
@@ -51,16 +40,6 @@
     "cost_center_code": "GENERAL"
   },
   {
-    "sap_id": "3610007599",
-    "name": "Tool",
-    "category": "GENERAL",
-    "bin": "0211D05",
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Tooth for shrink machine",
-    "cost_center_code": "GENERAL"
-  },
-  {
     "sap_id": "3610001597",
     "name": "Bearing",
     "category": "GENERAL",
@@ -98,16 +77,6 @@
     "manufacturer": null,
     "model_number": null,
     "description": "Magnet for drum loader",
-    "cost_center_code": "GENERAL"
-  },
-  {
-    "sap_id": "3610001663",
-    "name": "Wedge",
-    "category": "GENERAL",
-    "bin": "0126M09",
-    "manufacturer": null,
-    "model_number": "#W685105044",
-    "description": "Loader Block",
     "cost_center_code": "GENERAL"
   },
   {
