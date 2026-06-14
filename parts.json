@@ -7,7 +7,8 @@
     "manufacturer": null,
     "model_number": null,
     "description": "Hydraulic oil",
-    "cost_center_code": "GENERAL"
+    "cost_center_code": "GENERAL",
+    "image": "images/3610003762.jpg"
   },
   {
     "sap_id": "3610002553",
@@ -817,7 +818,8 @@
     "manufacturer": "Castrol",
     "model_number": "#HYSPIN AWS 32",
     "description": "Hydraulic oil",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610003762.jpg"
   },
   {
     "sap_id": "3610003217",
@@ -998,5 +1000,16 @@
     "model_number": null,
     "description": "Sensor for blister measurer",
     "cost_center_code": "000085C312"
+  },
+  {
+    "sap_id": "3610004804",
+    "name": "WD-40 Multi-Use Product",
+    "category": "GENERAL",
+    "bin": null,
+    "manufacturer": "WD-40",
+    "model_number": null,
+    "description": "Multi-use spray lubricant. Stops squeaks, removes & protects, loosens rusted parts, frees sticky mechanisms, drives out moisture. Sprays 2 ways.",
+    "cost_center_code": "GENERAL",
+    "image": "images/3610004804.jpg"
   }
 ]
