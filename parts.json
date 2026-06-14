@@ -461,16 +461,6 @@
     "cost_center_code": "000085C218"
   },
   {
-    "sap_id": null,
-    "name": "Mist Collector",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Mist collector unit",
-    "cost_center_code": "000085C218"
-  },
-  {
     "sap_id": "3610004278",
     "name": "Filter",
     "category": "PA2 - PAINT AND PRINT",
@@ -761,16 +751,6 @@
     "cost_center_code": "000085C301"
   },
   {
-    "sap_id": null,
-    "name": "Spacer",
-    "category": "PA3 - LASERS",
-    "bin": "4",
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Suction cup spacer for robot head",
-    "cost_center_code": "000085C301"
-  },
-  {
     "sap_id": "3610003341",
     "name": "Magnet",
     "category": "PA3 - LASERS",
@@ -979,16 +959,6 @@
     "manufacturer": "Festo",
     "model_number": "#165004",
     "description": "Large muffler",
-    "cost_center_code": "000085C312"
-  },
-  {
-    "sap_id": null,
-    "name": "Thermal Transfer Ribbon",
-    "category": "PA3 - RING PACK",
-    "bin": "0405202",
-    "manufacturer": null,
-    "model_number": "#12340007271 IIM FRD13072",
-    "description": "Ribbon for label machine (on top of cabinet beside storage machine)",
     "cost_center_code": "000085C312"
   },
   {
