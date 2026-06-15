@@ -950,16 +950,5 @@
     "description": "Multi-use spray lubricant. Stops squeaks, removes & protects, loosens rusted parts, frees sticky mechanisms, drives out moisture. Sprays 2 ways.",
     "cost_center_code": "000085C082",
     "image": "images/3610004804.jpg"
-  },
-  {
-    "sap_id": "9999999999",
-    "name": "TEST PART DO NOT KEEP",
-    "category": "TC/Wash/Temper/SS",
-    "bin": "TESTBIN",
-    "manufacturer": "TestCo",
-    "model_number": "#TEST123",
-    "description": "This is a test submission for the queue processor.",
-    "cost_center_code": "000085C217",
-    "image": "images/9999999999.jpg"
   }
 ]
