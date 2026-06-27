@@ -12,22 +12,22 @@
   {
     "sap_id": "3610004958",
     "name": "Hang Tag",
-    "category": "GENERAL",
+    "category": "PA2 - HANGTAG PACKAGING",
     "bin": null,
     "manufacturer": "Festo",
     "model_number": null,
     "description": "Filter hang tag",
-    "cost_center_code": "GENERAL"
+    "cost_center_code": "000085C219"
   },
   {
     "sap_id": "3610002439",
     "name": "Master Link",
-    "category": "GENERAL",
+    "category": "PA2 - TC CELLS",
     "bin": "0127A03",
     "manufacturer": null,
     "model_number": "#35318781",
     "description": "8mm master link (used on mag conveyors)",
-    "cost_center_code": "GENERAL"
+    "cost_center_code": "000085C217"
   },
   {
     "sap_id": "3610004228",
@@ -42,42 +42,42 @@
   {
     "sap_id": "3610001597",
     "name": "Bearing",
-    "category": "GENERAL",
+    "category": "PA2 - PAINT AND PRINT",
     "bin": null,
     "manufacturer": null,
     "model_number": null,
     "description": "Bearing for loader drum assembly (RSB paint lines and wash)",
-    "cost_center_code": "GENERAL"
+    "cost_center_code": "000085C218"
   },
   {
     "sap_id": "3610008263",
     "name": "Ejector",
-    "category": "GENERAL",
+    "category": "PA2 - PAINT AND PRINT",
     "bin": null,
     "manufacturer": null,
     "model_number": null,
     "description": "Ejector for loader drum assembly",
-    "cost_center_code": "GENERAL"
+    "cost_center_code": "000085C218"
   },
   {
     "sap_id": "3610001634",
     "name": "Spring",
-    "category": "GENERAL",
+    "category": "PA2 - PAINT AND PRINT",
     "bin": null,
     "manufacturer": null,
     "model_number": null,
     "description": "Spring on ejector for loader drum assembly",
-    "cost_center_code": "GENERAL"
+    "cost_center_code": "000085C218"
   },
   {
     "sap_id": "3610008619",
     "name": "Magnet",
-    "category": "GENERAL",
+    "category": "PA2 - PAINT AND PRINT",
     "bin": null,
     "manufacturer": null,
     "model_number": null,
     "description": "Magnet for drum loader",
-    "cost_center_code": "GENERAL"
+    "cost_center_code": "000085C218"
   },
   {
     "sap_id": "3610007599",
