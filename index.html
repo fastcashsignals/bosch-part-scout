@@ -21,6 +21,21 @@
       --accent-dim: #00d4aa22;
       --danger: #ff4757;
       --warning: #ffa502;
+      --select-arrow: %23888;
+    }
+
+    [data-theme="light"] {
+      --bg: #f4f4f4;
+      --surface: #ffffff;
+      --surface-hover: #ebebeb;
+      --border: #d4d4d4;
+      --text: #111111;
+      --text-secondary: #666666;
+      --accent: #009e80;
+      --accent-dim: #00d4aa22;
+      --danger: #d93040;
+      --warning: #d08000;
+      --select-arrow: %23666;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -41,20 +56,20 @@
       z-index: 100;
       background: var(--bg);
       border-bottom: 1px solid var(--border);
-      padding: 12px 16px 10px;
+      padding: 14px 16px 12px;
     }
 
     .header-top {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 12px;
       margin-bottom: 10px;
     }
 
     .logo {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
       overflow: hidden;
       flex-shrink: 0;
       background: var(--surface);
@@ -69,13 +84,13 @@
     }
 
     .title {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 800;
       letter-spacing: -0.4px;
     }
 
     .subtitle {
-      font-size: 11px;
+      font-size: 13px;
       color: var(--text-secondary);
       margin-top: -2px;
     }
@@ -159,14 +174,18 @@
       background-position: right 12px center;
     }
 
+    [data-theme="light"] .machine-select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23666'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+    }
+
     .machine-select:focus {
       border-color: var(--accent);
     }
 
     .machine-select option,
     .machine-select optgroup {
-      background: #1a1a1a;
-      color: #e8e8e8;
+      background: var(--surface);
+      color: var(--text);
       font-size: 15px;
     }
 
@@ -523,6 +542,27 @@
       font-size: 13px;
       cursor: pointer;
     }
+
+    .theme-toggle {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 12px;
+      color: var(--text-secondary);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+      flex-shrink: 0;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
   </style>
 </head>
 <body>
@@ -534,6 +574,10 @@
         <div class="subtitle">Find parts fast. Get machines running.</div>
       </div>
       <div class="part-count" id="partCount">0 parts</div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span id="themeIcon">☀️</span>
+        <span id="themeLabel">Light</span>
+      </button>
     </div>
     <div class="search-wrap">
       <span class="search-icon">&#128269;</span>
@@ -924,6 +968,35 @@
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js').catch(() => {});
     }
+
+    // Theme toggle
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const themeLabel = document.getElementById('themeLabel');
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      if (theme === 'light') {
+        themeIcon.textContent = '🌙';
+        themeLabel.textContent = 'Dark';
+        if (themeMeta) themeMeta.content = '#f4f4f4';
+      } else {
+        themeIcon.textContent = '☀️';
+        themeLabel.textContent = 'Light';
+        if (themeMeta) themeMeta.content = '#0f0f0f';
+      }
+    }
+
+    const savedTheme = localStorage.getItem('theme') ||
+      (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    applyTheme(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      applyTheme(current === 'light' ? 'dark' : 'light');
+    });
 
     loadParts();
   </script>
