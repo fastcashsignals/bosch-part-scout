@@ -6,7 +6,7 @@
   <meta name="theme-color" content="#0f0f0f">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>Bosch Part Scout</title>
+  <title>Bosch Parts</title>
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icon-192.png">
   <style>
@@ -21,6 +21,21 @@
       --accent-dim: #00d4aa22;
       --danger: #ff4757;
       --warning: #ffa502;
+      --select-arrow: %23888;
+    }
+
+    [data-theme="light"] {
+      --bg: #f4f4f4;
+      --surface: #ffffff;
+      --surface-hover: #ebebeb;
+      --border: #d4d4d4;
+      --text: #111111;
+      --text-secondary: #666666;
+      --accent: #009e80;
+      --accent-dim: #00d4aa22;
+      --danger: #d93040;
+      --warning: #d08000;
+      --select-arrow: %23666;
     }
 
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -41,20 +56,20 @@
       z-index: 100;
       background: var(--bg);
       border-bottom: 1px solid var(--border);
-      padding: 12px 16px 10px;
+      padding: 14px 16px 12px;
     }
 
     .header-top {
       display: flex;
       align-items: center;
-      gap: 10px;
-      margin-bottom: 10px;
+      gap: 12px;
+      margin-bottom: 12px;
     }
 
     .logo {
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
       overflow: hidden;
       flex-shrink: 0;
       background: var(--surface);
@@ -69,19 +84,60 @@
     }
 
     .title {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: 800;
       letter-spacing: -0.4px;
     }
 
     .subtitle {
-      font-size: 11px;
+      font-size: 13px;
       color: var(--text-secondary);
       margin-top: -2px;
     }
 
+    .header-text { flex: 1 1 auto; min-width: 0; }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      gap: 8px;
+    }
+
+    .tab {
+      flex: 1;
+      padding: 10px 12px;
+      border-radius: 10px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      color: var(--text-secondary);
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      transition: background 0.2s, color 0.2s, border-color 0.2s;
+    }
+
+    .tab.active {
+      background: var(--accent);
+      color: #000;
+      border-color: var(--accent);
+    }
+
+    .panel { display: none; }
+    .panel.active { display: block; }
+
+    .search-controls { padding: 12px 16px 0; }
+
+    .part-count-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8px;
+    }
+
     .part-count {
-      margin-left: auto;
       font-size: 11px;
       color: var(--text-secondary);
       background: var(--surface);
@@ -159,14 +215,18 @@
       background-position: right 12px center;
     }
 
+    [data-theme="light"] .machine-select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23666'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+    }
+
     .machine-select:focus {
       border-color: var(--accent);
     }
 
     .machine-select option,
     .machine-select optgroup {
-      background: #1a1a1a;
-      color: #e8e8e8;
+      background: var(--surface);
+      color: var(--text);
       font-size: 15px;
     }
 
@@ -498,6 +558,214 @@
       color: var(--accent);
     }
 
+    /* Submit form */
+    .form {
+      padding: 16px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .field { margin-bottom: 18px; }
+
+    .form label {
+      display: block;
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+      margin-bottom: 8px;
+    }
+
+    .form label .required { color: var(--accent); margin-left: 4px; }
+
+    .form input[type="text"],
+    .form input[type="tel"],
+    .form select,
+    .form textarea {
+      width: 100%;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      color: var(--text);
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.2s, background 0.2s;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+
+    .form input:focus,
+    .form select:focus,
+    .form textarea:focus {
+      border-color: var(--accent);
+      background: var(--surface-hover);
+    }
+
+    .form input::placeholder,
+    .form textarea::placeholder { color: #555; }
+
+    .form select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23888'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 14px center;
+    }
+
+    [data-theme="light"] .form select {
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23666'%3E%3Cpath d='M4 6l4 4 4-4'/%3E%3C/svg%3E");
+    }
+
+    .form textarea {
+      min-height: 90px;
+      resize: vertical;
+    }
+
+    .sap-input {
+      display: flex;
+      align-items: stretch;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      overflow: hidden;
+      transition: border-color 0.2s, background 0.2s;
+    }
+
+    .sap-input:focus-within { border-color: var(--accent); }
+
+    .sap-prefix {
+      display: flex;
+      align-items: center;
+      padding: 0 14px;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: var(--text-secondary);
+      background: var(--surface-hover);
+      border-right: 1px solid var(--border);
+    }
+
+    .sap-input input {
+      border: none;
+      border-radius: 0;
+      background: transparent;
+      flex: 1;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+
+    .sap-input input:focus { background: transparent; }
+
+    .photo-area {
+      position: relative;
+      border: 2px dashed var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      text-align: center;
+      background: var(--surface);
+      transition: border-color 0.2s;
+    }
+
+    .photo-area.has-image {
+      border-color: var(--accent);
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .photo-area input[type="file"] {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      cursor: pointer;
+    }
+
+    .photo-placeholder {
+      color: var(--text-secondary);
+      font-size: 14px;
+      pointer-events: none;
+    }
+
+    .photo-placeholder strong {
+      display: block;
+      color: var(--accent);
+      font-size: 18px;
+      margin-bottom: 6px;
+    }
+
+    .photo-preview {
+      width: 100%;
+      max-height: 300px;
+      object-fit: contain;
+      display: block;
+    }
+
+    .photo-clear {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      width: 32px;
+      height: 32px;
+      font-size: 18px;
+      line-height: 1;
+      cursor: pointer;
+      z-index: 5;
+    }
+
+    .helper {
+      font-size: 12px;
+      color: var(--text-secondary);
+      margin-top: 6px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: var(--accent);
+      color: #000;
+      border: none;
+      border-radius: 14px;
+      padding: 18px;
+      font-size: 17px;
+      font-weight: 800;
+      cursor: pointer;
+      margin-top: 10px;
+      transition: transform 0.1s, opacity 0.2s;
+    }
+
+    .submit-btn:active { transform: scale(0.98); }
+    .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
+
+    .status {
+      margin-top: 16px;
+      padding: 14px;
+      border-radius: 12px;
+      font-size: 14px;
+      display: none;
+    }
+
+    .status.show { display: block; }
+    .status.success { background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent); }
+    .status.error { background: rgba(255, 71, 87, 0.1); color: var(--danger); border: 1px solid var(--danger); }
+
+    .spinner {
+      display: inline-block;
+      width: 18px;
+      height: 18px;
+      border: 2px solid rgba(0,0,0,0.3);
+      border-top-color: #000;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+      margin-right: 8px;
+      vertical-align: middle;
+    }
+
+    @keyframes spin { to { transform: rotate(360deg); } }
+
     /* Install prompt */
     .install-banner {
       display: none;
@@ -523,74 +791,205 @@
       font-size: 13px;
       cursor: pointer;
     }
+
+    .theme-toggle {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 6px 12px;
+      color: var(--text-secondary);
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: background 0.2s, border-color 0.2s, color 0.2s;
+      flex-shrink: 0;
+    }
+
+    .theme-toggle:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
   </style>
 </head>
 <body>
   <div class="header">
     <div class="header-top">
       <div class="logo"><img src="logo.jpg" alt="Bosch"></div>
-      <div>
-        <div class="title">Bosch Part Scout</div>
-        <div class="subtitle">Find parts fast. Get machines running.</div>
+      <div class="header-text">
+        <div class="title">Bosch Parts</div>
+        <div class="subtitle">Search the catalog or submit a part</div>
       </div>
-      <div class="part-count" id="partCount">0 parts</div>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span id="themeIcon">☀️</span>
+        <span id="themeLabel">Light</span>
+      </button>
     </div>
-    <div class="search-wrap">
-      <span class="search-icon">&#128269;</span>
-      <input type="text" class="search-input" id="searchInput" placeholder="Search parts, bins, SAP IDs, keywords..." autocomplete="off">
-      <button class="clear-btn" id="clearBtn">&#10005;</button>
+    <div class="tabs">
+      <button class="tab active" id="tabSearch" data-tab="search">&#128269; Search</button>
+      <button class="tab" id="tabSubmit" data-tab="submit">&#10133; Submit</button>
     </div>
-    <select class="machine-select" id="machineSelect">
-      <option value="ALL">All Machines</option>
-      <option value="GENERAL">GENERAL</option>
-      <optgroup label="PA2">
-        <option value="000085C216">Punch/Grind/Sand/Stamping</option>
-        <option value="000085C217">TC/Wash/Temper/SS</option>
-        <option value="000085C218">Coating/Printing</option>
-        <option value="000085C219">Hangtag Packaging</option>
-        <option value="000085C220">Clamshell Packaging</option>
-        <option value="000085C221">Man. Packaging v. RSB</option>
-        <option value="000085C229">RF Sealing VS RSB</option>
-        <option value="000085C230">Ultrasonic Cleaner</option>
-        <option value="000085C231">Shrink Tunnel</option>
-      </optgroup>
-      <optgroup label="PA3">
-        <option value="000085C301">CSB Laser</option>
-        <option value="000085C303">CSB Annealing</option>
-        <option value="000085C306">CSB Brazing</option>
-        <option value="000085C308">CSB Coating/Phosphate</option>
-        <option value="000085C309">CSB Grinding</option>
-        <option value="000085C310">CSB Final Wash</option>
-        <option value="000085C311">CSB Marking</option>
-        <option value="000085C312">CSB Packaging Ring Pack</option>
-        <option value="000085C313">CSB Packaging Clamshell</option>
-        <option value="000085C314">CSB Packaging Manual</option>
-      </optgroup>
-      <optgroup label="TEF">
-        <option value="000085C082">Direct - General</option>
-        <option value="000085C083">TEF Equipment</option>
-        <option value="000085C092">TEF Direct - PA2 RSB</option>
-        <option value="000085C095">TEF Direct - PA2 OMT</option>
-        <option value="000085C093">TEF Direct - PA3 CSB</option>
-      </optgroup>
-    </select>
   </div>
 
   <div class="install-banner" id="installBanner">
     <div class="install-text">
       <strong>Add to Home Screen</strong><br>
-      Install Bosch Part Scout for instant access
+      Install Bosch Parts for instant access
     </div>
     <button class="install-btn" id="installBtn">Install</button>
   </div>
 
-  <div class="results" id="results">
-    <div class="empty">
-      <div class="empty-icon">&#128295;</div>
-      <h3>Loading parts...</h3>
-      <p>One sec while we gear up.</p>
+  <!-- SEARCH TAB -->
+  <section id="searchPanel" class="panel active">
+    <div class="search-controls">
+      <div class="search-wrap">
+        <span class="search-icon">&#128269;</span>
+        <input type="text" class="search-input" id="searchInput" placeholder="Search parts, bins, SAP IDs, keywords..." autocomplete="off">
+        <button class="clear-btn" id="clearBtn">&#10005;</button>
+      </div>
+      <select class="machine-select" id="machineSelect">
+        <option value="ALL">All Machines</option>
+        <option value="GENERAL">GENERAL</option>
+        <optgroup label="PA2">
+          <option value="000085C216">Punch/Grind/Sand/Stamping</option>
+          <option value="000085C217">TC/Wash/Temper/SS</option>
+          <option value="000085C218">Coating/Printing</option>
+          <option value="000085C219">Hangtag Packaging</option>
+          <option value="000085C220">Clamshell Packaging</option>
+          <option value="000085C221">Man. Packaging v. RSB</option>
+          <option value="000085C229">RF Sealing VS RSB</option>
+          <option value="000085C230">Ultrasonic Cleaner</option>
+          <option value="000085C231">Shrink Tunnel</option>
+        </optgroup>
+        <optgroup label="PA3">
+          <option value="000085C301">CSB Laser</option>
+          <option value="000085C303">CSB Annealing</option>
+          <option value="000085C306">CSB Brazing</option>
+          <option value="000085C308">CSB Coating/Phosphate</option>
+          <option value="000085C309">CSB Grinding</option>
+          <option value="000085C310">CSB Final Wash</option>
+          <option value="000085C311">CSB Marking</option>
+          <option value="000085C312">CSB Packaging Ring Pack</option>
+          <option value="000085C313">CSB Packaging Clamshell</option>
+          <option value="000085C314">CSB Packaging Manual</option>
+        </optgroup>
+        <optgroup label="TEF">
+          <option value="000085C082">Direct - General</option>
+          <option value="000085C083">TEF Equipment</option>
+          <option value="000085C092">TEF Direct - PA2 RSB</option>
+          <option value="000085C095">TEF Direct - PA2 OMT</option>
+          <option value="000085C093">TEF Direct - PA3 CSB</option>
+        </optgroup>
+      </select>
+      <div class="part-count-row">
+        <span class="part-count" id="partCount">0 parts</span>
+      </div>
     </div>
-  </div>
+
+    <div class="results" id="results">
+      <div class="empty">
+        <div class="empty-icon">&#128295;</div>
+        <h3>Loading parts...</h3>
+        <p>One sec while we gear up.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUBMIT TAB -->
+  <section id="submitPanel" class="panel">
+    <form class="form" id="submitForm">
+      <div class="field">
+        <label>SAP / Part Number <span class="required">*</span></label>
+        <div class="sap-input">
+          <span class="sap-prefix">361000</span>
+          <input type="tel" id="sapLast4" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="3762" required>
+        </div>
+        <div class="helper">Just the last 4 digits &mdash; 361000 is added automatically</div>
+      </div>
+
+      <div class="field">
+        <label>Part Name <span class="required">*</span></label>
+        <input type="text" id="partName" placeholder="Hydraulic Oil" required>
+      </div>
+
+      <div class="field">
+        <label>Machine / Cost Center <span class="required">*</span></label>
+        <select id="costCenter" required>
+          <option value="" disabled selected>Pick a cost center</option>
+          <option value="GENERAL">GENERAL</option>
+          <optgroup label="PA2">
+            <option value="000085C216">Punch/Grind/Sand/Stamping</option>
+            <option value="000085C217">TC/Wash/Temper/SS</option>
+            <option value="000085C218">Coating/Printing</option>
+            <option value="000085C219">Hangtag Packaging</option>
+            <option value="000085C220">Clamshell Packaging</option>
+            <option value="000085C221">Man. Packaging v. RSB</option>
+            <option value="000085C229">RF Sealing VS RSB</option>
+            <option value="000085C230">Ultrasonic Cleaner</option>
+            <option value="000085C231">Shrink Tunnel</option>
+          </optgroup>
+          <optgroup label="PA3">
+            <option value="000085C301">CSB Laser</option>
+            <option value="000085C303">CSB Annealing</option>
+            <option value="000085C306">CSB Brazing</option>
+            <option value="000085C308">CSB Coating/Phosphate</option>
+            <option value="000085C309">CSB Grinding</option>
+            <option value="000085C310">CSB Final Wash</option>
+            <option value="000085C311">CSB Marking</option>
+            <option value="000085C312">CSB Packaging Ring Pack</option>
+            <option value="000085C313">CSB Packaging Clamshell</option>
+            <option value="000085C314">CSB Packaging Manual</option>
+          </optgroup>
+          <optgroup label="TEF">
+            <option value="000085C082">Direct - General</option>
+            <option value="000085C083">TEF Equipment</option>
+            <option value="000085C092">TEF Direct - PA2 RSB</option>
+            <option value="000085C095">TEF Direct - PA2 OMT</option>
+            <option value="000085C093">TEF Direct - PA3 CSB</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="field">
+        <label>Bin / Location <span class="required">*</span></label>
+        <input type="text" id="bin" placeholder="0404101" required>
+      </div>
+
+      <div class="field">
+        <label>Manufacturer</label>
+        <input type="text" id="manufacturer" placeholder="Festo">
+      </div>
+
+      <div class="field">
+        <label>Model Number</label>
+        <input type="text" id="modelNumber" placeholder="#HYSPIN AWS 32">
+      </div>
+
+      <div class="field">
+        <label>Description</label>
+        <textarea id="description" placeholder="What it looks like, where it goes, anything helpful"></textarea>
+      </div>
+
+      <div class="field">
+        <label>Photo <span class="required">*</span></label>
+        <div class="photo-area" id="photoArea">
+          <input type="file" id="photoInput" accept="image/*" capture="environment" required>
+          <div class="photo-placeholder" id="photoPlaceholder">
+            <strong>Tap to take photo</strong>
+            Use the camera, clear shot of the part
+          </div>
+          <img class="photo-preview" id="photoPreview" style="display:none">
+          <button type="button" class="photo-clear" id="photoClear" style="display:none">&times;</button>
+        </div>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submitBtn">Submit Part</button>
+
+      <div class="status" id="status"></div>
+    </form>
+  </section>
 
   <div class="modal-overlay" id="modalOverlay">
     <div class="modal" id="modal">
@@ -605,11 +1004,14 @@
   <!-- Full-screen pinch-to-zoom image viewer -->
   <div class="zoom-overlay" id="zoomOverlay">
     <button class="zoom-close" id="zoomClose">&times;</button>
-    <div class="zoom-hint" id="zoomHint">Pinch to zoom · Tap to close</div>
+    <div class="zoom-hint" id="zoomHint">Pinch to zoom &middot; Tap to close</div>
     <img id="zoomImg" src="" alt="">
   </div>
 
   <script>
+    // ===== Shared config / data =====
+    const WORKER_URL = 'https://bosch-part-queue.fastcashsignals.workers.dev';
+
     let allParts = [];
     let deferredPrompt = null;
 
@@ -641,8 +1043,6 @@
       '000085C093': { name: 'TEF Direct - PA3 CSB', code: '000085C093', group: 'TEF' },
     };
 
-    // Category display order
-    const GROUP_ORDER = ['PA2', 'PA3', 'TEF'];
     const CC_ORDER = [
       'GENERAL',
       '000085C216', '000085C217', '000085C218', '000085C219', '000085C220',
@@ -652,6 +1052,21 @@
       '000085C082', '000085C083', '000085C092', '000085C095', '000085C093'
     ];
 
+    // ===== Tab switching =====
+    const panels = {
+      search: document.getElementById('searchPanel'),
+      submit: document.getElementById('submitPanel')
+    };
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const name = tab.dataset.tab;
+        document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === tab));
+        Object.entries(panels).forEach(([key, el]) => el.classList.toggle('active', key === name));
+        window.scrollTo(0, 0);
+      });
+    });
+
+    // ===== Search =====
     const searchInput = document.getElementById('searchInput');
     const clearBtn = document.getElementById('clearBtn');
     const machineSelect = document.getElementById('machineSelect');
@@ -703,12 +1118,10 @@
 
       let filtered = allParts;
 
-      // Machine filter
       if (selectedCC !== 'ALL') {
         filtered = filtered.filter(p => p.cost_center_code === selectedCC);
       }
 
-      // Text search
       if (query) {
         const terms = query.split(/\s+/);
         filtered = filtered.filter(p => {
@@ -757,7 +1170,6 @@
         return;
       }
 
-      // Group by cost center
       const grouped = {};
       parts.forEach(p => {
         const cc = p.cost_center_code || 'UNKNOWN';
@@ -765,13 +1177,10 @@
         grouped[cc].push(p);
       });
 
-      // Order groups
       let order;
       if (selectedCC !== 'ALL') {
-        // Single machine selected — just show that group
         order = [selectedCC];
       } else {
-        // All — use fixed order
         order = CC_ORDER.filter(cc => grouped[cc]);
       }
 
@@ -879,7 +1288,6 @@
       zoomImg.src = img.src;
       zoomOverlay.classList.add('open');
       document.body.style.overflow = 'hidden';
-      // Show hint then fade it
       zoomHint.style.opacity = '1';
       clearTimeout(zoomHintTimer);
       zoomHintTimer = setTimeout(() => { zoomHint.style.opacity = '0'; }, 2500);
@@ -904,7 +1312,121 @@
       searchInput.focus();
     });
 
-    // PWA install
+    // ===== Submit =====
+    const form = document.getElementById('submitForm');
+    const photoInput = document.getElementById('photoInput');
+    const photoArea = document.getElementById('photoArea');
+    const photoPreview = document.getElementById('photoPreview');
+    const photoPlaceholder = document.getElementById('photoPlaceholder');
+    const photoClear = document.getElementById('photoClear');
+    const submitBtn = document.getElementById('submitBtn');
+    const statusEl = document.getElementById('status');
+
+    let currentPhotoBase64 = null;
+    let currentPhotoMime = null;
+
+    photoInput.addEventListener('change', e => {
+      const file = e.target.files[0];
+      if (!file) return;
+      currentPhotoMime = file.type || 'image/jpeg';
+      const reader = new FileReader();
+      reader.onload = ev => {
+        currentPhotoBase64 = ev.target.result.split(',')[1];
+        photoPreview.src = ev.target.result;
+        photoPreview.style.display = 'block';
+        photoPlaceholder.style.display = 'none';
+        photoClear.style.display = 'block';
+        photoArea.classList.add('has-image');
+      };
+      reader.readAsDataURL(file);
+    });
+
+    photoClear.addEventListener('click', () => {
+      photoInput.value = '';
+      currentPhotoBase64 = null;
+      currentPhotoMime = null;
+      photoPreview.style.display = 'none';
+      photoPreview.src = '';
+      photoPlaceholder.style.display = 'block';
+      photoClear.style.display = 'none';
+      photoArea.classList.remove('has-image');
+    });
+
+    function setStatus(msg, type) {
+      statusEl.textContent = msg;
+      statusEl.className = 'status ' + type + ' show';
+    }
+
+    function clearStatus() {
+      statusEl.className = 'status';
+    }
+
+    form.addEventListener('submit', async e => {
+      e.preventDefault();
+      clearStatus();
+
+      if (!currentPhotoBase64) {
+        setStatus('Take a photo first.', 'error');
+        return;
+      }
+
+      const last4 = document.getElementById('sapLast4').value.trim();
+      const sapId = '361000' + last4;
+      const partName = document.getElementById('partName').value.trim();
+      const costCenter = document.getElementById('costCenter').value;
+      const bin = document.getElementById('bin').value.trim();
+
+      if (!/^[0-9]{4}$/.test(last4)) {
+        setStatus('Enter the last 4 digits of the part number.', 'error');
+        return;
+      }
+
+      if (!partName || !costCenter || !bin) {
+        setStatus('Fill in all required fields.', 'error');
+        return;
+      }
+
+      const ccInfo = COST_CENTERS[costCenter];
+      const payload = {
+        sap_id: sapId,
+        name: partName,
+        category: ccInfo ? ccInfo.name : costCenter,
+        cost_center_code: costCenter,
+        bin: bin || null,
+        manufacturer: document.getElementById('manufacturer').value.trim() || null,
+        model_number: document.getElementById('modelNumber').value.trim() || null,
+        description: document.getElementById('description').value.trim() || null,
+        image_base64: currentPhotoBase64,
+        image_mime: currentPhotoMime
+      };
+
+      submitBtn.disabled = true;
+      const originalText = submitBtn.textContent;
+      submitBtn.innerHTML = '<span class="spinner"></span>Sending...';
+
+      try {
+        const res = await fetch(WORKER_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          throw new Error(data.error || `Server error ${res.status}`);
+        }
+        setStatus('Submitted. It will be reviewed and added to the catalog.', 'success');
+        form.reset();
+        photoClear.click();
+      } catch (err) {
+        console.error(err);
+        setStatus('Failed to submit: ' + err.message, 'error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalText;
+      }
+    });
+
+    // ===== PWA install =====
     window.addEventListener('beforeinstallprompt', e => {
       e.preventDefault();
       deferredPrompt = e;
@@ -924,6 +1446,35 @@
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js').catch(() => {});
     }
+
+    // ===== Theme toggle =====
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = document.getElementById('themeIcon');
+    const themeLabel = document.getElementById('themeLabel');
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('theme', theme);
+      if (theme === 'light') {
+        themeIcon.textContent = '🌙';
+        themeLabel.textContent = 'Dark';
+        if (themeMeta) themeMeta.content = '#f4f4f4';
+      } else {
+        themeIcon.textContent = '☀️';
+        themeLabel.textContent = 'Light';
+        if (themeMeta) themeMeta.content = '#0f0f0f';
+      }
+    }
+
+    const savedTheme = localStorage.getItem('theme') ||
+      (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    applyTheme(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const current = document.documentElement.getAttribute('data-theme');
+      applyTheme(current === 'light' ? 'dark' : 'light');
+    });
 
     loadParts();
   </script>
