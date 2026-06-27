@@ -95,8 +95,15 @@
       margin-top: -2px;
     }
 
+    .header-text { flex: 1 1 auto; min-width: 0; }
+
+    .part-count-row {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 8px;
+    }
+
     .part-count {
-      margin-left: auto;
       font-size: 11px;
       color: var(--text-secondary);
       background: var(--surface);
@@ -569,11 +576,10 @@
   <div class="header">
     <div class="header-top">
       <div class="logo"><img src="logo.jpg" alt="Bosch"></div>
-      <div>
+      <div class="header-text">
         <div class="title">Bosch Part Scout</div>
         <div class="subtitle">Find parts fast. Get machines running.</div>
       </div>
-      <div class="part-count" id="partCount">0 parts</div>
       <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
         <span id="themeIcon">☀️</span>
         <span id="themeLabel">Light</span>
@@ -618,6 +624,9 @@
         <option value="000085C093">TEF Direct - PA3 CSB</option>
       </optgroup>
     </select>
+    <div class="part-count-row">
+      <span class="part-count" id="partCount">0 parts</span>
+    </div>
   </div>
 
   <div class="install-banner" id="installBanner">
