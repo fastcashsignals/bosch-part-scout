@@ -95,20 +95,26 @@
       object-fit: cover;
     }
 
+    .header-text {
+      flex: 1;
+      min-width: 0;
+    }
+
     .title {
       font-size: 28px;
       font-weight: 800;
       letter-spacing: -0.4px;
+      line-height: 1.05;
     }
 
     .subtitle {
       font-size: 13px;
       color: var(--text-secondary);
-      margin-top: -2px;
+      margin-top: 2px;
     }
 
     .part-count {
-      margin-left: auto;
+      flex-shrink: 0;
       font-size: 11px;
       color: var(--text-secondary);
       background: var(--surface);
@@ -119,23 +125,25 @@
 
     .theme-toggle {
       flex-shrink: 0;
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      border: 1px solid var(--border);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 7px 14px;
+      border-radius: 20px;
+      border: 1px solid var(--accent);
       background: var(--surface);
       color: var(--text);
-      font-size: 18px;
+      font-size: 14px;
+      font-weight: 600;
       line-height: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      white-space: nowrap;
       cursor: pointer;
       transition: background 0.2s, border-color 0.2s;
     }
 
+    .theme-toggle .tt-icon { font-size: 15px; }
     .theme-toggle:hover { background: var(--surface-hover); }
-    .theme-toggle:active { transform: scale(0.94); }
+    .theme-toggle:active { transform: scale(0.96); }
 
     /* Search */
     .search-wrap {
@@ -576,12 +584,14 @@
   <div class="header">
     <div class="header-top">
       <div class="logo"><img src="logo.jpg" alt="Bosch"></div>
-      <div>
+      <div class="header-text">
         <div class="title">Bosch Part Scout</div>
         <div class="subtitle">Find parts fast. Get machines running.</div>
       </div>
       <div class="part-count" id="partCount">0 parts</div>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">&#127769;</button>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+        <span class="tt-icon">&#9728;&#65039;</span><span class="tt-label">Light</span>
+      </button>
     </div>
     <div class="search-wrap">
       <span class="search-icon">&#128269;</span>
@@ -978,13 +988,17 @@
     const THEME_COLORS = { dark: '#0f0f0f', light: '#f4f5f7' };
     const themeToggle = document.getElementById('themeToggle');
     const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+    const ttIcon = themeToggle.querySelector('.tt-icon');
+    const ttLabel = themeToggle.querySelector('.tt-label');
 
     function applyTheme(theme) {
       document.documentElement.setAttribute('data-theme', theme);
       if (themeColorMeta) themeColorMeta.setAttribute('content', THEME_COLORS[theme]);
-      // Show the icon for the theme you'll switch TO
-      themeToggle.textContent = theme === 'light' ? '\u{1F319}' : '☀️';
-      themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+      // Show the icon + label for the theme you'll switch TO
+      const next = theme === 'light' ? 'dark' : 'light';
+      ttIcon.textContent = next === 'light' ? '☀️' : '\u{1F319}';
+      ttLabel.textContent = next === 'light' ? 'Light' : 'Dark';
+      themeToggle.setAttribute('aria-label', 'Switch to ' + next + ' theme');
     }
 
     let currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
