@@ -851,7 +851,6 @@
       </div>
       <select class="machine-select" id="machineSelect">
         <option value="ALL">All Machines</option>
-        <option value="GENERAL">GENERAL</option>
         <optgroup label="PA2">
           <option value="000085C216">RSB Punch/Grind/Sand/Stamping</option>
           <option value="000085C217">RSB TC/Wash/Temper/SS</option>
@@ -918,7 +917,6 @@
         <label>Machine / Cost Center <span class="required">*</span></label>
         <select id="costCenter" required>
           <option value="" disabled selected>Pick a cost center</option>
-          <option value="GENERAL">GENERAL</option>
           <optgroup label="PA2">
             <option value="000085C216">RSB Punch/Grind/Sand/Stamping</option>
             <option value="000085C217">RSB TC/Wash/Temper/SS</option>
@@ -1016,7 +1014,6 @@
     let deferredPrompt = null;
 
     const COST_CENTERS = {
-      'GENERAL': { name: 'GENERAL', code: 'GENERAL', group: '' },
       '000085C216': { name: 'RSB Punch/Grind/Sand/Stamping', code: '000085C216', group: 'PA2' },
       '000085C217': { name: 'RSB TC/Wash/Temper/SS', code: '000085C217', group: 'PA2' },
       '000085C218': { name: 'RSB Paint and Print', code: '000085C218', group: 'PA2' },
@@ -1044,7 +1041,6 @@
     };
 
     const CC_ORDER = [
-      'GENERAL',
       '000085C216', '000085C217', '000085C218', '000085C219', '000085C220',
       '000085C221', '000085C229', '000085C230', '000085C231',
       '000085C301', '000085C303', '000085C306', '000085C308', '000085C309',
@@ -1102,8 +1098,6 @@
       Array.from(machineSelect.options).forEach(opt => {
         if (opt.value === 'ALL') {
           opt.textContent = `All Machines (${allParts.length})`;
-        } else if (opt.value === 'GENERAL') {
-          opt.textContent = `GENERAL (${counts['GENERAL'] || 0})`;
         } else if (COST_CENTERS[opt.value]) {
           const count = counts[opt.value] || 0;
           opt.textContent = `${COST_CENTERS[opt.value].name} (${count})`;
