@@ -9,6 +9,19 @@
   <title>Bosch Part Scout</title>
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icon-192.png">
+  <script>
+    // Apply theme before paint to avoid a flash of the wrong theme
+    (function () {
+      try {
+        var saved = localStorage.getItem('theme');
+        var theme = (saved === 'light' || saved === 'dark') ? saved
+          : (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+        document.documentElement.setAttribute('data-theme', theme);
+        var meta = document.querySelector('meta[name="theme-color"]');
+        if (meta) meta.setAttribute('content', theme === 'light' ? '#f4f5f7' : '#0f0f0f');
+      } catch (e) {}
+    })();
+  </script>
   <style>
     :root {
       --bg: #0f0f0f;
@@ -23,6 +36,19 @@
       --warning: #ffa502;
     }
 
+    [data-theme="light"] {
+      --bg: #f4f5f7;
+      --surface: #ffffff;
+      --surface-hover: #eceef1;
+      --border: #dcdfe4;
+      --text: #1a1d21;
+      --text-secondary: #6b7280;
+      --accent: #00a888;
+      --accent-dim: #00a8881f;
+      --danger: #e0344b;
+      --warning: #c77600;
+    }
+
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
     html, body {
@@ -32,6 +58,7 @@
       height: 100%;
       overflow-x: hidden;
       -webkit-tap-highlight-color: transparent;
+      transition: background 0.25s ease, color 0.25s ease;
     }
 
     /* Header */
@@ -89,6 +116,26 @@
       border-radius: 20px;
       white-space: nowrap;
     }
+
+    .theme-toggle {
+      flex-shrink: 0;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      border: 1px solid var(--border);
+      background: var(--surface);
+      color: var(--text);
+      font-size: 18px;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+
+    .theme-toggle:hover { background: var(--surface-hover); }
+    .theme-toggle:active { transform: scale(0.94); }
 
     /* Search */
     .search-wrap {
@@ -165,8 +212,8 @@
 
     .machine-select option,
     .machine-select optgroup {
-      background: #1a1a1a;
-      color: #e8e8e8;
+      background: var(--surface);
+      color: var(--text);
       font-size: 15px;
     }
 
@@ -534,6 +581,7 @@
         <div class="subtitle">Find parts fast. Get machines running.</div>
       </div>
       <div class="part-count" id="partCount">0 parts</div>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">&#127769;</button>
     </div>
     <div class="search-wrap">
       <span class="search-icon">&#128269;</span>
@@ -923,6 +971,39 @@
 
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('sw.js').catch(() => {});
+    }
+
+    // Theme toggle (light / dark)
+    const THEME_KEY = 'theme';
+    const THEME_COLORS = { dark: '#0f0f0f', light: '#f4f5f7' };
+    const themeToggle = document.getElementById('themeToggle');
+    const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+    function applyTheme(theme) {
+      document.documentElement.setAttribute('data-theme', theme);
+      if (themeColorMeta) themeColorMeta.setAttribute('content', THEME_COLORS[theme]);
+      // Show the icon for the theme you'll switch TO
+      themeToggle.textContent = theme === 'light' ? '\u{1F319}' : '☀️';
+      themeToggle.setAttribute('aria-label', theme === 'light' ? 'Switch to dark theme' : 'Switch to light theme');
+    }
+
+    let currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
+    applyTheme(currentTheme);
+
+    themeToggle.addEventListener('click', () => {
+      currentTheme = currentTheme === 'light' ? 'dark' : 'light';
+      localStorage.setItem(THEME_KEY, currentTheme);
+      applyTheme(currentTheme);
+    });
+
+    // Follow OS preference changes until the user makes an explicit choice
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: light)').addEventListener('change', e => {
+        if (!localStorage.getItem(THEME_KEY)) {
+          currentTheme = e.matches ? 'light' : 'dark';
+          applyTheme(currentTheme);
+        }
+      });
     }
 
     loadParts();
