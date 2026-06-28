@@ -191,12 +191,13 @@
   {
     "sap_id": "3610006730",
     "name": "Cooling Additive",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
-    "manufacturer": null,
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "04-05-101",
+    "manufacturer": "Castrol",
     "model_number": "#Syntilo 68",
     "description": "Additive for Faudi",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610006730.jpg?v=1782674237970"
   },
   {
     "sap_id": "3610003358",
