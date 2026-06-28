@@ -323,12 +323,13 @@
   {
     "sap_id": "3610007520",
     "name": "Drive Belt",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-39-I03",
+    "manufacturer": "Megapower2",
+    "model_number": "AT5-600",
     "description": "X-axis Station 2,4 / Z-axis Stations 2,3,4",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610007520.jpg?v=1782681047642"
   },
   {
     "sap_id": "3610002116",
