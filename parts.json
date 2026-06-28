@@ -987,5 +987,16 @@
     "description": "TC cell axis 2&5 servo for carbide handler",
     "cost_center_code": "000085C217",
     "image": "images/3610001972.jpg?v=1782675595077"
+  },
+  {
+    "sap_id": "3610001727",
+    "name": "Carbide Tooth Picker",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-28-D04",
+    "manufacturer": null,
+    "model_number": "W665118504R2",
+    "description": null,
+    "cost_center_code": "000085C217",
+    "image": "images/3610001727.jpg?v=1782675895389"
   }
 ]
