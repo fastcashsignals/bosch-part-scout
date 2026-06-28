@@ -279,12 +279,13 @@
   {
     "sap_id": "3610007998",
     "name": "Sensor",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-37-J04",
+    "manufacturer": "Balluff",
+    "model_number": "BGL001M",
     "description": "Vibrating bowl rail sensor",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610007998.jpg?v=1782676983322"
   },
   {
     "sap_id": "3610001617",
