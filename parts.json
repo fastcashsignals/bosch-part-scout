@@ -102,13 +102,14 @@
   },
   {
     "sap_id": "3610003741",
-    "name": "Filter",
-    "category": "PA2 - TC CELLS",
-    "bin": "0307101",
-    "manufacturer": null,
-    "model_number": null,
-    "description": "FES Bag Filters",
-    "cost_center_code": "000085C217"
+    "name": "Filter for FES",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": "03-07-101",
+    "manufacturer": "FES",
+    "model_number": "FES PES200P2SH",
+    "description": "Bag filter for FES",
+    "cost_center_code": "000085C216",
+    "image": "images/3610003741.jpg?v=1782652096356"
   },
   {
     "sap_id": "3610001777",
