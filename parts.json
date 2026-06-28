@@ -224,12 +224,13 @@
   {
     "sap_id": "3610001708",
     "name": "Arbor",
-    "category": "PA2 - TC CELLS",
+    "category": "RSB TC/Wash/Temper/SS",
     "bin": "0128B05",
     "manufacturer": null,
     "model_number": null,
     "description": "Grinding wheel arbor",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610001708.jpg?v=1782675980102"
   },
   {
     "sap_id": "3610002185",
