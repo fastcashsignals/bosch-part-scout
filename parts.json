@@ -147,12 +147,13 @@
   {
     "sap_id": "3610001839",
     "name": "Vertical Slide",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-28-B04",
     "manufacturer": null,
-    "model_number": null,
-    "description": "Vertical slide",
-    "cost_center_code": "000085C217"
+    "model_number": "MXQ8-10",
+    "description": "Vertical slide for carbide grippers",
+    "cost_center_code": "000085C217",
+    "image": "images/3610001839.jpg?v=1782659077370"
   },
   {
     "sap_id": "3610001737",
