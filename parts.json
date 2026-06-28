@@ -257,8 +257,8 @@
   {
     "sap_id": "3610005103",
     "name": "Air Fitting",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-40-M03",
     "manufacturer": "Festo",
     "model_number": null,
     "description": "Air fitting for tip handler M3 x 4mm (90 deg)",
