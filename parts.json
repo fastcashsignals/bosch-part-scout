@@ -356,12 +356,13 @@
   {
     "sap_id": "3610001778",
     "name": "Motor Pulley",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-28-K07",
     "manufacturer": null,
     "model_number": null,
     "description": "Axis 3 X",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610001778.jpg?v=1782681589398"
   },
   {
     "sap_id": "3610003277",
