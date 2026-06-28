@@ -378,12 +378,13 @@
   {
     "sap_id": "3610008324",
     "name": "I/O Block Cable",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "02-24-H03",
     "manufacturer": null,
     "model_number": null,
     "description": "I/O block cable",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610008324.jpg?v=1782682819976"
   },
   {
     "sap_id": "3610003550",
