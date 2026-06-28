@@ -301,12 +301,13 @@
   {
     "sap_id": "3610002571",
     "name": "Shaft Coupling",
-    "category": "PA2 - TC CELLS",
+    "category": "RSB TC/Wash/Temper/SS",
     "bin": "0109P01",
     "manufacturer": null,
     "model_number": null,
     "description": "Coupling for blade clamp",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610002571.jpg?v=1782680705090"
   },
   {
     "sap_id": "3610001852",
