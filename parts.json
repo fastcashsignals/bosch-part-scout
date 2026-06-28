@@ -1047,5 +1047,16 @@
     "description": "Filter bowel for tc cell",
     "cost_center_code": "000085C217",
     "image": "images/3610002403.jpg?v=1782677571832"
+  },
+  {
+    "sap_id": "3610003283",
+    "name": "Cylinder Holder",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-28-O09",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Holder for exit pin cylinder 3277",
+    "cost_center_code": "000085C217",
+    "image": "images/3610003283.jpg?v=1782683162028"
   }
 ]
