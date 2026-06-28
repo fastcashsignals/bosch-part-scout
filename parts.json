@@ -793,12 +793,13 @@
   {
     "sap_id": "3610006066",
     "name": "Hydraulic Filter",
-    "category": "PA3 - GRINDERS",
+    "category": "CSB Grinding",
     "bin": "0307406",
     "manufacturer": "UFI",
     "model_number": "#ERA32NFD",
     "description": "Filter for hydraulic oil tank",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610006066.jpg?v=1782677461093"
   },
   {
     "sap_id": "3610003084",
