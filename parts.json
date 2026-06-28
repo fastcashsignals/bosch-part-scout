@@ -977,5 +977,16 @@
     "description": "24 x 24 x2 filter",
     "cost_center_code": "000085C218",
     "image": "images/3610008553.jpg?v=1782647849849"
+  },
+  {
+    "sap_id": "3610000167",
+    "name": "Foot pedal",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-40-N02",
+    "manufacturer": "Hercules Foot Switch",
+    "model_number": "532 SWH",
+    "description": "Foot pedal switch for Side set",
+    "cost_center_code": "000085C217",
+    "image": "images/3610000167.jpg?v=1782658431664"
   }
 ]
