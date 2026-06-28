@@ -156,16 +156,6 @@
     "image": "images/3610001839.jpg?v=1782659077370"
   },
   {
-    "sap_id": "3610001737",
-    "name": "Sensor",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Larger sensor (Robot door open and close cylinder)",
-    "cost_center_code": "000085C217"
-  },
-  {
     "sap_id": "3610002031",
     "name": "Sensor Cable",
     "category": "RSB TC/Wash/Temper/SS",
@@ -877,17 +867,6 @@
     "model_number": "#K341 20P17A3/S35L",
     "description": "Belt blade position sensor",
     "cost_center_code": "000085C311"
-  },
-  {
-    "sap_id": "3610001737",
-    "name": "Sensor",
-    "category": "RSB TC/Wash/Temper/SS",
-    "bin": "01-28-B01",
-    "manufacturer": null,
-    "model_number": "MK5102",
-    "description": "Larger sensor (Robot door open and close cylinder)",
-    "cost_center_code": "000085C217",
-    "image": "images/3610001737.jpg?v=1782672734014"
   },
   {
     "sap_id": "3610002921",
