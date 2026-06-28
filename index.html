@@ -9,6 +9,13 @@
   <title>Bosch Parts</title>
   <link rel="manifest" href="manifest.json">
   <link rel="apple-touch-icon" href="icon-192.png">
+  <script>
+    // Apply the theme before first paint to avoid a flash. Default: light.
+    (function () {
+      var t = localStorage.getItem('theme') || 'light';
+      document.documentElement.setAttribute('data-theme', t);
+    })();
+  </script>
   <style>
     :root {
       --bg: #0f0f0f;
@@ -1484,8 +1491,8 @@
       }
     }
 
-    const savedTheme = localStorage.getItem('theme') ||
-      (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    // Default to light mode; respect the user's saved choice once they toggle.
+    const savedTheme = localStorage.getItem('theme') || 'light';
     applyTheme(savedTheme);
 
     themeToggle.addEventListener('click', () => {
