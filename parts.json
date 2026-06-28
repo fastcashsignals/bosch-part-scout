@@ -290,12 +290,13 @@
   {
     "sap_id": "3610001617",
     "name": "Chain",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-27-J01",
     "manufacturer": null,
     "model_number": null,
     "description": "Mag conveyor chain with master link",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610001617.jpg?v=1782677684163"
   },
   {
     "sap_id": "3610002571",
