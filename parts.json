@@ -975,5 +975,16 @@
     "description": "Foot pedal switch for Side set",
     "cost_center_code": "000085C217",
     "image": "images/3610000167.jpg?v=1782658431664"
+  },
+  {
+    "sap_id": "3610001972",
+    "name": "Carbide Handler Servo",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-41-DO2",
+    "manufacturer": "Rexroth",
+    "model_number": "MSK030C-0900-NN-M1-UP0-NNNN",
+    "description": "TC cell axis 2&5 servo for carbide handler",
+    "cost_center_code": "000085C217",
+    "image": "images/3610001972.jpg?v=1782675595077"
   }
 ]
