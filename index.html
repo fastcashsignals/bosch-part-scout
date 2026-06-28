@@ -460,6 +460,21 @@
 
     .modal-edit:active { transform: scale(0.98); }
 
+    .modal-delete {
+      width: 100%;
+      margin-top: 10px;
+      background: transparent;
+      color: var(--danger);
+      border: 1px solid var(--danger);
+      border-radius: 12px;
+      padding: 13px;
+      font-size: 14px;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    .modal-delete:active { transform: scale(0.98); }
+
     .modal-image {
       width: 100%;
       height: 300px;
@@ -1032,6 +1047,7 @@
       <div class="modal-sap" id="modalSap"></div>
       <div id="modalDetails"></div>
       <button class="modal-edit" id="modalEdit">&#9998; Edit / Add Photo</button>
+      <button class="modal-delete" id="modalDelete">Delete part</button>
     </div>
   </div>
 
@@ -1344,6 +1360,33 @@
       sapLast4El.value = sap.slice(-4);
       autoFillFromCatalog();
       window.scrollTo(0, 0);
+    });
+
+    // Delete part: confirm, then require the PIN (validated by the Worker).
+    document.getElementById('modalDelete').addEventListener('click', async () => {
+      const sap = currentModalSap;
+      if (!sap) return;
+      if (!confirm('Permanently delete this part?\n\n' + sap + '\n\nThis cannot be undone.')) return;
+      const pin = prompt('Enter the delete PIN to confirm:');
+      if (!pin) return;
+      try {
+        const res = await fetch(WORKER_URL, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ action: 'delete', sap_id: sap, pin: pin.trim() })
+        });
+        const data = await res.json().catch(() => ({}));
+        if (!res.ok) {
+          throw new Error(res.status === 403 ? 'Wrong PIN.' : (data.error || ('Error ' + res.status)));
+        }
+        // Remove it from the current view right away; the catalog updates shortly.
+        allParts = allParts.filter(p => p.sap_id !== sap);
+        closeModal();
+        doSearch();
+        alert('Deleted. It will drop off the catalog within a minute or two.');
+      } catch (err) {
+        alert('Delete failed: ' + err.message);
+      }
     });
 
     // Image pinch-zoom viewer
