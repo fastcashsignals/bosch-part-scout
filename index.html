@@ -1021,9 +1021,9 @@
       </div>
 
       <div class="field">
-        <label>Photo <span class="required">*</span></label>
+        <label>Photo <span class="required" id="photoReq">*</span></label>
         <div class="photo-area" id="photoArea">
-          <input type="file" id="photoInput" accept="image/*" capture="environment" required>
+          <input type="file" id="photoInput" accept="image/*" capture="environment">
           <div class="photo-placeholder" id="photoPlaceholder">
             <strong>Tap to take photo</strong>
             Use the camera, clear shot of the part
@@ -1488,11 +1488,14 @@
     };
     let autoFilled = false;
 
+    const photoReq = document.getElementById('photoReq');
+
     function clearAutoFill() {
       Object.keys(FILL_FIELDS).forEach(id => { document.getElementById(id).value = ''; });
       document.getElementById('costCenter').value = '';
       autoFilled = false;
       updateNote.style.display = 'none';
+      if (photoReq) photoReq.style.display = '';
     }
 
     function autoFillFromCatalog() {
@@ -1508,8 +1511,9 @@
         });
         document.getElementById('costCenter').value = part.cost_center_code || '';
         autoFilled = true;
-        updateNote.textContent = '✓ Existing part — details filled in. Take a new photo and submit to update it.';
+        updateNote.textContent = '✓ Existing part — details filled in. Change what you need and submit. New photo is optional (the current one is kept).';
         updateNote.style.display = 'block';
+        if (photoReq) photoReq.style.display = 'none';
       } else if (autoFilled) {
         clearAutoFill();
       }
@@ -1521,11 +1525,6 @@
       e.preventDefault();
       clearStatus();
 
-      if (!currentPhotoBase64) {
-        setStatus('Take a photo first.', 'error');
-        return;
-      }
-
       const last4 = document.getElementById('sapLast4').value.trim();
       const sapId = '361000' + last4;
       const partName = document.getElementById('partName').value.trim();
@@ -1534,6 +1533,13 @@
 
       if (!/^[0-9]{4}$/.test(last4)) {
         setStatus('Enter the last 4 digits of the part number.', 'error');
+        return;
+      }
+
+      // Photo is required for a new part, optional when updating an existing one.
+      const isUpdate = allParts.some(p => p.sap_id === sapId);
+      if (!currentPhotoBase64 && !isUpdate) {
+        setStatus('Take a photo first.', 'error');
         return;
       }
 
