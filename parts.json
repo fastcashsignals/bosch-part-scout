@@ -114,12 +114,13 @@
   {
     "sap_id": "3610001777",
     "name": "Sensor",
-    "category": "PA2 - TC CELLS",
+    "category": "RSB TC/Wash/Temper/SS",
     "bin": "0128B03",
     "manufacturer": "Schunk",
     "model_number": "#0301474, IN 40-S-M8-PNP",
     "description": "Larger round sensor (Clamping)",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610001777.jpg?v=1782658151139"
   },
   {
     "sap_id": "3610001738",
