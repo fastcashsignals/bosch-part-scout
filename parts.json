@@ -246,12 +246,13 @@
   {
     "sap_id": "3610002213",
     "name": "Gripper Finger",
-    "category": "PA2 - TC CELLS",
+    "category": "RSB TC/Wash/Temper/SS",
     "bin": "0128E09",
     "manufacturer": null,
     "model_number": null,
     "description": "Gripper pins for carbide teeth",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610002213.jpg?v=1782676165445"
   },
   {
     "sap_id": "3610005103",
@@ -1000,5 +1001,16 @@
     "description": null,
     "cost_center_code": "000085C217",
     "image": "images/3610001727.jpg?v=1782675895389"
+  },
+  {
+    "sap_id": "3610004622",
+    "name": "Superfici roller main bearing",
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-14-I02",
+    "manufacturer": "Koyo",
+    "model_number": "20001165 ucf 207",
+    "description": "Main drive roller for belt on coating, main bearing",
+    "cost_center_code": "000085C308",
+    "image": "images/3610004622.jpg?v=1782676049266"
   }
 ]
