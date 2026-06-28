@@ -1028,5 +1028,16 @@
     "description": null,
     "cost_center_code": "000085C217",
     "image": "images/3610002458.jpg?v=1782677200896"
+  },
+  {
+    "sap_id": "3610002403",
+    "name": "Filter bowel",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-37-K01",
+    "manufacturer": "Aventics",
+    "model_number": "R412007338",
+    "description": "Filter bowel for tc cell",
+    "cost_center_code": "000085C217",
+    "image": "images/3610002403.jpg?v=1782677571832"
   }
 ]
