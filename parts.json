@@ -780,8 +780,8 @@
   {
     "sap_id": "3610003762",
     "name": "Hydraulic Oil",
-    "category": "PA2 - TC CELLS",
-    "bin": "0404101",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "04-04-101",
     "manufacturer": "Castrol",
     "model_number": "#HYSPIN AWS 32",
     "description": "Hydraulic oil",
