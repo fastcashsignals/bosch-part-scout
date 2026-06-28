@@ -262,7 +262,8 @@
     "manufacturer": "Festo",
     "model_number": null,
     "description": "Air fitting for tip handler M3 x 4mm (90 deg)",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610005103.jpg?v=1782676684440"
   },
   {
     "sap_id": "3610002654",
