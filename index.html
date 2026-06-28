@@ -882,7 +882,7 @@
     </div>
     <div class="tabs">
       <button class="tab active" id="tabSearch" data-tab="search">&#128269; Search</button>
-      <button class="tab" id="tabSubmit" data-tab="submit">&#10133; Submit</button>
+      <button class="tab" id="tabSubmit" data-tab="submit">&#10133; Submit New Part</button>
     </div>
   </div>
 
@@ -1115,6 +1115,9 @@
         document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === tab));
         Object.entries(panels).forEach(([key, el]) => el.classList.toggle('active', key === name));
         window.scrollTo(0, 0);
+        if (name === 'search') {
+          setTimeout(() => document.getElementById('searchInput').focus(), 50);
+        }
       });
     });
 
