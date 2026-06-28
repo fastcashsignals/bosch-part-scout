@@ -367,12 +367,13 @@
   {
     "sap_id": "3610003277",
     "name": "Cylinder",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-28-O09",
+    "manufacturer": "Aventics",
+    "model_number": "D670",
     "description": "Air cylinder for exit pins",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610003277.jpg?v=1782681753664"
   },
   {
     "sap_id": "3610008324",
