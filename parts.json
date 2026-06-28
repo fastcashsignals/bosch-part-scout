@@ -168,12 +168,13 @@
   {
     "sap_id": "3610002031",
     "name": "Sensor Cable",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-29-D04",
     "manufacturer": null,
     "model_number": "#M8 EVC143",
     "description": "Long 3-wire Prox cable M8",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610002031.jpg?v=1782672984161"
   },
   {
     "sap_id": "3610003347",
