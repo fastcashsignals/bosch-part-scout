@@ -1023,7 +1023,7 @@
       <div class="field">
         <label>Photo <span class="required" id="photoReq">*</span></label>
         <div class="photo-area" id="photoArea">
-          <input type="file" id="photoInput" accept="image/*" capture="environment">
+          <input type="file" id="photoInput" accept="image/*">
           <div class="photo-placeholder" id="photoPlaceholder">
             <strong>Tap to take photo</strong>
             Use the camera, clear shot of the part
@@ -1520,6 +1520,16 @@
     }
 
     sapLast4El.addEventListener('input', autoFillFromCatalog);
+
+    // Auto-format the bin/location as xx-xx-xxx while typing.
+    const binEl = document.getElementById('bin');
+    binEl.addEventListener('input', () => {
+      const d = binEl.value.replace(/\D/g, '').slice(0, 7);
+      let out = d;
+      if (d.length > 4) out = d.slice(0, 2) + '-' + d.slice(2, 4) + '-' + d.slice(4);
+      else if (d.length > 2) out = d.slice(0, 2) + '-' + d.slice(2);
+      binEl.value = out;
+    });
 
     form.addEventListener('submit', async e => {
       e.preventDefault();
