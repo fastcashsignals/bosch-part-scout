@@ -345,12 +345,13 @@
   {
     "sap_id": "3610002167",
     "name": "Drive Belt",
-    "category": "PA2 - TC CELLS",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-28-I04",
+    "manufacturer": "Synchroflex",
+    "model_number": "AT5/420",
     "description": "X-axis Station 3",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610002167.jpg?v=1782681447205"
   },
   {
     "sap_id": "3610001778",
