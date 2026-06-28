@@ -235,12 +235,13 @@
   {
     "sap_id": "3610002185",
     "name": "Parallel Gripper",
-    "category": "PA2 - TC CELLS",
+    "category": "RSB TC/Wash/Temper/SS",
     "bin": "0128F02",
     "manufacturer": "Schunk",
     "model_number": "#MPG32 340011",
     "description": "Parallel gripper",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610002185.jpg?v=1782676047408"
   },
   {
     "sap_id": "3610002213",
