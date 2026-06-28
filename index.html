@@ -505,20 +505,24 @@
       background: #000;
       z-index: 300;
       display: none;
-      overflow: auto;
-      -webkit-overflow-scrolling: touch;
-      overscroll-behavior: contain;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      touch-action: none;
     }
 
-    .zoom-overlay.open { display: block; }
+    .zoom-overlay.open { display: flex; }
 
     .zoom-overlay img {
       display: block;
-      max-width: none;
-      min-width: 100vw;
-      min-height: 100vh;
+      max-width: 100vw;
+      max-height: 100vh;
+      width: auto;
+      height: auto;
       object-fit: contain;
-      margin: auto;
+      transform-origin: center center;
+      will-change: transform;
+      touch-action: none;
     }
 
     .zoom-close {
@@ -952,7 +956,7 @@
         <label>SAP / Part Number <span class="required">*</span></label>
         <div class="sap-input">
           <span class="sap-prefix">361000</span>
-          <input type="tel" id="sapLast4" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="3762" required>
+          <input type="tel" id="sapLast4" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="0000" required>
         </div>
         <div class="helper">Just the last 4 digits &mdash; 361000 is added automatically</div>
         <div class="update-note" id="updateNote" style="display:none"></div>
@@ -1002,7 +1006,7 @@
 
       <div class="field">
         <label>Bin / Location <span class="required">*</span></label>
-        <input type="text" id="bin" placeholder="02-02-B01" required>
+        <input type="text" id="bin" placeholder="02-02-B01" autocapitalize="characters" autocomplete="off" style="text-transform: uppercase" required>
       </div>
 
       <div class="field">
@@ -1396,10 +1400,22 @@
     const zoomHint = document.getElementById('zoomHint');
     let zoomHintTimer = null;
 
+    // Transform state for pinch-to-zoom + pan.
+    let zScale = 1, zTx = 0, zTy = 0;
+
+    function applyZoom() {
+      zoomImg.style.transform = `translate(${zTx}px, ${zTy}px) scale(${zScale})`;
+    }
+    function resetZoom() {
+      zScale = 1; zTx = 0; zTy = 0;
+      applyZoom();
+    }
+
     document.getElementById('modalImage').addEventListener('click', () => {
       const img = document.querySelector('#modalImage img');
       if (!img) return;
       zoomImg.src = img.src;
+      resetZoom();
       zoomOverlay.classList.add('open');
       document.body.style.overflow = 'hidden';
       zoomHint.style.opacity = '1';
@@ -1410,12 +1426,63 @@
     function closeZoom() {
       zoomOverlay.classList.remove('open');
       zoomImg.src = '';
+      resetZoom();
       document.body.style.overflow = '';
     }
 
     zoomClose.addEventListener('click', closeZoom);
-    zoomOverlay.addEventListener('click', e => {
-      if (e.target === zoomOverlay || e.target === zoomImg) closeZoom();
+
+    // Pinch to zoom, drag to pan; a plain tap (no zoom, no move) closes it.
+    let pinchStartDist = 0, pinchStartScale = 1;
+    let panStartX = 0, panStartY = 0, panStartTx = 0, panStartTy = 0;
+    let gestureMode = null, moved = false;
+
+    function touchDist(t) {
+      return Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+    }
+
+    zoomOverlay.addEventListener('touchstart', e => {
+      moved = false;
+      if (e.touches.length === 2) {
+        gestureMode = 'pinch';
+        pinchStartDist = touchDist(e.touches);
+        pinchStartScale = zScale;
+      } else if (e.touches.length === 1 && zScale > 1) {
+        gestureMode = 'pan';
+        panStartX = e.touches[0].clientX;
+        panStartY = e.touches[0].clientY;
+        panStartTx = zTx; panStartTy = zTy;
+      } else {
+        gestureMode = null;
+      }
+    }, { passive: false });
+
+    zoomOverlay.addEventListener('touchmove', e => {
+      if (gestureMode === 'pinch' && e.touches.length === 2) {
+        e.preventDefault();
+        moved = true;
+        const ratio = touchDist(e.touches) / (pinchStartDist || 1);
+        zScale = Math.min(5, Math.max(1, pinchStartScale * ratio));
+        applyZoom();
+      } else if (gestureMode === 'pan' && e.touches.length === 1) {
+        e.preventDefault();
+        moved = true;
+        zTx = panStartTx + (e.touches[0].clientX - panStartX);
+        zTy = panStartTy + (e.touches[0].clientY - panStartY);
+        applyZoom();
+      }
+    }, { passive: false });
+
+    zoomOverlay.addEventListener('touchend', e => {
+      if (e.touches.length === 0) {
+        if (zScale <= 1.01) { zScale = 1; zTx = 0; zTy = 0; applyZoom(); }
+        gestureMode = null;
+      }
+    });
+
+    // Tap (mouse or a touch that didn't pan/pinch) closes when not zoomed in.
+    zoomOverlay.addEventListener('click', () => {
+      if (!moved && zScale <= 1.01) closeZoom();
     });
 
     searchInput.addEventListener('input', doSearch);
