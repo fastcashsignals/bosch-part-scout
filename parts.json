@@ -691,12 +691,13 @@
   {
     "sap_id": "3610001834",
     "name": "Sensor",
-    "category": "PA3 - BRAZERS",
-    "bin": "0137K03",
+    "category": "CSB Brazing",
+    "bin": "01-37-K03",
     "manufacturer": "IFM Electronic",
     "model_number": "#E21107",
     "description": "Fiber optic sensor for conveyor",
-    "cost_center_code": "000085C306"
+    "cost_center_code": "000085C306",
+    "image": "images/3610001834.jpg?v=1782677164827"
   },
   {
     "sap_id": "3610003684",
