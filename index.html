@@ -1506,20 +1506,38 @@
     let currentPhotoBase64 = null;
     let currentPhotoMime = null;
 
+    function compressPhoto(file, callback) {
+      const MAX_W = 1200;
+      const QUALITY = 0.78;
+      const reader = new FileReader();
+      reader.onload = ev => {
+        const img = new Image();
+        img.onload = () => {
+          let w = img.width, h = img.height;
+          if (w > MAX_W) { h = Math.round(h * MAX_W / w); w = MAX_W; }
+          const canvas = document.createElement('canvas');
+          canvas.width = w; canvas.height = h;
+          canvas.getContext('2d').drawImage(img, 0, 0, w, h);
+          const dataUrl = canvas.toDataURL('image/jpeg', QUALITY);
+          callback(dataUrl.split(',')[1], 'image/jpeg', dataUrl);
+        };
+        img.src = ev.target.result;
+      };
+      reader.readAsDataURL(file);
+    }
+
     photoInput.addEventListener('change', e => {
       const file = e.target.files[0];
       if (!file) return;
-      currentPhotoMime = file.type || 'image/jpeg';
-      const reader = new FileReader();
-      reader.onload = ev => {
-        currentPhotoBase64 = ev.target.result.split(',')[1];
-        photoPreview.src = ev.target.result;
+      compressPhoto(file, (b64, mime, dataUrl) => {
+        currentPhotoBase64 = b64;
+        currentPhotoMime = mime;
+        photoPreview.src = dataUrl;
         photoPreview.style.display = 'block';
         photoPlaceholder.style.display = 'none';
         photoClear.style.display = 'block';
         photoArea.classList.add('has-image');
-      };
-      reader.readAsDataURL(file);
+      });
     });
 
     photoClear.addEventListener('click', () => {
