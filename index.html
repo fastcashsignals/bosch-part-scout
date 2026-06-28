@@ -1002,7 +1002,7 @@
 
       <div class="field">
         <label>Bin / Location <span class="required">*</span></label>
-        <input type="text" id="bin" placeholder="04-04-101" required>
+        <input type="text" id="bin" placeholder="02-02-B01" required>
       </div>
 
       <div class="field">
@@ -1521,13 +1521,27 @@
 
     sapLast4El.addEventListener('input', autoFillFromCatalog);
 
-    // Auto-format the bin/location as xx-xx-xxx while typing.
+    // Auto-format the bin/location as ##-##-XXX while typing: the first four
+    // are digits, the last three can include letters (e.g. 02-02-B01).
     const binEl = document.getElementById('bin');
     binEl.addEventListener('input', () => {
-      const d = binEl.value.replace(/\D/g, '').slice(0, 7);
-      let out = d;
-      if (d.length > 4) out = d.slice(0, 2) + '-' + d.slice(2, 4) + '-' + d.slice(4);
-      else if (d.length > 2) out = d.slice(0, 2) + '-' + d.slice(2);
+      const raw = binEl.value.toUpperCase().replace(/[^0-9A-Z]/g, '');
+      let nums = '';   // first 4 (digits only)
+      let tail = '';   // last 3 (alphanumeric)
+      for (const ch of raw) {
+        if (nums.length < 4) {
+          if (ch >= '0' && ch <= '9') nums += ch;
+        } else if (tail.length < 3) {
+          tail += ch;
+        }
+      }
+      let out = nums;
+      if (nums.length === 4) {
+        out = nums.slice(0, 2) + '-' + nums.slice(2, 4);
+        if (tail) out += '-' + tail;
+      } else if (nums.length > 2) {
+        out = nums.slice(0, 2) + '-' + nums.slice(2);
+      }
       binEl.value = out;
     });
 
