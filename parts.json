@@ -213,12 +213,13 @@
   {
     "sap_id": "3610002018",
     "name": "Gripper",
-    "category": "PA2 - TC CELLS",
-    "bin": "0128B04",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-28-H01",
     "manufacturer": "Schunk",
     "model_number": "#3.610.002.018",
     "description": "Robot gripper vertical cylinder",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610002018.jpg?v=1782675702492"
   },
   {
     "sap_id": "3610001708",
