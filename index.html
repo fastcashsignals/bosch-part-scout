@@ -731,6 +731,17 @@
       margin-top: 6px;
     }
 
+    .update-note {
+      margin-top: 8px;
+      padding: 8px 12px;
+      border-radius: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--accent);
+      background: var(--accent-dim);
+      border: 1px solid var(--accent);
+    }
+
     .submit-btn {
       width: 100%;
       background: var(--accent);
@@ -914,6 +925,7 @@
           <input type="tel" id="sapLast4" inputmode="numeric" maxlength="4" pattern="[0-9]{4}" placeholder="3762" required>
         </div>
         <div class="helper">Just the last 4 digits &mdash; 361000 is added automatically</div>
+        <div class="update-note" id="updateNote" style="display:none"></div>
       </div>
 
       <div class="field">
@@ -1386,6 +1398,48 @@
       statusEl.className = 'status';
     }
 
+    // Auto-fill the form when the entered part already exists in the catalog,
+    // so techs can update (e.g. add a photo) without retyping everything.
+    const sapLast4El = document.getElementById('sapLast4');
+    const updateNote = document.getElementById('updateNote');
+    const FILL_FIELDS = {
+      partName: 'name',
+      bin: 'bin',
+      manufacturer: 'manufacturer',
+      modelNumber: 'model_number',
+      description: 'description'
+    };
+    let autoFilled = false;
+
+    function clearAutoFill() {
+      Object.keys(FILL_FIELDS).forEach(id => { document.getElementById(id).value = ''; });
+      document.getElementById('costCenter').value = '';
+      autoFilled = false;
+      updateNote.style.display = 'none';
+    }
+
+    function autoFillFromCatalog() {
+      const last4 = sapLast4El.value.trim();
+      if (!/^[0-9]{4}$/.test(last4)) {
+        if (autoFilled) clearAutoFill();
+        return;
+      }
+      const part = allParts.find(p => p.sap_id === '361000' + last4);
+      if (part) {
+        Object.entries(FILL_FIELDS).forEach(([id, key]) => {
+          document.getElementById(id).value = part[key] || '';
+        });
+        document.getElementById('costCenter').value = part.cost_center_code || '';
+        autoFilled = true;
+        updateNote.textContent = '✓ Existing part — details filled in. Take a new photo and submit to update it.';
+        updateNote.style.display = 'block';
+      } else if (autoFilled) {
+        clearAutoFill();
+      }
+    }
+
+    sapLast4El.addEventListener('input', autoFillFromCatalog);
+
     form.addEventListener('submit', async e => {
       e.preventDefault();
       clearStatus();
@@ -1439,9 +1493,10 @@
         if (!res.ok) {
           throw new Error(data.error || `Server error ${res.status}`);
         }
-        setStatus('Submitted. It will be reviewed and added to the catalog.', 'success');
+        setStatus('Submitted. It will be added to the catalog shortly.', 'success');
         form.reset();
         photoClear.click();
+        clearAutoFill();
       } catch (err) {
         console.error(err);
         setStatus('Failed to submit: ' + err.message, 'error');
