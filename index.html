@@ -1071,13 +1071,20 @@
     const modalOverlay = document.getElementById('modalOverlay');
     const modalClose = document.getElementById('modalClose');
 
+    let lastPartsRaw = null;
+
+    function ingestParts(raw) {
+      lastPartsRaw = raw;
+      allParts = JSON.parse(raw);
+      allParts.forEach((p, i) => p._id = i);
+      updateDropdownCounts();
+      doSearch();
+    }
+
     async function loadParts() {
       try {
-        const res = await fetch('parts.json');
-        allParts = await res.json();
-        allParts.forEach((p, i) => p._id = i);
-        updateDropdownCounts();
-        doSearch();
+        const res = await fetch('parts.json', { cache: 'no-store' });
+        ingestParts(await res.text());
       } catch (e) {
         resultsEl.innerHTML = `
           <div class="empty">
@@ -1088,6 +1095,22 @@
         `;
       }
     }
+
+    // Silently pick up newly submitted parts when the app regains focus,
+    // without disturbing the current search unless the catalog changed.
+    async function refreshParts() {
+      try {
+        const res = await fetch('parts.json', { cache: 'no-store' });
+        const raw = await res.text();
+        if (raw !== lastPartsRaw) ingestParts(raw);
+      } catch (e) {
+        /* offline — keep the parts we already have */
+      }
+    }
+
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') refreshParts();
+    });
 
     function updateDropdownCounts() {
       const counts = {};

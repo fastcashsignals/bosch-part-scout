@@ -1,4 +1,4 @@
-const CACHE_NAME = 'bps-v9';
+const CACHE_NAME = 'bps-v10';
 const ASSETS = [
   '/bosch-part-scout/',
   '/bosch-part-scout/index.html',
@@ -26,6 +26,29 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
+  const url = new URL(e.request.url);
+  const isCatalog = url.pathname.endsWith('/parts.json');
+  const isShell =
+    e.request.mode === 'navigate' ||
+    url.pathname.endsWith('/index.html') ||
+    url.pathname.endsWith('/bosch-part-scout/');
+
+  // Network-first for the app shell and the parts catalog so newly added
+  // parts show up on reload. Fall back to the cached copy when offline.
+  if (isCatalog || isShell) {
+    e.respondWith(
+      fetch(e.request)
+        .then(res => {
+          const copy = res.clone();
+          caches.open(CACHE_NAME).then(cache => cache.put(e.request, copy));
+          return res;
+        })
+        .catch(() => caches.match(e.request))
+    );
+    return;
+  }
+
+  // Cache-first for everything else (icons, logo, part photos).
   e.respondWith(
     caches.match(e.request).then(cached => {
       if (cached) return cached;
