@@ -203,7 +203,7 @@
     "sap_id": "3610003358",
     "name": "Gripper",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": "0128E01",
+    "bin": "01-28-E01",
     "manufacturer": null,
     "model_number": null,
     "description": "Robot gripper tip",
