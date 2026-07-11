@@ -1080,5 +1080,175 @@
     "description": "Aluminum short bar",
     "cost_center_code": "000085C220",
     "image": "images/3610007455.jpg?v=1783785063576"
+  },
+  {
+    "sap_id": "3610000692",
+    "name": "Proximity Sensor BES01KE",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Proximity Sensor BES01KE",
+    "cost_center_code": "000085C216"
+  },
+  {
+    "sap_id": "3610001668",
+    "name": "Block L-shaped W685119410",
+    "category": "RSB Paint and Print",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Block L-shaped W685119410",
+    "cost_center_code": "000085C218"
+  },
+  {
+    "sap_id": "3610002052",
+    "name": "Connector Plug PICO M8 3 PIN Female",
+    "category": "PA3 - GRINDERS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Connector Plug PICO M8 3 PIN Female",
+    "cost_center_code": "000085C309"
+  },
+  {
+    "sap_id": "3610002055",
+    "name": "Sensor Cable 3POS DIGI-KEY",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Sensor Cable 3POS DIGI-KEY",
+    "cost_center_code": "000085C217"
+  },
+  {
+    "sap_id": "3610002164",
+    "name": "coolant pump TS 21/300-BZ+426",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "coolant pump TS 21/300-BZ+426",
+    "cost_center_code": "000085C217"
+  },
+  {
+    "sap_id": "3610002642",
+    "name": "Motor-gearbox assembly GR42X25 24V",
+    "category": "PA3 - BRAZERS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Motor-gearbox assembly GR42X25 24V",
+    "cost_center_code": "000085C306"
+  },
+  {
+    "sap_id": "3610003351",
+    "name": "Suction Valve ISV-M10 Festo 545998",
+    "category": "PA3 - LASERS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Suction Valve ISV-M10 Festo 545998",
+    "cost_center_code": "000085C301"
+  },
+  {
+    "sap_id": "3610003823",
+    "name": "Sticker Hazardous Waste",
+    "category": "Direct - General",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Sticker Hazardous Waste",
+    "cost_center_code": "000085C242"
+  },
+  {
+    "sap_id": "3610004542",
+    "name": "Plate Etch Poly D0624",
+    "category": "PA3 - MARKING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Plate Etch Poly D0624",
+    "cost_center_code": "000085C311"
+  },
+  {
+    "sap_id": "3610005175",
+    "name": "Die insert W622133112",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Die insert W622133112",
+    "cost_center_code": "000085C216"
+  },
+  {
+    "sap_id": "3610005406",
+    "name": "Roller Feed Roll Kit",
+    "category": "PA3 - RING PACK",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Roller Feed Roll Kit",
+    "cost_center_code": "000085C312"
+  },
+  {
+    "sap_id": "3610006343",
+    "name": "Label Flammable Liquid DOT",
+    "category": "Direct - General",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Label Flammable Liquid DOT",
+    "cost_center_code": "000085C242"
+  },
+  {
+    "sap_id": "3610006584",
+    "name": "Bridge 45X50X278 - IVA",
+    "category": "Direct - General",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Bridge 45X50X278 - IVA",
+    "cost_center_code": "000085C233"
+  },
+  {
+    "sap_id": "3610007218",
+    "name": "Rubber Door Seal Oven PA2",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Rubber Door Seal Oven PA2",
+    "cost_center_code": "000085C217"
+  },
+  {
+    "sap_id": "3610007456",
+    "name": "Anvil Plate 6\" Horizontal bar",
+    "category": "RSB Clamshell Packaging",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Anvil Plate 6\" Horizontal bar",
+    "cost_center_code": "000085C220"
+  },
+  {
+    "sap_id": "3610007884",
+    "name": "Spare Part Hang Tag Tip",
+    "category": "PA2 - HANGTAG PACKAGING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Spare Part Hang Tag Tip",
+    "cost_center_code": "000085C219"
+  },
+  {
+    "sap_id": "3610008659",
+    "name": "Frame Metal Silk Screen",
+    "category": "PA3 - MARKING",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Frame Metal Silk Screen",
+    "cost_center_code": "000085C311"
   }
 ]
