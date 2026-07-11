@@ -1058,5 +1058,16 @@
     "description": "Holder for exit pin cylinder 3277",
     "cost_center_code": "000085C217",
     "image": "images/3610003283.jpg?v=1782683162028"
+  },
+  {
+    "sap_id": "3610007042",
+    "name": "Basket rotation motor",
+    "category": "RSB Ultrasonic Cleaner",
+    "bin": "02-11-E03",
+    "manufacturer": "Anaheim",
+    "model_number": "BDPG-60",
+    "description": null,
+    "cost_center_code": "000085C230",
+    "image": "images/3610007042.jpg?v=1783778454148"
   }
 ]
