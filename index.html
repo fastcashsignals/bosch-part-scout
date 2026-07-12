@@ -794,16 +794,31 @@
     .submit-btn:disabled { opacity: 0.5; cursor: not-allowed; }
 
     .status {
-      margin-top: 16px;
-      padding: 14px;
-      border-radius: 12px;
-      font-size: 14px;
       display: none;
+      border-radius: 12px;
     }
 
     .status.show { display: block; }
-    .status.success { background: var(--accent-dim); color: var(--accent); border: 1px solid var(--accent); }
-    .status.error { background: rgba(255, 71, 87, 0.1); color: var(--danger); border: 1px solid var(--danger); }
+
+    .status.success {
+      margin-top: 16px;
+      padding: 14px;
+      font-size: 14px;
+      background: var(--accent-dim);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    .status.error {
+      margin-bottom: 20px;
+      padding: 18px 20px;
+      font-size: 17px;
+      font-weight: 700;
+      background: rgba(255, 71, 87, 0.18);
+      color: var(--danger);
+      border: 2px solid var(--danger);
+      border-left: 6px solid var(--danger);
+    }
 
     .spinner {
       display: inline-block;
@@ -951,6 +966,7 @@
 
   <!-- SUBMIT TAB -->
   <section id="submitPanel" class="panel">
+    <div class="status" id="status"></div>
     <form class="form" id="submitForm">
       <div class="field">
         <label>SAP / Part Number <span class="required">*</span></label>
@@ -1038,8 +1054,6 @@
       </div>
 
       <button type="submit" class="submit-btn" id="submitBtn">Submit Part</button>
-
-      <div class="status" id="status"></div>
     </form>
   </section>
 
@@ -1604,8 +1618,11 @@
     });
 
     function setStatus(msg, type) {
-      statusEl.textContent = msg;
+      statusEl.textContent = (type === 'error' ? '⚠ ' : '') + msg;
       statusEl.className = 'status ' + type + ' show';
+      if (type === 'error') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
     }
 
     function clearStatus() {
@@ -1704,8 +1721,16 @@
         return;
       }
 
-      if (!partName || !costCenter || !bin) {
-        setStatus('Fill in all required fields.', 'error');
+      if (!partName) {
+        setStatus('Enter the part name.', 'error');
+        return;
+      }
+      if (!costCenter) {
+        setStatus('Select a machine / cost center.', 'error');
+        return;
+      }
+      if (!bin) {
+        setStatus('Enter the bin / location.', 'error');
         return;
       }
 
