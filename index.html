@@ -1182,7 +1182,8 @@
           opt.textContent = `All Machines (${allParts.length})`;
         } else if (COST_CENTERS[opt.value]) {
           const count = counts[opt.value] || 0;
-          opt.textContent = `${COST_CENTERS[opt.value].name} (${count})`;
+          const suffix = opt.value.slice(-3);
+          opt.textContent = `${COST_CENTERS[opt.value].name} · ${suffix} (${count})`;
         }
       });
     }
