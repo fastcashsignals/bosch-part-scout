@@ -1250,5 +1250,95 @@
     "model_number": null,
     "description": "Frame Metal Silk Screen",
     "cost_center_code": "000085C311"
+  },
+  {
+    "sap_id": "3610002472",
+    "name": "Plate WMS STAUBLI TC CELL",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Plate WMS STAUBLI TC CELL",
+    "cost_center_code": "000085C216"
+  },
+  {
+    "sap_id": "3610006194",
+    "name": "Spare Part Blast-MA101983-1",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Spare Part Blast-MA101983-1",
+    "cost_center_code": "000085C216"
+  },
+  {
+    "sap_id": "3610006195",
+    "name": "Spare Part Blast-MA102579-1",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Spare Part Blast-MA102579-1",
+    "cost_center_code": "000085C216"
+  },
+  {
+    "sap_id": "3610006196",
+    "name": "Spare Part Blast-MA100964",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Spare Part Blast-MA100964",
+    "cost_center_code": "000085C216"
+  },
+  {
+    "sap_id": "3610006197",
+    "name": "Spare Part Blast-MA101932",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Spare Part Blast-MA101932",
+    "cost_center_code": "000085C216"
+  },
+  {
+    "sap_id": "3610006198",
+    "name": "Spare Part Blast-SHOT SEPARATOR",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Spare Part Blast-SHOT SEPARATOR",
+    "cost_center_code": "000085C216"
+  },
+  {
+    "sap_id": "3610006569",
+    "name": "End stop Blast Backside End",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "End stop Blast Backside End",
+    "cost_center_code": "000085C216"
+  },
+  {
+    "sap_id": "3610003511",
+    "name": "Robot Staubli",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Robot Staubli",
+    "cost_center_code": "000085C216"
+  },
+  {
+    "sap_id": "3610002583",
+    "name": "Nozzle Flat jet airLechler",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Nozzle Flat jet airLechler",
+    "cost_center_code": "000085C216"
   }
 ]
