@@ -83,12 +83,13 @@
   {
     "sap_id": "3610007599",
     "name": "Pusher",
-    "category": "PA2",
-    "bin": null,
+    "category": "RSB Shrink Tunnel",
+    "bin": "02-11-D05",
     "manufacturer": null,
     "model_number": null,
     "description": "Belt blade pusher (Shrink tunnel)",
-    "cost_center_code": "000085C231"
+    "cost_center_code": "000085C231",
+    "image": "images/3610007599.jpg?v=1783868502912"
   },
   {
     "sap_id": "3610003741",
@@ -1082,16 +1083,6 @@
     "image": "images/3610007455.jpg?v=1783785063576"
   },
   {
-    "sap_id": "3610000692",
-    "name": "Proximity Sensor BES01KE",
-    "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Proximity Sensor BES01KE",
-    "cost_center_code": "000085C216"
-  },
-  {
     "sap_id": "3610001668",
     "name": "Block L-shaped W685119410",
     "category": "RSB Paint and Print",
@@ -1115,11 +1106,12 @@
     "sap_id": "3610002055",
     "name": "Sensor Cable 3POS DIGI-KEY",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
+    "bin": "01-09-A05",
+    "manufacturer": "Phoenix contact inc",
+    "model_number": "1435551",
     "description": "Sensor Cable 3POS DIGI-KEY",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610002055.jpg?v=1783804010460"
   },
   {
     "sap_id": "3610002164",
@@ -1172,16 +1164,6 @@
     "cost_center_code": "000085C311"
   },
   {
-    "sap_id": "3610005175",
-    "name": "Die insert W622133112",
-    "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Die insert W622133112",
-    "cost_center_code": "000085C216"
-  },
-  {
     "sap_id": "3610005406",
     "name": "Roller Feed Roll Kit",
     "category": "PA3 - RING PACK",
@@ -1225,11 +1207,12 @@
     "sap_id": "3610007456",
     "name": "Anvil Plate 6\" Horizontal bar",
     "category": "RSB Clamshell Packaging",
-    "bin": null,
+    "bin": "02-15-N09",
     "manufacturer": null,
     "model_number": null,
     "description": "Anvil Plate 6\" Horizontal bar",
-    "cost_center_code": "000085C220"
+    "cost_center_code": "000085C220",
+    "image": "images/3610007456.jpg?v=1783868213611"
   },
   {
     "sap_id": "3610007884",
@@ -1250,16 +1233,6 @@
     "model_number": null,
     "description": "Frame Metal Silk Screen",
     "cost_center_code": "000085C311"
-  },
-  {
-    "sap_id": "3610002472",
-    "name": "Plate WMS STAUBLI TC CELL",
-    "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Plate WMS STAUBLI TC CELL",
-    "cost_center_code": "000085C216"
   },
   {
     "sap_id": "3610006194",
@@ -1325,11 +1298,12 @@
     "sap_id": "3610003511",
     "name": "Robot Staubli",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
+    "bin": "07-01-010",
     "manufacturer": null,
     "model_number": null,
     "description": "Robot Staubli",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610003511.jpg?v=1784661778463"
   },
   {
     "sap_id": "3610002583",
@@ -1340,5 +1314,93 @@
     "model_number": null,
     "description": "Nozzle Flat jet airLechler",
     "cost_center_code": "000085C216"
+  },
+  {
+    "sap_id": "3610001482",
+    "name": "Silver Magnet",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-27-C03",
+    "manufacturer": "BBA",
+    "model_number": "80.0049.Z.02",
+    "description": "Silver magnet for mag conveyor",
+    "cost_center_code": "000085C217",
+    "image": "images/3610001482.jpg?v=1784392828933"
+  },
+  {
+    "sap_id": "3610001591",
+    "name": "Yellow Magnet",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-27-E01",
+    "manufacturer": "BBA",
+    "model_number": "80.0061.C",
+    "description": "Yellow magnet for mag conveyors",
+    "cost_center_code": "000085C217",
+    "image": "images/3610001591.jpg?v=1784392669750"
+  },
+  {
+    "sap_id": "3610007521",
+    "name": "Hydraulic Hose",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-15-J04",
+    "manufacturer": "Parker",
+    "model_number": null,
+    "description": "Hose to clamp on welding side",
+    "cost_center_code": "000085C217",
+    "image": "images/3610007521.jpg?v=1784379924433"
+  },
+  {
+    "sap_id": "3610007826",
+    "name": "Seal Bar 12\u201d",
+    "category": "RSB Clamshell Packaging",
+    "bin": "02-17-K01",
+    "manufacturer": "Algus",
+    "model_number": "In House- Algus",
+    "description": "Seal bar for clamshells on Algus",
+    "cost_center_code": "000085C220",
+    "image": "images/3610007826.jpg?v=1784373900540"
+  },
+  {
+    "sap_id": "3610001589",
+    "name": "Wire Brush for paint line",
+    "category": "RSB Paint and Print",
+    "bin": "01-27-G01",
+    "manufacturer": "Brush",
+    "model_number": "Wire",
+    "description": "Paint line wire brushes",
+    "cost_center_code": "000085C218",
+    "image": "images/3610001589.jpg?v=1784392471965"
+  },
+  {
+    "sap_id": "3610007824",
+    "name": "Seal Bar",
+    "category": "RSB Clamshell Packaging",
+    "bin": "02-17-J02",
+    "manufacturer": "In House - Algus",
+    "model_number": null,
+    "description": "Seal Bar for Algus seal",
+    "cost_center_code": "000085C220",
+    "image": "images/3610007824.jpg?v=1784373753159"
+  },
+  {
+    "sap_id": "3610001595",
+    "name": "Conveyor Bearings",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-27-C02",
+    "manufacturer": "McMaster",
+    "model_number": null,
+    "description": "Small mag conveyor bearings",
+    "cost_center_code": "000085C217",
+    "image": "images/3610001595.jpg?v=1784393281146"
+  },
+  {
+    "sap_id": "3610008962",
+    "name": "Filter Bag",
+    "category": "RSB Shrink Tunnel",
+    "bin": "03-07-211",
+    "manufacturer": "Minuteman",
+    "model_number": "10E081",
+    "description": "Bag filter for vacuum system",
+    "cost_center_code": "000085C231",
+    "image": "images/3610008962.jpg?v=1784473324207"
   }
 ]
