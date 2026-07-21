@@ -1932,65 +1932,114 @@
 
   <script>
   (function() {
-    const cropModal   = document.getElementById('cropModal');
-    const cropCanvas  = document.getElementById('cropCanvas');
-    const cropCtx     = cropCanvas.getContext('2d');
+    const cropModal    = document.getElementById('cropModal');
+    const cropCanvas   = document.getElementById('cropCanvas');
+    const cropCtx      = cropCanvas.getContext('2d');
     const photoCropBtn = document.getElementById('photoCropBtn');
 
     let cropImg = null, rawPhotoDataUrl = null;
-    let cropRotation = 0, cropScale = 1, cropMinScale = 1;
-    let cropOffsetX = 0, cropOffsetY = 0, cropFrameSize = 0;
-    let ctStart = null, ctPinch = null, ctPinchScale = null;
+    let rotation = 0, imgScale = 1;
+    let canvasW = 0, canvasH = 0;
+    let imgDrawX = 0, imgDrawY = 0, imgDrawW = 0, imgDrawH = 0;
+    let cropX = 0, cropY = 0, cropSize = 0;
 
-    function calcMinScale() {
-      const rotated = cropRotation % 180 !== 0;
-      const iw = rotated ? cropImg.naturalHeight : cropImg.naturalWidth;
-      const ih = rotated ? cropImg.naturalWidth  : cropImg.naturalHeight;
-      cropMinScale = Math.max(cropFrameSize / iw, cropFrameSize / ih);
-      if (cropScale < cropMinScale) cropScale = cropMinScale;
+    const HANDLE = 30; // touch target radius for corners
+    let dragging = null, dragStart = null;
+
+    function getDisplayDims() {
+      const r = rotation % 180 !== 0;
+      return { w: r ? cropImg.naturalHeight : cropImg.naturalWidth,
+               h: r ? cropImg.naturalWidth  : cropImg.naturalHeight };
     }
 
-    function clampOffset() {
-      const rotated = cropRotation % 180 !== 0;
-      const iw = (rotated ? cropImg.naturalHeight : cropImg.naturalWidth)  * cropScale;
-      const ih = (rotated ? cropImg.naturalWidth  : cropImg.naturalHeight) * cropScale;
-      const mx = Math.max(0, (iw - cropFrameSize) / 2);
-      const my = Math.max(0, (ih - cropFrameSize) / 2);
-      cropOffsetX = Math.max(-mx, Math.min(mx, cropOffsetX));
-      cropOffsetY = Math.max(-my, Math.min(my, cropOffsetY));
+    function computeLayout() {
+      const { w, h } = getDisplayDims();
+      imgScale = Math.min(canvasW / w, canvasH / h);
+      imgDrawW = w * imgScale;
+      imgDrawH = h * imgScale;
+      imgDrawX = (canvasW - imgDrawW) / 2;
+      imgDrawY = (canvasH - imgDrawH) / 2;
+    }
+
+    function clampCropBox() {
+      const maxSize = Math.min(imgDrawW, imgDrawH);
+      cropSize = Math.min(Math.max(40, cropSize), maxSize);
+      cropX = Math.max(imgDrawX, Math.min(imgDrawX + imgDrawW - cropSize, cropX));
+      cropY = Math.max(imgDrawY, Math.min(imgDrawY + imgDrawH - cropSize, cropY));
     }
 
     function drawCrop() {
-      const s = cropFrameSize;
-      cropCtx.clearRect(0, 0, s, s);
-      cropCtx.save();
-      cropCtx.translate(s / 2 + cropOffsetX, s / 2 + cropOffsetY);
-      cropCtx.rotate(cropRotation * Math.PI / 180);
-      cropCtx.scale(cropScale, cropScale);
-      cropCtx.drawImage(cropImg, -cropImg.naturalWidth / 2, -cropImg.naturalHeight / 2);
-      cropCtx.restore();
-      // Rule-of-thirds grid
-      cropCtx.strokeStyle = 'rgba(255,255,255,0.25)';
-      cropCtx.lineWidth = 1;
+      const ctx = cropCtx;
+      ctx.clearRect(0, 0, canvasW, canvasH);
+
+      // Draw image
+      ctx.save();
+      ctx.translate(canvasW / 2, canvasH / 2);
+      ctx.rotate(rotation * Math.PI / 180);
+      ctx.scale(imgScale, imgScale);
+      ctx.drawImage(cropImg, -cropImg.naturalWidth / 2, -cropImg.naturalHeight / 2);
+      ctx.restore();
+
+      // Darken area outside crop box
+      ctx.fillStyle = 'rgba(0,0,0,0.55)';
+      ctx.fillRect(0, 0, canvasW, cropY);
+      ctx.fillRect(0, cropY + cropSize, canvasW, canvasH - cropY - cropSize);
+      ctx.fillRect(0, cropY, cropX, cropSize);
+      ctx.fillRect(cropX + cropSize, cropY, canvasW - cropX - cropSize, cropSize);
+
+      // Crop box border
+      ctx.strokeStyle = '#fff';
+      ctx.lineWidth = 2;
+      ctx.strokeRect(cropX, cropY, cropSize, cropSize);
+
+      // Rule-of-thirds grid inside box
+      ctx.strokeStyle = 'rgba(255,255,255,0.3)';
+      ctx.lineWidth = 1;
       for (let i = 1; i < 3; i++) {
-        cropCtx.beginPath(); cropCtx.moveTo(s * i / 3, 0); cropCtx.lineTo(s * i / 3, s); cropCtx.stroke();
-        cropCtx.beginPath(); cropCtx.moveTo(0, s * i / 3); cropCtx.lineTo(s, s * i / 3); cropCtx.stroke();
+        const gx = cropX + cropSize * i / 3;
+        const gy = cropY + cropSize * i / 3;
+        ctx.beginPath(); ctx.moveTo(gx, cropY); ctx.lineTo(gx, cropY + cropSize); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(cropX, gy); ctx.lineTo(cropX + cropSize, gy); ctx.stroke();
       }
-      cropCtx.strokeStyle = '#fff';
-      cropCtx.lineWidth = 2;
-      cropCtx.strokeRect(1, 1, s - 2, s - 2);
+
+      // Corner handles — larger circles for easy touch
+      const corners = [
+        [cropX, cropY], [cropX + cropSize, cropY],
+        [cropX, cropY + cropSize], [cropX + cropSize, cropY + cropSize]
+      ];
+      corners.forEach(([cx, cy]) => {
+        ctx.beginPath(); ctx.arc(cx, cy, 9, 0, Math.PI * 2);
+        ctx.fillStyle = '#fff'; ctx.fill();
+      });
+    }
+
+    function hitTest(tx, ty) {
+      const corners = [
+        ['tl', cropX,            cropY           ],
+        ['tr', cropX + cropSize, cropY           ],
+        ['bl', cropX,            cropY + cropSize],
+        ['br', cropX + cropSize, cropY + cropSize]
+      ];
+      for (const [name, cx, cy] of corners) {
+        if (Math.hypot(tx - cx, ty - cy) < HANDLE) return name;
+      }
+      if (tx >= cropX && tx <= cropX + cropSize && ty >= cropY && ty <= cropY + cropSize) return 'move';
+      return null;
     }
 
     function openCrop() {
       cropImg = new Image();
       cropImg.onload = () => {
-        cropRotation = 0;
-        cropFrameSize = Math.min(window.innerWidth, window.innerHeight - 160);
-        cropCanvas.width = cropFrameSize;
-        cropCanvas.height = cropFrameSize;
-        calcMinScale();
-        cropScale = cropMinScale;
-        cropOffsetX = 0; cropOffsetY = 0;
+        rotation = 0;
+        canvasW = window.innerWidth;
+        canvasH = window.innerHeight - 160;
+        cropCanvas.width = canvasW;
+        cropCanvas.height = canvasH;
+        computeLayout();
+        // Default crop box: 80% of shorter image dimension, centered
+        cropSize = Math.min(imgDrawW, imgDrawH) * 0.8;
+        cropX = imgDrawX + (imgDrawW - cropSize) / 2;
+        cropY = imgDrawY + (imgDrawH - cropSize) / 2;
         cropModal.style.display = 'flex';
         drawCrop();
       };
@@ -1999,36 +2048,64 @@
 
     cropCanvas.addEventListener('touchstart', e => {
       e.preventDefault();
-      if (e.touches.length === 1) {
-        ctStart = { x: e.touches[0].clientX, y: e.touches[0].clientY, ox: cropOffsetX, oy: cropOffsetY };
-        ctPinch = null;
-      } else if (e.touches.length === 2) {
-        ctPinch = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
-        ctPinchScale = cropScale;
-        ctStart = null;
-      }
+      if (e.touches.length !== 1) return;
+      const rect = cropCanvas.getBoundingClientRect();
+      const tx = e.touches[0].clientX - rect.left;
+      const ty = e.touches[0].clientY - rect.top;
+      dragging = hitTest(tx, ty);
+      dragStart = { tx, ty, cropX, cropY, cropSize };
     }, { passive: false });
 
     cropCanvas.addEventListener('touchmove', e => {
       e.preventDefault();
-      if (e.touches.length === 1 && ctStart) {
-        cropOffsetX = ctStart.ox + (e.touches[0].clientX - ctStart.x);
-        cropOffsetY = ctStart.oy + (e.touches[0].clientY - ctStart.y);
-        clampOffset(); drawCrop();
-      } else if (e.touches.length === 2 && ctPinch) {
-        const d = Math.hypot(e.touches[0].clientX - e.touches[1].clientX, e.touches[0].clientY - e.touches[1].clientY);
-        cropScale = Math.max(cropMinScale, ctPinchScale * (d / ctPinch));
-        clampOffset(); drawCrop();
+      if (!dragging || e.touches.length !== 1) return;
+      const rect = cropCanvas.getBoundingClientRect();
+      const tx = e.touches[0].clientX - rect.left;
+      const ty = e.touches[0].clientY - rect.top;
+      const dx = tx - dragStart.tx;
+      const dy = ty - dragStart.ty;
+
+      if (dragging === 'move') {
+        cropX = dragStart.cropX + dx;
+        cropY = dragStart.cropY + dy;
+      } else {
+        // Resize from dragged corner, maintain square
+        let delta, newSize;
+        if (dragging === 'br') {
+          delta = Math.max(dx, dy);
+          newSize = Math.max(40, dragStart.cropSize + delta);
+          cropX = dragStart.cropX;
+          cropY = dragStart.cropY;
+        } else if (dragging === 'bl') {
+          delta = Math.max(-dx, dy);
+          newSize = Math.max(40, dragStart.cropSize + delta);
+          cropX = dragStart.cropX + (dragStart.cropSize - newSize);
+          cropY = dragStart.cropY;
+        } else if (dragging === 'tr') {
+          delta = Math.max(dx, -dy);
+          newSize = Math.max(40, dragStart.cropSize + delta);
+          cropX = dragStart.cropX;
+          cropY = dragStart.cropY + (dragStart.cropSize - newSize);
+        } else { // tl
+          delta = Math.max(-dx, -dy);
+          newSize = Math.max(40, dragStart.cropSize + delta);
+          cropX = dragStart.cropX + (dragStart.cropSize - newSize);
+          cropY = dragStart.cropY + (dragStart.cropSize - newSize);
+        }
+        cropSize = newSize;
       }
+      clampCropBox();
+      drawCrop();
     }, { passive: false });
 
-    cropCanvas.addEventListener('touchend', () => { ctStart = null; }, { passive: true });
+    cropCanvas.addEventListener('touchend', () => { dragging = null; }, { passive: true });
 
     document.getElementById('cropRotate').addEventListener('click', () => {
-      cropRotation = (cropRotation + 90) % 360;
-      calcMinScale();
-      cropScale = cropMinScale;
-      cropOffsetX = 0; cropOffsetY = 0;
+      rotation = (rotation + 90) % 360;
+      computeLayout();
+      cropSize = Math.min(imgDrawW, imgDrawH) * 0.8;
+      cropX = imgDrawX + (imgDrawW - cropSize) / 2;
+      cropY = imgDrawY + (imgDrawH - cropSize) / 2;
       drawCrop();
     });
 
@@ -2037,34 +2114,29 @@
     });
 
     document.getElementById('cropDone').addEventListener('click', () => {
-      const s = cropFrameSize;
-      const tmp = document.createElement('canvas');
-      tmp.width = s; tmp.height = s;
-      const tCtx = tmp.getContext('2d');
-      tCtx.save();
-      tCtx.translate(s / 2 + cropOffsetX, s / 2 + cropOffsetY);
-      tCtx.rotate(cropRotation * Math.PI / 180);
-      tCtx.scale(cropScale, cropScale);
-      tCtx.drawImage(cropImg, -cropImg.naturalWidth / 2, -cropImg.naturalHeight / 2);
-      tCtx.restore();
-
       const MAX_W = 1200, QUALITY = 0.78;
+      const sz = Math.min(Math.round(cropSize), MAX_W);
       const out = document.createElement('canvas');
-      const sz = Math.min(s, MAX_W);
       out.width = sz; out.height = sz;
-      out.getContext('2d').drawImage(tmp, 0, 0, sz, sz);
-      const dataUrl = out.toDataURL('image/jpeg', QUALITY);
+      const outCtx = out.getContext('2d');
 
-      // Push result back into the submit form's photo state
-      const photoPreview   = document.getElementById('photoPreview');
-      const photoPlaceholder = document.getElementById('photoPlaceholder');
-      const photoClear     = document.getElementById('photoClear');
-      const photoArea      = document.getElementById('photoArea');
-      // currentPhotoBase64 / currentPhotoMime live in the outer script scope —
-      // update them via a small bridge event the outer script listens to.
+      // Map crop box back to image pixels using the inverse of the draw transform
+      outCtx.save();
+      outCtx.scale(sz / cropSize, sz / cropSize);
+      outCtx.translate(canvasW / 2 - cropX, canvasH / 2 - cropY);
+      outCtx.rotate(rotation * Math.PI / 180);
+      outCtx.scale(imgScale, imgScale);
+      outCtx.drawImage(cropImg, -cropImg.naturalWidth / 2, -cropImg.naturalHeight / 2);
+      outCtx.restore();
+
+      const dataUrl = out.toDataURL('image/jpeg', QUALITY);
       const ev = new CustomEvent('cropApplied', { detail: { b64: dataUrl.split(',')[1], mime: 'image/jpeg', dataUrl } });
       document.dispatchEvent(ev);
 
+      const photoPreview    = document.getElementById('photoPreview');
+      const photoPlaceholder = document.getElementById('photoPlaceholder');
+      const photoClear      = document.getElementById('photoClear');
+      const photoArea       = document.getElementById('photoArea');
       photoPreview.src = dataUrl;
       photoPreview.style.display = 'block';
       photoPlaceholder.style.display = 'none';
@@ -2076,7 +2148,6 @@
 
     photoCropBtn.addEventListener('click', e => { e.stopPropagation(); openCrop(); });
 
-    // Expose so the main script can set rawPhotoDataUrl and show the button
     window._cropTool = {
       setRaw(dataUrl) { rawPhotoDataUrl = dataUrl; },
       showBtn() { photoCropBtn.style.display = 'block'; },
