@@ -1100,6 +1100,43 @@
       </div>
 
       <div class="field">
+        <label>Additional Machine / Cost Center <span style="font-weight:400;font-size:13px;color:var(--muted)">(optional — if part is used on multiple machines)</span></label>
+        <select id="costCenter2">
+          <option value="">None</option>
+          <optgroup label="PA2">
+            <option value="000085C216">RSB Punch/Grind/Sand/Stamping · 216</option>
+            <option value="000085C217">RSB TC/Wash/Temper/SS · 217</option>
+            <option value="000085C218">RSB Paint and Print · 218</option>
+            <option value="000085C219">RSB Hangtag Packaging · 219</option>
+            <option value="000085C220">RSB Clamshell Packaging · 220</option>
+            <option value="000085C221">RSB Man. Packaging · 221</option>
+            <option value="000085C229">RSB RF Sealing · 229</option>
+            <option value="000085C230">RSB Ultrasonic Cleaner · 230</option>
+            <option value="000085C231">RSB Shrink Tunnel · 231</option>
+          </optgroup>
+          <optgroup label="PA3">
+            <option value="000085C301">CSB Laser · 301</option>
+            <option value="000085C303">CSB Annealing · 303</option>
+            <option value="000085C306">CSB Brazing · 306</option>
+            <option value="000085C308">CSB Coating/Phosphate · 308</option>
+            <option value="000085C309">CSB Grinding · 309</option>
+            <option value="000085C310">CSB Final Wash · 310</option>
+            <option value="000085C311">CSB Marking · 311</option>
+            <option value="000085C312">CSB Packaging Ring Pack · 312</option>
+            <option value="000085C313">CSB Packaging Clamshell · 313</option>
+            <option value="000085C314">CSB Packaging Manual · 314</option>
+          </optgroup>
+          <optgroup label="TEF">
+            <option value="000085C082">Direct - General · 082</option>
+            <option value="000085C083">TEF Equipment · 083</option>
+            <option value="000085C092">TEF Direct - PA2 RSB · 092</option>
+            <option value="000085C095">TEF Direct - PA2 OMT · 095</option>
+            <option value="000085C093">TEF Direct - PA3 CSB · 093</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="field">
         <label>Bin / Location <span class="required">*</span></label>
         <input type="text" id="bin" placeholder="02-02-B01" autocapitalize="characters" autocomplete="off" style="text-transform: uppercase" required>
       </div>
@@ -1290,7 +1327,10 @@
       let filtered = allParts;
 
       if (selectedCC !== 'ALL') {
-        filtered = filtered.filter(p => p.cost_center_code === selectedCC);
+        filtered = filtered.filter(p =>
+          p.cost_center_code === selectedCC ||
+          (p.additional_cost_centers || []).includes(selectedCC)
+        );
       }
 
       if (query) {
@@ -1391,6 +1431,10 @@
               <div class="card-meta">
                 ${p.bin ? `<span>&#128230; ${highlight(p.bin, query)}</span>` : ''}
                 ${p.manufacturer ? `<span>&#127981; ${highlight(p.manufacturer, query)}</span>` : ''}
+                ${(p.additional_cost_centers || []).map(acc => {
+                  const ai = COST_CENTERS[acc];
+                  return ai ? `<span style="opacity:.75">&#43; ${ai.name}</span>` : '';
+                }).join('')}
               </div>
             </div>
           </div>
@@ -1422,7 +1466,14 @@
       const details = [
         { label: 'SAP ID', value: p.sap_id || 'Not assigned', mono: true },
         { label: 'Part Name', value: p.name },
-        { label: 'Cost Center', value: cc ? `${cc.name} (${cc.code})` : 'Not assigned' },
+        { label: 'Cost Center', value: (() => {
+          const lines = [cc ? `${cc.name} (${cc.code})` : (p.cost_center_code || 'Not assigned')];
+          (p.additional_cost_centers || []).forEach(acc => {
+            const ai = COST_CENTERS[acc];
+            if (ai) lines.push(`${ai.name} (${ai.code})`);
+          });
+          return lines.join('<br>');
+        })() },
         { label: 'Bin Location', value: p.bin || 'N/A' },
         { label: 'Manufacturer', value: p.manufacturer || 'N/A' },
         { label: 'Model #', value: p.model_number || 'N/A', mono: true },
@@ -1735,6 +1786,7 @@
     function clearAutoFill() {
       Object.keys(FILL_FIELDS).forEach(id => { document.getElementById(id).value = ''; });
       document.getElementById('costCenter').value = '';
+      document.getElementById('costCenter2').value = '';
       autoFilled = false;
       updateNote.style.display = 'none';
       if (photoReq) photoReq.style.display = '';
@@ -1752,10 +1804,37 @@
           document.getElementById(id).value = part[key] || '';
         });
         document.getElementById('costCenter').value = part.cost_center_code || '';
+        const accs = part.additional_cost_centers || [];
+        document.getElementById('costCenter2').value = accs.length > 0 ? accs[0] : '';
         autoFilled = true;
         updateNote.textContent = '✓ Existing part — details filled in. Change what you need and submit. New photo is optional (the current one is kept).';
         updateNote.style.display = 'block';
         if (photoReq) photoReq.style.display = 'none';
+
+        // Pre-load existing photo so tech can see (and optionally re-crop) it.
+        if (part.image) {
+          photoPreview.src = part.image;
+          photoPreview.style.display = 'block';
+          photoPlaceholder.style.display = 'none';
+          photoClear.style.display = 'block';
+          photoArea.classList.add('has-image');
+          // Try to fetch as data URL for the crop tool (requires CORS).
+          fetch(part.image)
+            .then(r => r.blob())
+            .then(blob => new Promise((resolve, reject) => {
+              const reader = new FileReader();
+              reader.onload = ev => resolve(ev.target.result);
+              reader.onerror = reject;
+              reader.readAsDataURL(blob);
+            }))
+            .then(dataUrl => {
+              if (window._cropTool) {
+                window._cropTool.setRaw(dataUrl);
+                window._cropTool.showBtn();
+              }
+            })
+            .catch(() => {});
+        }
       } else if (autoFilled) {
         clearAutoFill();
       }
@@ -1823,11 +1902,13 @@
       }
 
       const ccInfo = COST_CENTERS[costCenter];
+      const cc2val = document.getElementById('costCenter2').value;
       const payload = {
         sap_id: sapId,
         name: partName,
         category: ccInfo ? ccInfo.name : costCenter,
         cost_center_code: costCenter,
+        additional_cost_centers: cc2val ? [cc2val] : [],
         bin: bin || null,
         manufacturer: document.getElementById('manufacturer').value.trim() || null,
         model_number: document.getElementById('modelNumber').value.trim() || null,
