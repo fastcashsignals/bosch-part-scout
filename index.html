@@ -1941,9 +1941,9 @@
     let rotation = 0, imgScale = 1;
     let canvasW = 0, canvasH = 0;
     let imgDrawX = 0, imgDrawY = 0, imgDrawW = 0, imgDrawH = 0;
-    let cropX = 0, cropY = 0, cropSize = 0;
+    let cropX = 0, cropY = 0, cropW = 0, cropH = 0;
 
-    const HANDLE = 30; // touch target radius for corners
+    const HANDLE = 30;
     let dragging = null, dragStart = null;
 
     function getDisplayDims() {
@@ -1962,17 +1962,17 @@
     }
 
     function clampCropBox() {
-      const maxSize = Math.min(imgDrawW, imgDrawH);
-      cropSize = Math.min(Math.max(40, cropSize), maxSize);
-      cropX = Math.max(imgDrawX, Math.min(imgDrawX + imgDrawW - cropSize, cropX));
-      cropY = Math.max(imgDrawY, Math.min(imgDrawY + imgDrawH - cropSize, cropY));
+      const MIN = 40;
+      cropW = Math.max(MIN, Math.min(cropW, imgDrawW));
+      cropH = Math.max(MIN, Math.min(cropH, imgDrawH));
+      cropX = Math.max(imgDrawX, Math.min(imgDrawX + imgDrawW - cropW, cropX));
+      cropY = Math.max(imgDrawY, Math.min(imgDrawY + imgDrawH - cropH, cropY));
     }
 
     function drawCrop() {
       const ctx = cropCtx;
       ctx.clearRect(0, 0, canvasW, canvasH);
 
-      // Draw image
       ctx.save();
       ctx.translate(canvasW / 2, canvasH / 2);
       ctx.rotate(rotation * Math.PI / 180);
@@ -1980,34 +1980,31 @@
       ctx.drawImage(cropImg, -cropImg.naturalWidth / 2, -cropImg.naturalHeight / 2);
       ctx.restore();
 
-      // Darken area outside crop box
+      // Darken outside crop box
       ctx.fillStyle = 'rgba(0,0,0,0.55)';
       ctx.fillRect(0, 0, canvasW, cropY);
-      ctx.fillRect(0, cropY + cropSize, canvasW, canvasH - cropY - cropSize);
-      ctx.fillRect(0, cropY, cropX, cropSize);
-      ctx.fillRect(cropX + cropSize, cropY, canvasW - cropX - cropSize, cropSize);
+      ctx.fillRect(0, cropY + cropH, canvasW, canvasH - cropY - cropH);
+      ctx.fillRect(0, cropY, cropX, cropH);
+      ctx.fillRect(cropX + cropW, cropY, canvasW - cropX - cropW, cropH);
 
-      // Crop box border
+      // Box border
       ctx.strokeStyle = '#fff';
       ctx.lineWidth = 2;
-      ctx.strokeRect(cropX, cropY, cropSize, cropSize);
+      ctx.strokeRect(cropX, cropY, cropW, cropH);
 
-      // Rule-of-thirds grid inside box
+      // Rule-of-thirds grid
       ctx.strokeStyle = 'rgba(255,255,255,0.3)';
       ctx.lineWidth = 1;
       for (let i = 1; i < 3; i++) {
-        const gx = cropX + cropSize * i / 3;
-        const gy = cropY + cropSize * i / 3;
-        ctx.beginPath(); ctx.moveTo(gx, cropY); ctx.lineTo(gx, cropY + cropSize); ctx.stroke();
-        ctx.beginPath(); ctx.moveTo(cropX, gy); ctx.lineTo(cropX + cropSize, gy); ctx.stroke();
+        const gx = cropX + cropW * i / 3;
+        const gy = cropY + cropH * i / 3;
+        ctx.beginPath(); ctx.moveTo(gx, cropY); ctx.lineTo(gx, cropY + cropH); ctx.stroke();
+        ctx.beginPath(); ctx.moveTo(cropX, gy); ctx.lineTo(cropX + cropW, gy); ctx.stroke();
       }
 
-      // Corner handles — larger circles for easy touch
-      const corners = [
-        [cropX, cropY], [cropX + cropSize, cropY],
-        [cropX, cropY + cropSize], [cropX + cropSize, cropY + cropSize]
-      ];
-      corners.forEach(([cx, cy]) => {
+      // Corner handles
+      [[cropX, cropY], [cropX + cropW, cropY],
+       [cropX, cropY + cropH], [cropX + cropW, cropY + cropH]].forEach(([cx, cy]) => {
         ctx.beginPath(); ctx.arc(cx, cy, 9, 0, Math.PI * 2);
         ctx.fillStyle = '#fff'; ctx.fill();
       });
@@ -2015,15 +2012,15 @@
 
     function hitTest(tx, ty) {
       const corners = [
-        ['tl', cropX,            cropY           ],
-        ['tr', cropX + cropSize, cropY           ],
-        ['bl', cropX,            cropY + cropSize],
-        ['br', cropX + cropSize, cropY + cropSize]
+        ['tl', cropX,        cropY       ],
+        ['tr', cropX + cropW, cropY       ],
+        ['bl', cropX,        cropY + cropH],
+        ['br', cropX + cropW, cropY + cropH]
       ];
       for (const [name, cx, cy] of corners) {
         if (Math.hypot(tx - cx, ty - cy) < HANDLE) return name;
       }
-      if (tx >= cropX && tx <= cropX + cropSize && ty >= cropY && ty <= cropY + cropSize) return 'move';
+      if (tx >= cropX && tx <= cropX + cropW && ty >= cropY && ty <= cropY + cropH) return 'move';
       return null;
     }
 
@@ -2036,10 +2033,10 @@
         cropCanvas.width = canvasW;
         cropCanvas.height = canvasH;
         computeLayout();
-        // Default crop box: 80% of shorter image dimension, centered
-        cropSize = Math.min(imgDrawW, imgDrawH) * 0.8;
-        cropX = imgDrawX + (imgDrawW - cropSize) / 2;
-        cropY = imgDrawY + (imgDrawH - cropSize) / 2;
+        cropW = imgDrawW * 0.8;
+        cropH = imgDrawH * 0.8;
+        cropX = imgDrawX + (imgDrawW - cropW) / 2;
+        cropY = imgDrawY + (imgDrawH - cropH) / 2;
         cropModal.style.display = 'flex';
         drawCrop();
       };
@@ -2053,7 +2050,7 @@
       const tx = e.touches[0].clientX - rect.left;
       const ty = e.touches[0].clientY - rect.top;
       dragging = hitTest(tx, ty);
-      dragStart = { tx, ty, cropX, cropY, cropSize };
+      dragStart = { tx, ty, cropX, cropY, cropW, cropH };
     }, { passive: false });
 
     cropCanvas.addEventListener('touchmove', e => {
@@ -2068,31 +2065,26 @@
       if (dragging === 'move') {
         cropX = dragStart.cropX + dx;
         cropY = dragStart.cropY + dy;
-      } else {
-        // Resize from dragged corner, maintain square
-        let delta, newSize;
-        if (dragging === 'br') {
-          delta = Math.max(dx, dy);
-          newSize = Math.max(40, dragStart.cropSize + delta);
-          cropX = dragStart.cropX;
-          cropY = dragStart.cropY;
-        } else if (dragging === 'bl') {
-          delta = Math.max(-dx, dy);
-          newSize = Math.max(40, dragStart.cropSize + delta);
-          cropX = dragStart.cropX + (dragStart.cropSize - newSize);
-          cropY = dragStart.cropY;
-        } else if (dragging === 'tr') {
-          delta = Math.max(dx, -dy);
-          newSize = Math.max(40, dragStart.cropSize + delta);
-          cropX = dragStart.cropX;
-          cropY = dragStart.cropY + (dragStart.cropSize - newSize);
-        } else { // tl
-          delta = Math.max(-dx, -dy);
-          newSize = Math.max(40, dragStart.cropSize + delta);
-          cropX = dragStart.cropX + (dragStart.cropSize - newSize);
-          cropY = dragStart.cropY + (dragStart.cropSize - newSize);
-        }
-        cropSize = newSize;
+      } else if (dragging === 'br') {
+        cropW = Math.max(40, dragStart.cropW + dx);
+        cropH = Math.max(40, dragStart.cropH + dy);
+      } else if (dragging === 'bl') {
+        const newW = Math.max(40, dragStart.cropW - dx);
+        cropX = dragStart.cropX + (dragStart.cropW - newW);
+        cropW = newW;
+        cropH = Math.max(40, dragStart.cropH + dy);
+      } else if (dragging === 'tr') {
+        cropW = Math.max(40, dragStart.cropW + dx);
+        const newH = Math.max(40, dragStart.cropH - dy);
+        cropY = dragStart.cropY + (dragStart.cropH - newH);
+        cropH = newH;
+      } else { // tl
+        const newW = Math.max(40, dragStart.cropW - dx);
+        const newH = Math.max(40, dragStart.cropH - dy);
+        cropX = dragStart.cropX + (dragStart.cropW - newW);
+        cropY = dragStart.cropY + (dragStart.cropH - newH);
+        cropW = newW;
+        cropH = newH;
       }
       clampCropBox();
       drawCrop();
@@ -2103,9 +2095,10 @@
     document.getElementById('cropRotate').addEventListener('click', () => {
       rotation = (rotation + 90) % 360;
       computeLayout();
-      cropSize = Math.min(imgDrawW, imgDrawH) * 0.8;
-      cropX = imgDrawX + (imgDrawW - cropSize) / 2;
-      cropY = imgDrawY + (imgDrawH - cropSize) / 2;
+      cropW = imgDrawW * 0.8;
+      cropH = imgDrawH * 0.8;
+      cropX = imgDrawX + (imgDrawW - cropW) / 2;
+      cropY = imgDrawY + (imgDrawH - cropH) / 2;
       drawCrop();
     });
 
@@ -2115,14 +2108,15 @@
 
     document.getElementById('cropDone').addEventListener('click', () => {
       const MAX_W = 1200, QUALITY = 0.78;
-      const sz = Math.min(Math.round(cropSize), MAX_W);
+      const scale = Math.min(MAX_W / cropW, MAX_W / cropH, 1);
+      const outW = Math.round(cropW * scale);
+      const outH = Math.round(cropH * scale);
       const out = document.createElement('canvas');
-      out.width = sz; out.height = sz;
+      out.width = outW; out.height = outH;
       const outCtx = out.getContext('2d');
 
-      // Map crop box back to image pixels using the inverse of the draw transform
       outCtx.save();
-      outCtx.scale(sz / cropSize, sz / cropSize);
+      outCtx.scale(outW / cropW, outH / cropH);
       outCtx.translate(canvasW / 2 - cropX, canvasH / 2 - cropY);
       outCtx.rotate(rotation * Math.PI / 180);
       outCtx.scale(imgScale, imgScale);
