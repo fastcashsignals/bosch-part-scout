@@ -1321,11 +1321,12 @@
     "sap_id": "3610002583",
     "name": "Nozzle Flat jet airLechler",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
+    "bin": "01-30-E03",
     "manufacturer": null,
     "model_number": null,
     "description": "Nozzle Flat jet airLechler",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610002583.jpg?v=1785600349267"
   },
   {
     "sap_id": "3610002038",
