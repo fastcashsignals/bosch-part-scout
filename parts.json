@@ -594,12 +594,13 @@
   {
     "sap_id": "3610002343",
     "name": "Bushing",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-36-N01",
     "manufacturer": null,
     "model_number": null,
     "description": "White bushings for end of rollers",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610002343.jpg?v=1785611271528"
   },
   {
     "sap_id": "3610004218",
