@@ -1166,12 +1166,13 @@
   {
     "sap_id": "3610003351",
     "name": "Suction Valve ISV-M10 Festo 545998",
-    "category": "PA3 - LASERS",
-    "bin": null,
+    "category": "CSB Laser",
+    "bin": "01-04-B14",
     "manufacturer": null,
     "model_number": null,
     "description": "Suction Valve ISV-M10 Festo 545998",
-    "cost_center_code": "000085C301"
+    "cost_center_code": "000085C301",
+    "image": "images/3610003351.jpg?v=1785609947627"
   },
   {
     "sap_id": "3610003823",
