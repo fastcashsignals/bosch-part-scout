@@ -941,7 +941,8 @@
     "manufacturer": null,
     "model_number": null,
     "description": "Large blue muffler",
-    "cost_center_code": "000085C310"
+    "cost_center_code": "000085C310",
+    "image": "images/3610003702.jpg?v=1785599186936"
   },
   {
     "sap_id": "3610004068",
