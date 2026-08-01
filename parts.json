@@ -460,12 +460,13 @@
   {
     "sap_id": "3610004278",
     "name": "Filter",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": "0140D04",
+    "category": "RSB Paint and Print",
+    "bin": "01-40-D04",
     "manufacturer": null,
     "model_number": null,
     "description": "Filter for mist collector",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610004278.jpg?v=1785602129051"
   },
   {
     "sap_id": "3610003560",
