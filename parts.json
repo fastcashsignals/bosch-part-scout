@@ -515,12 +515,13 @@
   {
     "sap_id": "3610004955",
     "name": "Belt",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "01-18-N04",
     "manufacturer": null,
     "model_number": null,
     "description": "Blade loader drive motor belt",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610004955.jpg?v=1785602622091"
   },
   {
     "sap_id": "3610002004",
