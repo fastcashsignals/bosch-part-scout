@@ -900,12 +900,13 @@
   {
     "sap_id": "3610003517",
     "name": "Silencer",
-    "category": "PA3 - FINAL WASH",
-    "bin": "0136A02",
+    "category": "CSB Final Wash",
+    "bin": "01-36-A02",
     "manufacturer": null,
     "model_number": "#161419",
     "description": "Small blue muffler",
-    "cost_center_code": "000085C310"
+    "cost_center_code": "000085C310",
+    "image": "images/3610003517.jpg?v=1785612374539"
   },
   {
     "sap_id": "3610005100",
