@@ -1244,11 +1244,12 @@
     "sap_id": "3610006194",
     "name": "Spare Part Blast-MA101983-1",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
-    "manufacturer": null,
+    "bin": "01-15-C02",
+    "manufacturer": "Peenmatic",
     "model_number": null,
     "description": "Spare Part Blast-MA101983-1",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610006194.jpg?v=1785599642752"
   },
   {
     "sap_id": "3610006195",
