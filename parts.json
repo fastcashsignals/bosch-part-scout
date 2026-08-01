@@ -984,12 +984,12 @@
     "sap_id": "3610003702",
     "name": "Silencer",
     "category": "CSB Final Wash",
-    "bin": "0136H04",
+    "bin": "01-36-H04",
     "manufacturer": null,
     "model_number": null,
     "description": "Large blue muffler",
     "cost_center_code": "000085C310",
-    "image": "images/3610003702.jpg?v=1785599186936"
+    "image": "images/3610003702.jpg?v=1785612326338"
   },
   {
     "sap_id": "3610004068",
