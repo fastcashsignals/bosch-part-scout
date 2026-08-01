@@ -703,12 +703,13 @@
   {
     "sap_id": "3610004550",
     "name": "Chain Drive Pin",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-14-F10",
     "manufacturer": null,
     "model_number": null,
     "description": "Pin for lower chain guide sprocket",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610004550.jpg?v=1785612000530"
   },
   {
     "sap_id": "3610002305",
