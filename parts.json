@@ -1122,11 +1122,12 @@
     "sap_id": "3610002164",
     "name": "coolant pump TS 21/300-BZ+426",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": null,
+    "bin": "00-00-000",
     "manufacturer": null,
     "model_number": null,
     "description": "coolant pump TS 21/300-BZ+426",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610002164.jpg?v=1785600593922"
   },
   {
     "sap_id": "3610002642",
