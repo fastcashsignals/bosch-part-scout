@@ -108,14 +108,14 @@
   },
   {
     "sap_id": "3610003741",
-    "name": "Filter for FES",
-    "category": "RSB Punch/Grind/Sand/Stamping",
+    "name": "Filter",
+    "category": "RSB Ultrasonic Cleaner",
     "bin": "03-07-101",
-    "manufacturer": "FES",
-    "model_number": "FES PES200P2SH",
-    "description": "Bag filter for FES",
-    "cost_center_code": "000085C216",
-    "image": "images/3610003741.jpg?v=1782652096356"
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Bag filter for Faudi",
+    "cost_center_code": "000085C230",
+    "image": "images/3610003741.jpg?v=1785605489957"
   },
   {
     "sap_id": "3610001777",
