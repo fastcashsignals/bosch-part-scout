@@ -1288,11 +1288,12 @@
     "sap_id": "3610006198",
     "name": "Spare Part Blast-SHOT SEPARATOR",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
+    "bin": "01-15-H03",
     "manufacturer": null,
     "model_number": null,
     "description": "Spare Part Blast-SHOT SEPARATOR",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610006198.jpg?v=1785600006292"
   },
   {
     "sap_id": "3610006569",
