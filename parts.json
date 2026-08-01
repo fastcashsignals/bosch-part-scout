@@ -1171,12 +1171,13 @@
   {
     "sap_id": "3610005406",
     "name": "Roller Feed Roll Kit",
-    "category": "PA3 - RING PACK",
-    "bin": null,
+    "category": "CSB Packaging Ring Pack",
+    "bin": "01-22-B04",
     "manufacturer": null,
     "model_number": null,
     "description": "Roller Feed Roll Kit",
-    "cost_center_code": "000085C312"
+    "cost_center_code": "000085C312",
+    "image": "images/3610005406.jpg?v=1785599433874"
   },
   {
     "sap_id": "3610006343",
