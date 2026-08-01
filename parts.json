@@ -34,12 +34,13 @@
   {
     "sap_id": "3610004228",
     "name": "Flashlight",
-    "category": "TEF - General",
-    "bin": null,
+    "category": "Direct - General",
+    "bin": "01-06-E02",
     "manufacturer": null,
     "model_number": null,
     "description": "Blue flashlight",
-    "cost_center_code": "000085C082"
+    "cost_center_code": "000085C082",
+    "image": "images/3610004228.jpg?v=1785610065137"
   },
   {
     "sap_id": "3610001597",
