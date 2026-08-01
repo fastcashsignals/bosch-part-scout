@@ -670,12 +670,13 @@
   {
     "sap_id": "3610002829",
     "name": "Toothed Gear",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-07-C01",
     "manufacturer": null,
     "model_number": "#3.07.65.476",
     "description": "Chain drive gear Z10 (Phosphate tensioner sprocket) - Also used for lower chain guide",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610002829.jpg?v=1785611787868"
   },
   {
     "sap_id": "3610002830",
