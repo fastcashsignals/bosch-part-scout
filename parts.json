@@ -789,12 +789,13 @@
   {
     "sap_id": "3610003109",
     "name": "Pressure Switch",
-    "category": "PA3 - GRINDERS",
-    "bin": "0104P03",
+    "category": "CSB Grinding",
+    "bin": "01-04-P03",
     "manufacturer": null,
     "model_number": null,
     "description": "Pressure switch",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610003109.jpg?v=1785610593299"
   },
   {
     "sap_id": "3610003757",
