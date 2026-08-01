@@ -471,12 +471,13 @@
   {
     "sap_id": "3610003560",
     "name": "Belt",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": "0127C04",
+    "category": "RSB Paint and Print",
+    "bin": "01-27-C04",
     "manufacturer": "Gates",
     "model_number": "#4LK350",
     "description": "Belt for mist collector fan",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610003560.jpg?v=1785602220051"
   },
   {
     "sap_id": "3610004184",
