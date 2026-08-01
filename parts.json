@@ -947,12 +947,13 @@
   {
     "sap_id": "3610004068",
     "name": "Transducer",
-    "category": "PA3 - RING PACK",
-    "bin": null,
+    "category": "CSB Packaging Ring Pack",
+    "bin": "01-43-I06",
     "manufacturer": null,
     "model_number": null,
     "description": "Sensor for blister measurer",
-    "cost_center_code": "000085C312"
+    "cost_center_code": "000085C312",
+    "image": "images/3610004068.jpg?v=1785599305437"
   },
   {
     "sap_id": "3610004804",
