@@ -914,12 +914,13 @@
   {
     "sap_id": "3610003796",
     "name": "Flange",
-    "category": "PA3 - RING PACK",
+    "category": "CSB Packaging Ring Pack",
     "bin": "0124A10",
     "manufacturer": "Sistec",
     "model_number": "#102160001010S",
     "description": "Brass flange for centering pin on table",
-    "cost_center_code": "000085C312"
+    "cost_center_code": "000085C312",
+    "image": "images/3610003796.jpg?v=1785598843684"
   },
   {
     "sap_id": "3610004729",
