@@ -548,12 +548,13 @@
   {
     "sap_id": "3610001647",
     "name": "Block",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "01-26-I06",
     "manufacturer": null,
     "model_number": "#W685113411",
     "description": "Reversing blade knock-off block",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610001647.jpg?v=1785602860079"
   },
   {
     "sap_id": "3610002934",
