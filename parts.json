@@ -427,12 +427,13 @@
   {
     "sap_id": "3610004169",
     "name": "Line Filter",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": "0136B03",
+    "category": "RSB Paint and Print",
+    "bin": "01-36-B03",
     "manufacturer": null,
     "model_number": null,
     "description": "Filter for Paint mixology",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610004169.jpg?v=1785601874514"
   },
   {
     "sap_id": "3610005443",
