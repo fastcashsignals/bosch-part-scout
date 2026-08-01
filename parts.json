@@ -732,12 +732,13 @@
   {
     "sap_id": "3610003684",
     "name": "Wire Wheel",
-    "category": "PA3 - BRAZERS",
-    "bin": "304204",
+    "category": "CSB Brazing",
+    "bin": "03-04-203",
     "manufacturer": "Norton",
     "model_number": "#39025",
     "description": "8\" wire wheels for pedestal grinders and wire wheel machine",
-    "cost_center_code": "000085C306"
+    "cost_center_code": "000085C306",
+    "image": "images/3610003684.jpg?v=1785610179606"
   },
   {
     "sap_id": "3610003303",
