@@ -763,12 +763,13 @@
   {
     "sap_id": "3610003341",
     "name": "Magnet",
-    "category": "PA3 - LASERS",
-    "bin": "0125K05",
+    "category": "CSB Laser",
+    "bin": "01-25-K05",
     "manufacturer": "Applyca SRL",
     "model_number": "#AP00001C-AF_A",
     "description": "Magnet for robot head",
-    "cost_center_code": "000085C301"
+    "cost_center_code": "000085C301",
+    "image": "images/3610003341.jpg?v=1785609868844"
   },
   {
     "sap_id": "3610003793",
