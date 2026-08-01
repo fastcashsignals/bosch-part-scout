@@ -844,12 +844,13 @@
   {
     "sap_id": "3610003084",
     "name": "Forked Light Barrier",
-    "category": "PA3 - GRINDERS",
-    "bin": "0104P02",
+    "category": "CSB Grinding",
+    "bin": "01-04-P02",
     "manufacturer": "di-soric",
     "model_number": "#LGU-031",
     "description": "Photo eye for scanner",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610003084.jpg?v=1785610833244"
   },
   {
     "sap_id": "3610006236",
