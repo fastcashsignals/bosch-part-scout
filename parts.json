@@ -778,12 +778,13 @@
   {
     "sap_id": "3610003793",
     "name": "Robot Spring",
-    "category": "PA3 - GRINDERS",
-    "bin": "0124B01",
+    "category": "CSB Grinding",
+    "bin": "01-24-B01",
     "manufacturer": null,
     "model_number": null,
     "description": "Robot spring",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610003793.jpg?v=1785610521754"
   },
   {
     "sap_id": "3610003109",
