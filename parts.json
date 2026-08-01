@@ -1204,11 +1204,12 @@
     "sap_id": "3610007218",
     "name": "Rubber Door Seal Oven PA2",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": null,
+    "bin": "02-20-F01",
     "manufacturer": null,
     "model_number": null,
     "description": "Rubber Door Seal Oven PA2",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610007218.jpg?v=1785600692381"
   },
   {
     "sap_id": "3610007456",
