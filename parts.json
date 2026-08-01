@@ -692,12 +692,13 @@
   {
     "sap_id": "3610004548",
     "name": "Snap Ring",
-    "category": "PA3 - COATING",
-    "bin": "0114F07",
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-14-F07",
     "manufacturer": null,
     "model_number": null,
     "description": "Snap ring for tensioner - Also used for lower chain guide",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610004548.jpg?v=1785611927249"
   },
   {
     "sap_id": "3610004550",
