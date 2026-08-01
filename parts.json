@@ -12,12 +12,13 @@
   {
     "sap_id": "3610004958",
     "name": "Hang Tag",
-    "category": "PA2 - HANGTAG PACKAGING",
-    "bin": null,
+    "category": "RSB Hangtag Packaging",
+    "bin": "01-18-Q11",
     "manufacturer": "Festo",
     "model_number": null,
     "description": "Filter hang tag",
-    "cost_center_code": "000085C219"
+    "cost_center_code": "000085C219",
+    "image": "images/3610004958.jpg?v=1785605295927"
   },
   {
     "sap_id": "3610002439",
