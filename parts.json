@@ -482,12 +482,13 @@
   {
     "sap_id": "3610004184",
     "name": "UV Lamp",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "05-03-303",
     "manufacturer": null,
     "model_number": null,
     "description": "UV lamp for exit conveyor",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610004184.jpg?v=1785602307483"
   },
   {
     "sap_id": "3610006240",
