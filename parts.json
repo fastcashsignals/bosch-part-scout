@@ -935,13 +935,13 @@
   },
   {
     "sap_id": "3610003702",
-    "name": "Pneumatic Muffler",
-    "category": "PA3 - RING PACK",
+    "name": "Silencer",
+    "category": "CSB Final Wash",
     "bin": "0136H04",
-    "manufacturer": "Festo",
-    "model_number": "#165004",
-    "description": "Large muffler",
-    "cost_center_code": "000085C312"
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Large blue muffler",
+    "cost_center_code": "000085C310"
   },
   {
     "sap_id": "3610004068",
