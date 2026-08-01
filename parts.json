@@ -605,12 +605,13 @@
   {
     "sap_id": "3610004218",
     "name": "Support Plate",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-33-I03",
     "manufacturer": null,
     "model_number": null,
     "description": "Chain guide support 165mm",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610004218.jpg?v=1785611351750"
   },
   {
     "sap_id": "3610004219",
