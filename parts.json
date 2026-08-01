@@ -1468,5 +1468,16 @@
     "description": null,
     "cost_center_code": "000085C217",
     "image": "images/3610003513.jpg?v=1785015815678"
+  },
+  {
+    "sap_id": "3610003696",
+    "name": "Vacuum Generator",
+    "category": "CSB Packaging Ring Pack",
+    "bin": "01-36-I04",
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Used on Blister Robot",
+    "cost_center_code": "000085C312",
+    "image": "images/3610003696.jpg?v=1785588782845"
   }
 ]
