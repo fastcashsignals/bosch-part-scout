@@ -123,7 +123,7 @@
     "sap_id": "3610001777",
     "name": "Sensor",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": "0128B03",
+    "bin": "01-28-B03",
     "manufacturer": "Schunk",
     "model_number": "#0301474, IN 40-S-M8-PNP",
     "description": "Larger round sensor (Clamping)",
