@@ -255,7 +255,7 @@
     "sap_id": "3610002213",
     "name": "Gripper Finger",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": "0128E09",
+    "bin": "01-28-E09",
     "manufacturer": null,
     "model_number": null,
     "description": "Gripper pins for carbide teeth",
