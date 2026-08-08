@@ -99,27 +99,6 @@
     "image": "images/3610007599.jpg?v=1783868502912"
   },
   {
-    "sap_id": "3610003741",
-    "name": "Filter",
-    "category": "PA2",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Bag filter for Faudi",
-    "cost_center_code": "000085C230"
-  },
-  {
-    "sap_id": "3610003741",
-    "name": "Filter",
-    "category": "RSB Ultrasonic Cleaner",
-    "bin": "03-07-101",
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Bag filter for Faudi",
-    "cost_center_code": "000085C230",
-    "image": "images/3610003741.jpg?v=1785619741204"
-  },
-  {
     "sap_id": "3610001777",
     "name": "Sensor",
     "category": "RSB TC/Wash/Temper/SS",
