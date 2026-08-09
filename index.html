@@ -137,7 +137,14 @@
     .panel { display: none; }
     .panel.active { display: block; }
 
-    .search-controls { padding: 12px 16px 0; }
+    .search-controls {
+      padding: 12px 16px 10px;
+      position: sticky;
+      top: var(--header-h, 132px);
+      z-index: 90;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+    }
 
     .part-count-row {
       display: flex;
@@ -1258,6 +1265,18 @@
     const machineSelect = document.getElementById('machineSelect');
     const resultsEl = document.getElementById('results');
     const partCountEl = document.getElementById('partCount');
+
+    // Keep the search bar pinned directly under the header (whose height can
+    // change — install banner, text wrap, etc.) instead of a hardcoded offset.
+    const headerEl = document.querySelector('.header');
+    function updateHeaderHeight() {
+      document.documentElement.style.setProperty('--header-h', headerEl.offsetHeight + 'px');
+    }
+    updateHeaderHeight();
+    window.addEventListener('resize', updateHeaderHeight);
+    if (window.ResizeObserver) {
+      new ResizeObserver(updateHeaderHeight).observe(headerEl);
+    }
     const modalOverlay = document.getElementById('modalOverlay');
     const modalClose = document.getElementById('modalClose');
 
