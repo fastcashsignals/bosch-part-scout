@@ -2,22 +2,24 @@
   {
     "sap_id": "3610002553",
     "name": "Contact Cleaner",
-    "category": "TEF - General",
-    "bin": null,
+    "category": "Direct - General",
+    "bin": "03-01-CAB",
     "manufacturer": null,
     "model_number": null,
     "description": "Contact cleaner",
-    "cost_center_code": "000085C082"
+    "cost_center_code": "000085C082",
+    "image": "images/3610002553.jpg?v=1785616329850"
   },
   {
     "sap_id": "3610004958",
     "name": "Hang Tag",
-    "category": "PA2 - HANGTAG PACKAGING",
-    "bin": null,
+    "category": "RSB Hangtag Packaging",
+    "bin": "01-18-Q11",
     "manufacturer": "Festo",
     "model_number": null,
     "description": "Filter hang tag",
-    "cost_center_code": "000085C219"
+    "cost_center_code": "000085C219",
+    "image": "images/3610004958.jpg?v=1785605295927"
   },
   {
     "sap_id": "3610002439",
@@ -33,79 +35,74 @@
   {
     "sap_id": "3610004228",
     "name": "Flashlight",
-    "category": "TEF - General",
-    "bin": null,
+    "category": "Direct - General",
+    "bin": "01-06-E02",
     "manufacturer": null,
     "model_number": null,
     "description": "Blue flashlight",
-    "cost_center_code": "000085C082"
+    "cost_center_code": "000085C082",
+    "image": "images/3610004228.jpg?v=1785610065137"
   },
   {
     "sap_id": "3610001597",
     "name": "Bearing",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "01-26-O08",
     "manufacturer": null,
     "model_number": null,
     "description": "Bearing for loader drum assembly (RSB paint lines and wash)",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610001597.jpg?v=1785600871241"
   },
   {
     "sap_id": "3610008263",
     "name": "Ejector",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "01-29-H03",
     "manufacturer": null,
     "model_number": null,
     "description": "Ejector for loader drum assembly",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610008263.jpg?v=1785601081313"
   },
   {
     "sap_id": "3610001634",
     "name": "Spring",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "01-27-B10",
     "manufacturer": null,
     "model_number": null,
     "description": "Spring on ejector for loader drum assembly",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610001634.jpg?v=1785601175999"
   },
   {
     "sap_id": "3610008619",
     "name": "Magnet",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "02-27-A03",
     "manufacturer": null,
     "model_number": null,
     "description": "Magnet for drum loader",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610008619.jpg?v=1785601577056"
   },
   {
     "sap_id": "3610007599",
     "name": "Pusher",
-    "category": "PA2",
-    "bin": null,
+    "category": "RSB Shrink Tunnel",
+    "bin": "02-11-D05",
     "manufacturer": null,
     "model_number": null,
     "description": "Belt blade pusher (Shrink tunnel)",
-    "cost_center_code": "000085C231"
-  },
-  {
-    "sap_id": "3610003741",
-    "name": "Filter for FES",
-    "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": "03-07-101",
-    "manufacturer": "FES",
-    "model_number": "FES PES200P2SH",
-    "description": "Bag filter for FES",
-    "cost_center_code": "000085C216",
-    "image": "images/3610003741.jpg?v=1782652096356"
+    "cost_center_code": "000085C231",
+    "image": "images/3610007599.jpg?v=1783868502912"
   },
   {
     "sap_id": "3610001777",
     "name": "Sensor",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": "0128B03",
+    "bin": "01-28-B03",
     "manufacturer": "Schunk",
     "model_number": "#0301474, IN 40-S-M8-PNP",
     "description": "Larger round sensor (Clamping)",
@@ -215,7 +212,7 @@
     "sap_id": "3610001708",
     "name": "Arbor",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": "0128B05",
+    "bin": "01-28-B05",
     "manufacturer": null,
     "model_number": null,
     "description": "Grinding wheel arbor",
@@ -226,7 +223,7 @@
     "sap_id": "3610002185",
     "name": "Parallel Gripper",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": "0128F02",
+    "bin": "01-28-F02",
     "manufacturer": "Schunk",
     "model_number": "#MPG32 340011",
     "description": "Parallel gripper",
@@ -237,7 +234,7 @@
     "sap_id": "3610002213",
     "name": "Gripper Finger",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": "0128E09",
+    "bin": "01-28-E09",
     "manufacturer": null,
     "model_number": null,
     "description": "Gripper pins for carbide teeth",
@@ -292,7 +289,7 @@
     "sap_id": "3610002571",
     "name": "Shaft Coupling",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": "0109P01",
+    "bin": "01-09-P01",
     "manufacturer": null,
     "model_number": null,
     "description": "Coupling for blade clamp",
@@ -379,312 +376,343 @@
   {
     "sap_id": "3610003550",
     "name": "Filter",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": "0131B04",
+    "category": "RSB Paint and Print",
+    "bin": "01-31-B04",
     "manufacturer": "Pall",
     "model_number": "#500391",
     "description": "Ink filter for printer",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610003550.jpg?v=1785601661396"
   },
   {
     "sap_id": "3610003549",
     "name": "Filter",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": "0131H02",
+    "category": "RSB Paint and Print",
+    "bin": "01-31-H02",
     "manufacturer": "Pall",
     "model_number": "#500499 (LCF-59400)",
     "description": "Vent filter for printer",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610003549.jpg?v=1785601741127"
   },
   {
     "sap_id": "3610001663",
     "name": "Wedge",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": "0126M09",
+    "category": "RSB Paint and Print",
+    "bin": "01-26-M09",
     "manufacturer": null,
     "model_number": "#W685105044",
     "description": "Loader Block",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610001663.jpg?v=1785601805447"
   },
   {
     "sap_id": "3610004169",
     "name": "Line Filter",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": "0136B03",
+    "category": "RSB Paint and Print",
+    "bin": "01-36-B03",
     "manufacturer": null,
     "model_number": null,
     "description": "Filter for Paint mixology",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610004169.jpg?v=1785601874514"
   },
   {
     "sap_id": "3610005443",
     "name": "Spring",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": "0126P05",
+    "category": "RSB Paint and Print",
+    "bin": "01-26-P05",
     "manufacturer": null,
     "model_number": null,
     "description": "Spring for filter",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610005443.jpg?v=1785601948867"
   },
   {
     "sap_id": "3610001579",
     "name": "Cylinder",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": "0127A04",
+    "category": "RSB Paint and Print",
+    "bin": "01-27-A04",
     "manufacturer": "SMC",
     "model_number": "#CDJP2B16-15D",
     "description": "Air cylinder for mag conveyor",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610001579.jpg?v=1785602024115"
   },
   {
     "sap_id": "3610004278",
     "name": "Filter",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": "0140D04",
+    "category": "RSB Paint and Print",
+    "bin": "01-40-D04",
     "manufacturer": null,
     "model_number": null,
     "description": "Filter for mist collector",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610004278.jpg?v=1785602129051"
   },
   {
     "sap_id": "3610003560",
     "name": "Belt",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": "0127C04",
+    "category": "RSB Paint and Print",
+    "bin": "01-27-C04",
     "manufacturer": "Gates",
     "model_number": "#4LK350",
     "description": "Belt for mist collector fan",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610003560.jpg?v=1785602220051"
   },
   {
     "sap_id": "3610004184",
     "name": "UV Lamp",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "05-03-303",
     "manufacturer": null,
     "model_number": null,
     "description": "UV lamp for exit conveyor",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610004184.jpg?v=1785602307483"
   },
   {
     "sap_id": "3610006240",
     "name": "Wear Plate",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "01-15-B08",
     "manufacturer": null,
     "model_number": null,
     "description": "Carbide wear plate for mag conveyor",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610006240.jpg?v=1785602427860"
   },
   {
     "sap_id": "3610004209",
     "name": "Edge Guide",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "01-12-L08",
     "manufacturer": null,
     "model_number": null,
     "description": "Edge guide for mag conveyor (no carbide)",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610004209.jpg?v=1785602528874"
   },
   {
     "sap_id": "3610004955",
     "name": "Belt",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "01-18-N04",
     "manufacturer": null,
     "model_number": null,
     "description": "Blade loader drive motor belt",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610004955.jpg?v=1785602622091"
   },
   {
     "sap_id": "3610002004",
     "name": "Pulley",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "01-12-E05",
     "manufacturer": null,
     "model_number": "#W070159330",
     "description": "Blade loader drive motor pulley",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610002004.jpg?v=1785602698492"
   },
   {
     "sap_id": "3610007211",
     "name": "Pipe",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "01-21-M01",
     "manufacturer": null,
     "model_number": null,
     "description": "Paint tote adapter",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610007211.jpg?v=1785602775673"
   },
   {
     "sap_id": "3610001647",
     "name": "Block",
-    "category": "PA2 - PAINT AND PRINT",
-    "bin": null,
+    "category": "RSB Paint and Print",
+    "bin": "01-26-I06",
     "manufacturer": null,
     "model_number": "#W685113411",
     "description": "Reversing blade knock-off block",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610001647.jpg?v=1785602860079"
   },
   {
     "sap_id": "3610002934",
     "name": "Proximity Sensor",
-    "category": "PA3 - COATING",
-    "bin": "0136I02",
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-36-I02",
     "manufacturer": "Festo",
     "model_number": "#SME-8M-DS-24V-K-0",
     "description": "Cylinder proximity",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610002934.jpg?v=1785610351624"
   },
   {
     "sap_id": "3610004380",
     "name": "Roller",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "03-08-B02",
     "manufacturer": null,
     "model_number": null,
     "description": "Lower rubber roller assembly - Phosphate",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610004380.jpg?v=1785610457890"
   },
   {
     "sap_id": "3610003886",
     "name": "Bearing Assembly",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-07-H03",
     "manufacturer": null,
     "model_number": null,
     "description": "Lower rubber roller end bearing assembly - Phosphate",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610003886.jpg?v=1785611182071"
   },
   {
     "sap_id": "3610002343",
     "name": "Bushing",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-36-N01",
     "manufacturer": null,
     "model_number": null,
     "description": "White bushings for end of rollers",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610002343.jpg?v=1785611271528"
   },
   {
     "sap_id": "3610004218",
     "name": "Support Plate",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-33-I03",
     "manufacturer": null,
     "model_number": null,
     "description": "Chain guide support 165mm",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610004218.jpg?v=1785611351750"
   },
   {
     "sap_id": "3610004219",
     "name": "Guide Plate",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "02-26-E02",
     "manufacturer": null,
     "model_number": null,
     "description": "Chain guide 165mm plastic",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610004219.jpg?v=1785611424746"
   },
   {
     "sap_id": "3610004677",
     "name": "Mounting Bracket",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "00-00-000",
     "manufacturer": null,
     "model_number": null,
     "description": "Chain guide support 152mm",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610004677.jpg?v=1785619628365"
   },
   {
     "sap_id": "3610004678",
     "name": "Chain Guide",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "02-30-F02",
     "manufacturer": null,
     "model_number": "#3.07.65.460",
     "description": "Chain guide 152mm plastic",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610004678.jpg?v=1785611540363"
   },
   {
     "sap_id": "3610002828",
     "name": "Chain Tensioner Housing",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-07-J02",
     "manufacturer": null,
     "model_number": null,
     "description": "Chain tensioner housing",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610002828.jpg?v=1785611612870"
   },
   {
     "sap_id": "3610003209",
     "name": "Pivot Chain Tension",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-01-G02",
     "manufacturer": null,
     "model_number": null,
     "description": "Pin for tensioner - Phosphate",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610003209.jpg?v=1785611690990"
   },
   {
     "sap_id": "3610002829",
     "name": "Toothed Gear",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-07-C01",
     "manufacturer": null,
     "model_number": "#3.07.65.476",
     "description": "Chain drive gear Z10 (Phosphate tensioner sprocket) - Also used for lower chain guide",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610002829.jpg?v=1785611787868"
   },
   {
     "sap_id": "3610002830",
     "name": "Bearing",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-01-G12",
     "manufacturer": null,
     "model_number": null,
     "description": "Bearings for tensioner - Phosphate - Also used for lower chain guide",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610002830.jpg?v=1785611868126"
   },
   {
     "sap_id": "3610004548",
     "name": "Snap Ring",
-    "category": "PA3 - COATING",
-    "bin": "0114F07",
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-14-F07",
     "manufacturer": null,
     "model_number": null,
     "description": "Snap ring for tensioner - Also used for lower chain guide",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610004548.jpg?v=1785611927249"
   },
   {
     "sap_id": "3610004550",
     "name": "Chain Drive Pin",
-    "category": "PA3 - COATING",
-    "bin": null,
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-14-F10",
     "manufacturer": null,
     "model_number": null,
     "description": "Pin for lower chain guide sprocket",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610004550.jpg?v=1785612000530"
   },
   {
     "sap_id": "3610002305",
     "name": "Diaphragm Pump",
-    "category": "PA3 - COATING",
-    "bin": "0301301",
+    "category": "CSB Coating/Phosphate",
+    "bin": "03-01-301",
     "manufacturer": "Wagner",
     "model_number": "#U550.STSS7-A",
     "description": "Circulating pump for paint system",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610002305.jpg?v=1785612077594"
   },
   {
     "sap_id": "3610004972",
     "name": "Motor",
-    "category": "PA3 - COATING",
-    "bin": "0113E01",
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-13-E01",
     "manufacturer": "Sew-Eurodrive",
     "model_number": "#SA37 DRN71MS4",
     "description": "Conveyor gear motor",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610004972.jpg?v=1785612136714"
   },
   {
     "sap_id": "3610001834",
@@ -700,72 +728,79 @@
   {
     "sap_id": "3610003684",
     "name": "Wire Wheel",
-    "category": "PA3 - BRAZERS",
-    "bin": "304204",
+    "category": "CSB Brazing",
+    "bin": "03-04-203",
     "manufacturer": "Norton",
     "model_number": "#39025",
     "description": "8\" wire wheels for pedestal grinders and wire wheel machine",
-    "cost_center_code": "000085C306"
+    "cost_center_code": "000085C306",
+    "image": "images/3610003684.jpg?v=1785610179606"
   },
   {
     "sap_id": "3610003303",
     "name": "Suction Cup Kit",
-    "category": "PA3 - LASERS",
-    "bin": "4",
+    "category": "CSB Laser",
+    "bin": "01-04-S01",
     "manufacturer": null,
     "model_number": null,
     "description": "Suction cup for robot head",
-    "cost_center_code": "000085C301"
+    "cost_center_code": "000085C301",
+    "image": "images/3610003303.jpg?v=1785605607783"
   },
   {
     "sap_id": "3610003349",
     "name": "Suction Cup Assembly",
-    "category": "PA3 - LASERS",
-    "bin": "4",
+    "category": "CSB Laser",
+    "bin": "01-04-T01",
     "manufacturer": null,
     "model_number": null,
     "description": "Suction cup assembly for robot head",
-    "cost_center_code": "000085C301"
+    "cost_center_code": "000085C301",
+    "image": "images/3610003349.jpg?v=1785609785008"
   },
   {
     "sap_id": "3610003341",
     "name": "Magnet",
-    "category": "PA3 - LASERS",
-    "bin": "0125K05",
+    "category": "CSB Laser",
+    "bin": "01-25-K05",
     "manufacturer": "Applyca SRL",
     "model_number": "#AP00001C-AF_A",
     "description": "Magnet for robot head",
-    "cost_center_code": "000085C301"
+    "cost_center_code": "000085C301",
+    "image": "images/3610003341.jpg?v=1785609868844"
   },
   {
     "sap_id": "3610003793",
     "name": "Robot Spring",
-    "category": "PA3 - GRINDERS",
-    "bin": "0124B01",
+    "category": "CSB Grinding",
+    "bin": "01-24-B01",
     "manufacturer": null,
     "model_number": null,
     "description": "Robot spring",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610003793.jpg?v=1785610521754"
   },
   {
     "sap_id": "3610003109",
     "name": "Pressure Switch",
-    "category": "PA3 - GRINDERS",
-    "bin": "0104P03",
+    "category": "CSB Grinding",
+    "bin": "01-04-P03",
     "manufacturer": null,
     "model_number": null,
     "description": "Pressure switch",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610003109.jpg?v=1785610593299"
   },
   {
     "sap_id": "3610003757",
     "name": "Marposs",
-    "category": "PA3 - GRINDERS",
-    "bin": "0143G02",
+    "category": "CSB Grinding",
+    "bin": "01-43-G02",
     "manufacturer": null,
     "model_number": null,
     "description": "Marposs component",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610003757.jpg?v=1785610675803"
   },
   {
     "sap_id": "3610003762",
@@ -781,18 +816,19 @@
   {
     "sap_id": "3610003217",
     "name": "Oil",
-    "category": "PA3 - GRINDERS",
-    "bin": null,
+    "category": "CSB Grinding",
+    "bin": "04-04-102",
     "manufacturer": "Mobil",
     "model_number": "#Vactra 2",
     "description": "Lubricating oil drum",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610003217.jpg?v=1785610768784"
   },
   {
     "sap_id": "3610006066",
     "name": "Hydraulic Filter",
     "category": "CSB Grinding",
-    "bin": "0307406",
+    "bin": "03-07-406",
     "manufacturer": "UFI",
     "model_number": "#ERA32NFD",
     "description": "Filter for hydraulic oil tank",
@@ -802,88 +838,96 @@
   {
     "sap_id": "3610003084",
     "name": "Forked Light Barrier",
-    "category": "PA3 - GRINDERS",
-    "bin": "0104P02",
+    "category": "CSB Grinding",
+    "bin": "01-04-P02",
     "manufacturer": "di-soric",
     "model_number": "#LGU-031",
     "description": "Photo eye for scanner",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610003084.jpg?v=1785610833244"
   },
   {
     "sap_id": "3610006236",
     "name": "Solenoid Valve",
-    "category": "PA3 - GRINDERS",
-    "bin": "0201A04",
+    "category": "CSB Grinding",
+    "bin": "02-01-A04",
     "manufacturer": "Festo",
     "model_number": "#VSNC-FC-M52-MD-G14-F",
     "description": "Coolant valve",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610006236.jpg?v=1785610909855"
   },
   {
     "sap_id": "3610008290",
     "name": "Silencer",
-    "category": "PA3 - GRINDERS",
-    "bin": null,
+    "category": "CSB Grinding",
+    "bin": "01-04-J10",
     "manufacturer": null,
     "model_number": null,
     "description": "Silencer for coolant valve",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610008290.jpg?v=1785610986934"
   },
   {
     "sap_id": "3610003517",
     "name": "Silencer",
-    "category": "PA3 - FINAL WASH",
-    "bin": "0136A02",
+    "category": "CSB Final Wash",
+    "bin": "01-36-A02",
     "manufacturer": null,
     "model_number": "#161419",
     "description": "Small blue muffler",
-    "cost_center_code": "000085C310"
+    "cost_center_code": "000085C310",
+    "image": "images/3610003517.jpg?v=1785612374539"
   },
   {
     "sap_id": "3610005100",
     "name": "Roller",
-    "category": "PA3 - MARKING",
-    "bin": "0119D03",
+    "category": "CSB Marking",
+    "bin": "01-19-D03",
     "manufacturer": "Zebra",
     "model_number": "#P1046696",
     "description": "2 rollers for labeler",
-    "cost_center_code": "000085C311"
+    "cost_center_code": "000085C311",
+    "image": "images/3610005100.jpg?v=1785612451748"
   },
   {
     "sap_id": "3610005101",
     "name": "Roller",
-    "category": "PA3 - MARKING",
-    "bin": "0119D02",
+    "category": "CSB Marking",
+    "bin": "01-19-D02",
     "manufacturer": "Zebra",
     "model_number": null,
     "description": "End roller for labeler",
-    "cost_center_code": "000085C311"
+    "cost_center_code": "000085C311",
+    "image": "images/3610005101.jpg?v=1785612501887"
   },
   {
     "sap_id": "3610002914",
     "name": "Inductive Position Switch",
-    "category": "PA3 - MARKING",
-    "bin": "0104J05",
+    "category": "CSB Marking",
+    "bin": "01-04-J05",
     "manufacturer": "Baumer",
     "model_number": "#K341 20P17A3/S35L",
     "description": "Belt blade position sensor",
-    "cost_center_code": "000085C311"
+    "cost_center_code": "000085C311",
+    "image": "images/3610002914.jpg?v=1785612555705"
   },
   {
     "sap_id": "3610002921",
     "name": "Dual-Action Pneumatic Cylinder",
-    "category": "PA3 - MARKING",
-    "bin": "0138K01",
+    "category": "CSB Marking",
+    "bin": "01-38-K01",
     "manufacturer": "Festo",
     "model_number": "#DSBC-40-40-PPV",
     "description": "Cylinder for up/down on tipper",
-    "cost_center_code": "000085C311"
+    "cost_center_code": "000085C311",
+    "image": "images/3610002921.jpg?v=1785612624730"
   },
   {
     "sap_id": "3610003795",
     "name": "Anchor Pin",
-    "category": "PA3 - RING PACK",
-    "bin": "0124B09",
+    "category": "CSB Packaging Ring Pack",
+    "bin": "01-24-B09",
     "manufacturer": "Sistec",
     "model_number": "#101190000120S",
     "description": "Centering pin on table",
@@ -892,8 +936,8 @@
   {
     "sap_id": "3610003796",
     "name": "Flange",
-    "category": "PA3 - RING PACK",
-    "bin": "0124A10",
+    "category": "CSB Packaging Ring Pack",
+    "bin": "01-24-A10",
     "manufacturer": "Sistec",
     "model_number": "#102160001010S",
     "description": "Brass flange for centering pin on table",
@@ -902,32 +946,24 @@
   {
     "sap_id": "3610004729",
     "name": "Photo Sensor",
-    "category": "PA3 - RING PACK",
-    "bin": null,
+    "category": "CSB Packaging Ring Pack",
+    "bin": "01-42-C04",
     "manufacturer": "Sick",
     "model_number": "#1069073",
     "description": "Blister sensor Zone 1",
-    "cost_center_code": "000085C312"
-  },
-  {
-    "sap_id": "3610003702",
-    "name": "Pneumatic Muffler",
-    "category": "PA3 - RING PACK",
-    "bin": "0136H04",
-    "manufacturer": "Festo",
-    "model_number": "#165004",
-    "description": "Large muffler",
-    "cost_center_code": "000085C312"
+    "cost_center_code": "000085C312",
+    "image": "images/3610004729.jpg?v=1785599134140"
   },
   {
     "sap_id": "3610004068",
     "name": "Transducer",
-    "category": "PA3 - RING PACK",
-    "bin": null,
+    "category": "CSB Packaging Ring Pack",
+    "bin": "01-43-I06",
     "manufacturer": null,
     "model_number": null,
     "description": "Sensor for blister measurer",
-    "cost_center_code": "000085C312"
+    "cost_center_code": "000085C312",
+    "image": "images/3610004068.jpg?v=1785599305437"
   },
   {
     "sap_id": "3610004804",
@@ -1062,74 +1098,70 @@
     "image": "images/3610007455.jpg?v=1783785063576"
   },
   {
-    "sap_id": "3610000692",
-    "name": "Proximity Sensor BES01KE",
-    "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Proximity Sensor BES01KE",
-    "cost_center_code": "000085C216"
-  },
-  {
     "sap_id": "3610001668",
     "name": "Block L-shaped W685119410",
     "category": "RSB Paint and Print",
-    "bin": null,
+    "bin": "01-26-L10",
     "manufacturer": null,
     "model_number": null,
     "description": "Block L-shaped W685119410",
-    "cost_center_code": "000085C218"
+    "cost_center_code": "000085C218",
+    "image": "images/3610001668.jpg?v=1785602945509"
   },
   {
     "sap_id": "3610002052",
     "name": "Connector Plug PICO M8 3 PIN Female",
-    "category": "PA3 - GRINDERS",
-    "bin": null,
+    "category": "CSB Grinding",
+    "bin": "01-29-D05",
     "manufacturer": null,
     "model_number": null,
     "description": "Connector Plug PICO M8 3 PIN Female",
-    "cost_center_code": "000085C309"
+    "cost_center_code": "000085C309",
+    "image": "images/3610002052.jpg?v=1786276888575"
   },
   {
     "sap_id": "3610002055",
     "name": "Sensor Cable 3POS DIGI-KEY",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
+    "bin": "01-09-A05",
+    "manufacturer": "Phoenix contact inc",
+    "model_number": "1435551",
     "description": "Sensor Cable 3POS DIGI-KEY",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610002055.jpg?v=1783804010460"
   },
   {
     "sap_id": "3610002164",
     "name": "coolant pump TS 21/300-BZ+426",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": null,
+    "bin": "00-00-000",
     "manufacturer": null,
     "model_number": null,
     "description": "coolant pump TS 21/300-BZ+426",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610002164.jpg?v=1785600593922"
   },
   {
     "sap_id": "3610002642",
     "name": "Motor-gearbox assembly GR42X25 24V",
-    "category": "PA3 - BRAZERS",
-    "bin": null,
+    "category": "CSB Brazing",
+    "bin": "01-17-C03",
     "manufacturer": null,
     "model_number": null,
     "description": "Motor-gearbox assembly GR42X25 24V",
-    "cost_center_code": "000085C306"
+    "cost_center_code": "000085C306",
+    "image": "images/3610002642.jpg?v=1785610282993"
   },
   {
     "sap_id": "3610003351",
     "name": "Suction Valve ISV-M10 Festo 545998",
-    "category": "PA3 - LASERS",
-    "bin": null,
+    "category": "CSB Laser",
+    "bin": "01-04-B14",
     "manufacturer": null,
     "model_number": null,
     "description": "Suction Valve ISV-M10 Festo 545998",
-    "cost_center_code": "000085C301"
+    "cost_center_code": "000085C301",
+    "image": "images/3610003351.jpg?v=1785609947627"
   },
   {
     "sap_id": "3610003823",
@@ -1144,32 +1176,24 @@
   {
     "sap_id": "3610004542",
     "name": "Plate Etch Poly D0624",
-    "category": "PA3 - MARKING",
-    "bin": null,
+    "category": "CSB Marking",
+    "bin": "03-12-2B1",
     "manufacturer": null,
     "model_number": null,
     "description": "Plate Etch Poly D0624",
-    "cost_center_code": "000085C311"
-  },
-  {
-    "sap_id": "3610005175",
-    "name": "Die insert W622133112",
-    "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Die insert W622133112",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C311",
+    "image": "images/3610004542.jpg?v=1785616474581"
   },
   {
     "sap_id": "3610005406",
     "name": "Roller Feed Roll Kit",
-    "category": "PA3 - RING PACK",
-    "bin": null,
+    "category": "CSB Packaging Ring Pack",
+    "bin": "01-22-B04",
     "manufacturer": null,
     "model_number": null,
     "description": "Roller Feed Roll Kit",
-    "cost_center_code": "000085C312"
+    "cost_center_code": "000085C312",
+    "image": "images/3610005406.jpg?v=1785599433874"
   },
   {
     "sap_id": "3610006343",
@@ -1195,130 +1219,307 @@
     "sap_id": "3610007218",
     "name": "Rubber Door Seal Oven PA2",
     "category": "RSB TC/Wash/Temper/SS",
-    "bin": null,
+    "bin": "02-20-F01",
     "manufacturer": null,
     "model_number": null,
     "description": "Rubber Door Seal Oven PA2",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610007218.jpg?v=1785600692381"
   },
   {
     "sap_id": "3610007456",
     "name": "Anvil Plate 6\" Horizontal bar",
     "category": "RSB Clamshell Packaging",
-    "bin": null,
+    "bin": "02-15-N09",
     "manufacturer": null,
     "model_number": null,
     "description": "Anvil Plate 6\" Horizontal bar",
-    "cost_center_code": "000085C220"
+    "cost_center_code": "000085C220",
+    "image": "images/3610007456.jpg?v=1783868213611"
   },
   {
     "sap_id": "3610007884",
     "name": "Spare Part Hang Tag Tip",
-    "category": "PA2 - HANGTAG PACKAGING",
-    "bin": null,
+    "category": "RSB Hangtag Packaging",
+    "bin": "01-27-I06",
     "manufacturer": null,
     "model_number": null,
     "description": "Spare Part Hang Tag Tip",
-    "cost_center_code": "000085C219"
+    "cost_center_code": "000085C219",
+    "image": "images/3610007884.jpg?v=1785605392799"
   },
   {
     "sap_id": "3610008659",
     "name": "Frame Metal Silk Screen",
-    "category": "PA3 - MARKING",
-    "bin": null,
+    "category": "CSB Marking",
+    "bin": "03-12-203",
     "manufacturer": null,
     "model_number": null,
     "description": "Frame Metal Silk Screen",
-    "cost_center_code": "000085C311"
-  },
-  {
-    "sap_id": "3610002472",
-    "name": "Plate WMS STAUBLI TC CELL",
-    "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Plate WMS STAUBLI TC CELL",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C311",
+    "image": "images/3610008659.jpg?v=1785616544808"
   },
   {
     "sap_id": "3610006194",
     "name": "Spare Part Blast-MA101983-1",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
-    "manufacturer": null,
+    "bin": "01-15-C02",
+    "manufacturer": "Peenmatic",
     "model_number": null,
     "description": "Spare Part Blast-MA101983-1",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610006194.jpg?v=1785599642752"
   },
   {
     "sap_id": "3610006195",
     "name": "Spare Part Blast-MA102579-1",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
+    "bin": "01-15-C03",
     "manufacturer": null,
     "model_number": null,
     "description": "Spare Part Blast-MA102579-1",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610006195.jpg?v=1785599730020"
   },
   {
     "sap_id": "3610006196",
     "name": "Spare Part Blast-MA100964",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
+    "bin": "03-01-507",
     "manufacturer": null,
     "model_number": null,
     "description": "Spare Part Blast-MA100964",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610006196.jpg?v=1785599838779"
   },
   {
     "sap_id": "3610006197",
     "name": "Spare Part Blast-MA101932",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
+    "bin": "01-15-D02",
     "manufacturer": null,
     "model_number": null,
     "description": "Spare Part Blast-MA101932",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610006197.jpg?v=1785599917653"
   },
   {
     "sap_id": "3610006198",
     "name": "Spare Part Blast-SHOT SEPARATOR",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
+    "bin": "01-15-H03",
     "manufacturer": null,
     "model_number": null,
     "description": "Spare Part Blast-SHOT SEPARATOR",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610006198.jpg?v=1785600006292"
   },
   {
     "sap_id": "3610006569",
     "name": "End stop Blast Backside End",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
+    "bin": "02-11-D03",
     "manufacturer": null,
     "model_number": null,
     "description": "End stop Blast Backside End",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610006569.jpg?v=1785600136956"
   },
   {
     "sap_id": "3610003511",
     "name": "Robot Staubli",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
+    "bin": "07-01-010",
     "manufacturer": null,
     "model_number": null,
     "description": "Robot Staubli",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610003511.jpg?v=1784661778463"
   },
   {
     "sap_id": "3610002583",
     "name": "Nozzle Flat jet airLechler",
     "category": "RSB Punch/Grind/Sand/Stamping",
-    "bin": null,
+    "bin": "01-30-E03",
     "manufacturer": null,
     "model_number": null,
     "description": "Nozzle Flat jet airLechler",
-    "cost_center_code": "000085C216"
+    "cost_center_code": "000085C216",
+    "image": "images/3610002583.jpg?v=1785600349267"
+  },
+  {
+    "sap_id": "3610001591",
+    "name": "Yellow Magnet",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-27-E01",
+    "manufacturer": "BBA",
+    "model_number": "80.0061.C",
+    "description": "Yellow magnet for mag conveyors",
+    "cost_center_code": "000085C217",
+    "image": "images/3610001591.jpg?v=1784392669750"
+  },
+  {
+    "sap_id": "3610007826",
+    "name": "Seal Bar 12\u201d",
+    "category": "RSB Clamshell Packaging",
+    "bin": "02-17-K01",
+    "manufacturer": "Algus",
+    "model_number": "In House- Algus",
+    "description": "Seal bar for clamshells on Algus",
+    "cost_center_code": "000085C220",
+    "image": "images/3610007826.jpg?v=1784373900540"
+  },
+  {
+    "sap_id": "3610001595",
+    "name": "Conveyor Bearings",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-27-C02",
+    "manufacturer": "McMaster",
+    "model_number": null,
+    "description": "Small mag conveyor bearings",
+    "cost_center_code": "000085C217",
+    "image": "images/3610001595.jpg?v=1784393281146"
+  },
+  {
+    "sap_id": "3610003513",
+    "name": "Flow Sensor",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-30-F03",
+    "manufacturer": "IFM Effector",
+    "model_number": "SM6000",
+    "description": null,
+    "cost_center_code": "000085C217",
+    "image": "images/3610003513.jpg?v=1785015815678"
+  },
+  {
+    "sap_id": "3610007894",
+    "name": "Algus pump vanes",
+    "category": "RSB Clamshell Packaging",
+    "bin": "03-37-N03",
+    "manufacturer": "Becker or Bestvane",
+    "model_number": "WIN 124-162 90134900007",
+    "description": "BV901349-7 Becker pump vanes",
+    "cost_center_code": "000085C220",
+    "image": "images/3610007894.jpg?v=1784982995863"
+  },
+  {
+    "sap_id": "3610007824",
+    "name": "Seal Bar",
+    "category": "RSB Clamshell Packaging",
+    "bin": "02-17-J02",
+    "manufacturer": "In House - Algus",
+    "model_number": null,
+    "description": "Seal Bar for Algus seal",
+    "cost_center_code": "000085C220",
+    "image": "images/3610007824.jpg?v=1784373753159"
+  },
+  {
+    "sap_id": "3610001589",
+    "name": "Wire Brush for paint line",
+    "category": "RSB Paint and Print",
+    "bin": "01-27-G01",
+    "manufacturer": "Brush",
+    "model_number": "Wire",
+    "description": "Paint line wire brushes",
+    "cost_center_code": "000085C218",
+    "image": "images/3610001589.jpg?v=1784392471965"
+  },
+  {
+    "sap_id": "3610001975",
+    "name": "Encoder cable",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-23-D01",
+    "manufacturer": "Rexroth",
+    "model_number": "R91130647",
+    "description": "Encoder cable for tc cells or paint lines in PA2",
+    "cost_center_code": "000085C217",
+    "image": "images/3610001975.jpg?v=1785074118402"
+  },
+  {
+    "sap_id": "3610003812",
+    "name": "Servomotor",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "03-02-501",
+    "manufacturer": "Rexroth",
+    "model_number": "R911330992",
+    "description": "X-Axis motor for stations 2,3 & 4",
+    "cost_center_code": "000085C217",
+    "image": "images/3610003812.jpg?v=1785066147527"
+  },
+  {
+    "sap_id": "3610002038",
+    "name": "Servomotor",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "03-13-306",
+    "manufacturer": "Rexroth",
+    "model_number": "R911330993",
+    "description": "Z-Axis motor for stations 2,3 & 4",
+    "cost_center_code": "000085C217",
+    "image": "images/3610002038.jpg?v=1785073184076"
+  },
+  {
+    "sap_id": "3610001482",
+    "name": "Silver Magnet",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-27-C03",
+    "manufacturer": "BBA",
+    "model_number": "80.0049.Z.02",
+    "description": "Silver magnet for mag conveyor",
+    "cost_center_code": "000085C217",
+    "image": "images/3610001482.jpg?v=1784392828933"
+  },
+  {
+    "sap_id": "3610003696",
+    "name": "Vacuum Generator",
+    "category": "CSB Packaging Ring Pack",
+    "bin": "01-36-I04",
+    "manufacturer": "Festo",
+    "model_number": "VN-14-H-T4-PQ3-VQ3-R02-B",
+    "description": "Used on Blister Robot",
+    "cost_center_code": "000085C312"
+  },
+  {
+    "sap_id": "3610008962",
+    "name": "Filter Bag",
+    "category": "RSB Shrink Tunnel",
+    "bin": "03-07-211",
+    "manufacturer": "Minuteman",
+    "model_number": "10E081",
+    "description": "Bag filter for vacuum system",
+    "cost_center_code": "000085C231",
+    "image": "images/3610008962.jpg?v=1784473324207"
+  },
+  {
+    "sap_id": "3610007521",
+    "name": "Hydraulic Hose",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-15-J04",
+    "manufacturer": "Parker",
+    "model_number": null,
+    "description": "Hose to clamp on welding side",
+    "cost_center_code": "000085C217",
+    "image": "images/3610007521.jpg?v=1784379924433"
+  },
+  {
+    "sap_id": "3610001984",
+    "name": "Control Unit",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "03-04-202",
+    "manufacturer": "Amada",
+    "model_number": "MNC60A1",
+    "description": "Welding Control Unit",
+    "cost_center_code": "000085C217",
+    "image": "images/3610001984.jpg?v=1785104620749"
+  },
+  {
+    "sap_id": "3610002311",
+    "name": "SuperFici Encoder",
+    "category": "CSB Coating/Phosphate",
+    "bin": "01-04-M08",
+    "manufacturer": "SuperFici",
+    "model_number": "MEENC009",
+    "description": "Paint booth entrance white belt motor encoder. 91680199",
+    "cost_center_code": "000085C308",
+    "image": "images/3610002311.jpg?v=1786301989658"
   }
 ]
