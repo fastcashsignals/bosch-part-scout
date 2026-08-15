@@ -1543,5 +1543,16 @@
     "description": "IMF spindle coolant flow sensor SV5610",
     "cost_center_code": "000085C217",
     "image": "images/3610005718.jpg?v=1786799786329"
+  },
+  {
+    "sap_id": "3610002024",
+    "name": "Power Cable",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "03-08-405",
+    "manufacturer": "Rexroth",
+    "model_number": "R911310651",
+    "description": null,
+    "cost_center_code": "000085C217",
+    "image": "images/3610002024.jpg?v=1786800482152"
   }
 ]
