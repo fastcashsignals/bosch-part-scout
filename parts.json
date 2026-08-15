@@ -1532,5 +1532,16 @@
     "description": "TC cell interface module for prox to plug into to HM transfer.",
     "cost_center_code": "000085C217",
     "image": "images/3610008109.jpg?v=1786311366383"
+  },
+  {
+    "sap_id": "3610005718",
+    "name": "IMF Efector SV5610 flow meter",
+    "category": "RSB TC/Wash/Temper/SS",
+    "bin": "01-17-G08",
+    "manufacturer": "IMF",
+    "model_number": "SV5610",
+    "description": "IMF spindle coolant flow sensor SV5610",
+    "cost_center_code": "000085C217",
+    "image": "images/3610005718.jpg?v=1786799786329"
   }
 ]
