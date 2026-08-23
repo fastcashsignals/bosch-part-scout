@@ -15938,5 +15938,81 @@
     "description": "Plate D0624 New US Demo",
     "cost_center_code": "000085C311",
     "additional_cost_centers": []
+  },
+  {
+    "sap_id": "3610003454",
+    "name": "Transport Container IBC Tote 275 Gal",
+    "category": "CSB Coating/Phosphate",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Transport Container IBC Tote 275 Gal",
+    "cost_center_code": "000085C308",
+    "additional_cost_centers": [
+      "000085C310",
+      "000085C217",
+      "000085C230",
+      "000085C309"
+    ]
+  },
+  {
+    "sap_id": "3610003455",
+    "name": "Drum Open Top 55 Gal Line",
+    "category": "CSB Laser",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Drum Open Top 55 Gal Line",
+    "cost_center_code": "000085C301",
+    "additional_cost_centers": [
+      "000085C217",
+      "000085C216",
+      "000085C308",
+      "000085C311",
+      "000085C306",
+      "000085C309",
+      "000085C218",
+      "000085C310"
+    ]
+  },
+  {
+    "sap_id": "3610003456",
+    "name": "Drum Closed 55 Gal Lined",
+    "category": "RSB Punch/Grind/Sand/Stamping",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Drum Closed 55 Gal Lined",
+    "cost_center_code": "000085C216",
+    "additional_cost_centers": [
+      "000085C308"
+    ]
+  },
+  {
+    "sap_id": "3610003457",
+    "name": "Drum Closed 30 Gal Lined",
+    "category": "RSB Paint and Print",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Drum Closed 30 Gal Lined",
+    "cost_center_code": "000085C218",
+    "additional_cost_centers": [
+      "000085C311",
+      "000085C306"
+    ]
+  },
+  {
+    "sap_id": "3610004118",
+    "name": "Chemicals DBT FE PLUS TTS",
+    "category": "CSB Coating/Phosphate",
+    "bin": null,
+    "manufacturer": null,
+    "model_number": null,
+    "description": "Chemicals DBT FE PLUS TTS",
+    "cost_center_code": "000085C308",
+    "additional_cost_centers": [
+      "000085C310"
+    ]
   }
 ]
