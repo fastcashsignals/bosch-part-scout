@@ -1166,12 +1166,12 @@
   {
     "sap_id": "3610003823",
     "name": "Sticker Hazardous Waste",
-    "category": "Direct - General",
+    "category": "CSB Coating/Phosphate",
     "bin": "01-35-F02 / 03-32-E01",
     "manufacturer": null,
     "model_number": null,
     "description": "Sticker Hazardous Waste",
-    "cost_center_code": "000085C242"
+    "cost_center_code": "000085C308"
   },
   {
     "sap_id": "3610004542",
@@ -1198,22 +1198,12 @@
   {
     "sap_id": "3610006343",
     "name": "Label Flammable Liquid DOT",
-    "category": "Direct - General",
+    "category": "CSB Coating/Phosphate",
     "bin": "01-35-D04 / 03-32-E07",
     "manufacturer": null,
     "model_number": null,
     "description": "Label Flammable Liquid DOT",
-    "cost_center_code": "000085C242"
-  },
-  {
-    "sap_id": "3610006584",
-    "name": "Bridge 45X50X278 - IVA",
-    "category": "Direct - General",
-    "bin": "02-17-C04",
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Bridge 45X50X278 - IVA",
-    "cost_center_code": "000085C233"
+    "cost_center_code": "000085C308"
   },
   {
     "sap_id": "3610007218",
