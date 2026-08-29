@@ -1747,6 +1747,9 @@
         photoClear.style.display = 'block';
         if (window._cropTool) window._cropTool.showBtn();
         photoArea.classList.add('has-image');
+        // Go straight to cropping so a new photo is one less tap. The full
+        // photo is already saved above, so backing out of the crop keeps it.
+        if (window._cropTool) window._cropTool.open();
       });
     });
 
@@ -2230,6 +2233,7 @@
     photoCropBtn.addEventListener('click', e => { e.stopPropagation(); openCrop(); });
 
     window._cropTool = {
+      open() { if (rawPhotoDataUrl) openCrop(); },
       setRaw(dataUrl) { rawPhotoDataUrl = dataUrl; },
       showBtn() { photoCropBtn.style.display = 'block'; },
       hideBtn() { photoCropBtn.style.display = 'none'; }
