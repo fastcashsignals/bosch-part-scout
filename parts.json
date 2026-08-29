@@ -4844,9 +4844,9 @@
     "description": "sand blaster GRIT 150 PA2",
     "cost_center_code": "000085C216",
     "additional_cost_centers": [
-      "000085C217",
-      "000085C309"
-    ]
+      "000085C217"
+    ],
+    "image": "images/3610002524.jpg?v=1788035539194"
   },
   {
     "sap_id": "3610002533",
