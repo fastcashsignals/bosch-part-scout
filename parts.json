@@ -13497,7 +13497,8 @@
     "model_number": "2610068973",
     "description": "Plate 1244X Cliche",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006210.png?v=1788099770448"
   },
   {
     "sap_id": "3610006212",
@@ -13508,7 +13509,8 @@
     "model_number": "2610072479",
     "description": "Plate 1260X Cliche",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006212.png?v=1788099770448"
   },
   {
     "sap_id": "3610006226",
