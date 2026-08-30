@@ -2120,22 +2120,38 @@
       cropImg.src = rawPhotoDataUrl;
     }
 
-    cropCanvas.addEventListener('touchstart', e => {
-      e.preventDefault();
-      if (e.touches.length !== 1) return;
+    // Pointer events rather than touch events, so the crop box can be dragged
+    // with a mouse or trackpad on a laptop as well as a finger on a phone.
+    function canvasPoint(e) {
       const rect = cropCanvas.getBoundingClientRect();
-      const tx = e.touches[0].clientX - rect.left;
-      const ty = e.touches[0].clientY - rect.top;
+      return { tx: e.clientX - rect.left, ty: e.clientY - rect.top };
+    }
+
+    const CURSOR_FOR = {
+      move: 'move', tl: 'nwse-resize', br: 'nwse-resize',
+      tr: 'nesw-resize', bl: 'nesw-resize'
+    };
+
+    cropCanvas.addEventListener('pointerdown', e => {
+      if (e.button !== 0) return;              // primary button / any touch
+      e.preventDefault();
+      const { tx, ty } = canvasPoint(e);
       dragging = hitTest(tx, ty);
       dragStart = { tx, ty, cropX, cropY, cropW, cropH };
-    }, { passive: false });
+      cropCanvas.setPointerCapture(e.pointerId);   // keep dragging outside the canvas
+    });
 
-    cropCanvas.addEventListener('touchmove', e => {
+    cropCanvas.addEventListener('pointermove', e => {
+      if (!dragging) {
+        // show what a handle does before it is grabbed (desktop only)
+        if (e.pointerType === 'mouse') {
+          const { tx, ty } = canvasPoint(e);
+          cropCanvas.style.cursor = CURSOR_FOR[hitTest(tx, ty)] || 'default';
+        }
+        return;
+      }
       e.preventDefault();
-      if (!dragging || e.touches.length !== 1) return;
-      const rect = cropCanvas.getBoundingClientRect();
-      const tx = e.touches[0].clientX - rect.left;
-      const ty = e.touches[0].clientY - rect.top;
+      const { tx, ty } = canvasPoint(e);
       const dx = tx - dragStart.tx;
       const dy = ty - dragStart.ty;
 
@@ -2165,9 +2181,16 @@
       }
       clampCropBox();
       drawCrop();
-    }, { passive: false });
+    });
 
-    cropCanvas.addEventListener('touchend', () => { dragging = null; }, { passive: true });
+    function endDrag(e) {
+      dragging = null;
+      if (e && e.pointerId !== undefined && cropCanvas.hasPointerCapture(e.pointerId)) {
+        cropCanvas.releasePointerCapture(e.pointerId);
+      }
+    }
+    cropCanvas.addEventListener('pointerup', endDrag);
+    cropCanvas.addEventListener('pointercancel', endDrag);
 
     document.getElementById('cropRotate').addEventListener('click', () => {
       rotation = (rotation + 90) % 360;
