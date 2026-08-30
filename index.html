@@ -1005,7 +1005,7 @@
       </div>
       <select class="machine-select" id="machineSelect">
         <option value="ALL">All Machines</option>
-        <optgroup label="PA2">
+        <optgroup label="Cost Center - PA2">
           <option value="000085C216">216 · RSB Punch/Grind/Sand/Stamping</option>
           <option value="000085C217">217 · RSB TC/Wash/Temper/SS</option>
           <option value="000085C218">218 · RSB Paint and Print</option>
@@ -1016,7 +1016,7 @@
           <option value="000085C230">230 · RSB Ultrasonic Cleaner</option>
           <option value="000085C231">231 · RSB Shrink Tunnel</option>
         </optgroup>
-        <optgroup label="PA3">
+        <optgroup label="Cost Center - PA3">
           <option value="000085C301">301 · CSB Laser</option>
           <option value="000085C303">303 · CSB Annealing</option>
           <option value="000085C306">306 · CSB Brazing</option>
@@ -1028,7 +1028,7 @@
           <option value="000085C313">313 · CSB Packaging Clamshell</option>
           <option value="000085C314">314 · CSB Packaging Manual</option>
         </optgroup>
-        <optgroup label="TEF">
+        <optgroup label="Cost Center - TEF">
           <option value="000085C082">082 · Direct - General</option>
         </optgroup>
       </select>
@@ -1069,7 +1069,7 @@
         <label>Machine / Cost Center <span class="required">*</span></label>
         <select id="costCenter" required>
           <option value="" disabled selected>Pick a cost center</option>
-          <optgroup label="PA2">
+          <optgroup label="Cost Center - PA2">
             <option value="000085C216">216 · RSB Punch/Grind/Sand/Stamping</option>
             <option value="000085C217">217 · RSB TC/Wash/Temper/SS</option>
             <option value="000085C218">218 · RSB Paint and Print</option>
@@ -1080,7 +1080,7 @@
             <option value="000085C230">230 · RSB Ultrasonic Cleaner</option>
             <option value="000085C231">231 · RSB Shrink Tunnel</option>
           </optgroup>
-          <optgroup label="PA3">
+          <optgroup label="Cost Center - PA3">
             <option value="000085C301">301 · CSB Laser</option>
             <option value="000085C303">303 · CSB Annealing</option>
             <option value="000085C306">306 · CSB Brazing</option>
@@ -1092,7 +1092,7 @@
             <option value="000085C313">313 · CSB Packaging Clamshell</option>
             <option value="000085C314">314 · CSB Packaging Manual</option>
           </optgroup>
-          <optgroup label="TEF">
+          <optgroup label="Cost Center - TEF">
             <option value="000085C082">082 · Direct - General</option>
           </optgroup>
         </select>
@@ -1102,7 +1102,7 @@
         <label>Additional Machine / Cost Center <span style="font-weight:400;font-size:13px;color:var(--muted)">(optional — if part is used on multiple machines)</span></label>
         <select id="costCenter2">
           <option value="">None</option>
-          <optgroup label="PA2">
+          <optgroup label="Cost Center - PA2">
             <option value="000085C216">216 · RSB Punch/Grind/Sand/Stamping</option>
             <option value="000085C217">217 · RSB TC/Wash/Temper/SS</option>
             <option value="000085C218">218 · RSB Paint and Print</option>
@@ -1113,7 +1113,7 @@
             <option value="000085C230">230 · RSB Ultrasonic Cleaner</option>
             <option value="000085C231">231 · RSB Shrink Tunnel</option>
           </optgroup>
-          <optgroup label="PA3">
+          <optgroup label="Cost Center - PA3">
             <option value="000085C301">301 · CSB Laser</option>
             <option value="000085C303">303 · CSB Annealing</option>
             <option value="000085C306">306 · CSB Brazing</option>
@@ -1125,7 +1125,7 @@
             <option value="000085C313">313 · CSB Packaging Clamshell</option>
             <option value="000085C314">314 · CSB Packaging Manual</option>
           </optgroup>
-          <optgroup label="TEF">
+          <optgroup label="Cost Center - TEF">
             <option value="000085C082">082 · Direct - General</option>
           </optgroup>
         </select>
@@ -1306,23 +1306,10 @@
     });
 
     function updateDropdownCounts() {
-      // Count a part under every cost center it serves, primary and additional,
-      // so the number here matches what selecting that machine actually shows.
-      const counts = {};
-      allParts.forEach(p => {
-        const ccs = new Set([p.cost_center_code, ...(p.additional_cost_centers || [])]);
-        ccs.forEach(cc => { counts[cc] = (counts[cc] || 0) + 1; });
-      });
-
-      Array.from(machineSelect.options).forEach(opt => {
-        if (opt.value === 'ALL') {
-          opt.textContent = `All Machines (${allParts.length})`;
-        } else if (COST_CENTERS[opt.value]) {
-          const count = counts[opt.value] || 0;
-          const suffix = opt.value.slice(-3);
-          opt.textContent = `${suffix} · ${COST_CENTERS[opt.value].name} (${count})`;
-        }
-      });
+      // Only the "All Machines" row carries a count. The individual machines
+      // keep their plain "216 · Name" label from the markup.
+      const allOpt = machineSelect.querySelector('option[value="ALL"]');
+      if (allOpt) allOpt.textContent = `All Machines (${allParts.length})`;
     }
 
     function doSearch() {
