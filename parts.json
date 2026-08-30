@@ -4689,7 +4689,7 @@
     "model_number": null,
     "description": "Pulley BELT 400-212 3NINE",
     "cost_center_code": "000085C312",
-    "additional_cost_centers": []
+    "image": "images/3610002446.jpg?v=1788097395662"
   },
   {
     "sap_id": "3610002447",
@@ -4714,9 +4714,9 @@
     "description": "Tape 2 X 1000 3M MACHINE",
     "cost_center_code": "000085C312",
     "additional_cost_centers": [
-      "000085C311",
-      "000085C309"
-    ]
+      "000085C311"
+    ],
+    "image": "images/3610002449.jpg?v=1788097436840"
   },
   {
     "sap_id": "3610002451",
