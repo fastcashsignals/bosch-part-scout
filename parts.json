@@ -6703,11 +6703,9 @@
     "description": "Pad CLEAN TAPE PA3",
     "cost_center_code": "000085C311",
     "additional_cost_centers": [
-      "000085C310",
-      "000085C312",
-      "000085C308",
-      "000085C309"
-    ]
+      "000085C310"
+    ],
+    "image": "images/3610003338.jpg?v=1788068866281"
   },
   {
     "sap_id": "3610003346",
