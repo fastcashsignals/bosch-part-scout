@@ -6818,10 +6818,9 @@
     "description": "Coolant additive Grotan Biocide",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C216",
-      "000085C309",
-      "000085C306"
-    ]
+      "000085C216"
+    ],
+    "image": "images/3610003371.jpg?v=1788097966104"
   },
   {
     "sap_id": "3610003377",
