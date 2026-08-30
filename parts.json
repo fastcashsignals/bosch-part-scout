@@ -12255,7 +12255,8 @@
     "model_number": null,
     "description": "Printer RH Print Engine",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005283.jpg?v=1788099639919"
   },
   {
     "sap_id": "3610005289",
@@ -13392,7 +13393,8 @@
     "model_number": null,
     "description": "Solenoid Valve SY7120-5Y0-02F-Q",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006101.jpg?v=1788099639919"
   },
   {
     "sap_id": "3610006113",
@@ -13572,7 +13574,8 @@
     "model_number": null,
     "description": "Retaining disk Marking Label Unwind",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006234.jpg?v=1788099639919"
   },
   {
     "sap_id": "3610006235",
