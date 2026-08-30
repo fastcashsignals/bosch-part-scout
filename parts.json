@@ -1466,7 +1466,8 @@
     "manufacturer": "Festo",
     "model_number": "VN-14-H-T4-PQ3-VQ3-R02-B",
     "description": "Used on Blister Robot",
-    "cost_center_code": "000085C312"
+    "cost_center_code": "000085C312",
+    "image": "images/3610003696.jpg?v=1788097324104"
   },
   {
     "sap_id": "3610008962",
@@ -1771,7 +1772,7 @@
     "model_number": null,
     "description": "Solenoid Valve CGM",
     "cost_center_code": "000085C312",
-    "additional_cost_centers": []
+    "image": "images/3610000358.jpg?v=1788097366839"
   },
   {
     "sap_id": "3610000387",
