@@ -5683,10 +5683,9 @@
     "description": "Floor sticker Hazard",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C220",
-      "000085C218",
-      "000085C308"
-    ]
+      "000085C220"
+    ],
+    "image": "images/3610002855.jpg?v=1788097393243"
   },
   {
     "sap_id": "3610002857",
