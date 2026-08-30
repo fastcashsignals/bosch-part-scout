@@ -10791,9 +10791,9 @@
     "description": "Tape Electrical Tape",
     "cost_center_code": "000085C216",
     "additional_cost_centers": [
-      "000085C218",
-      "000085C217"
-    ]
+      "000085C218"
+    ],
+    "image": "images/3610004570.jpg?v=1788093960518"
   },
   {
     "sap_id": "3610004571",
