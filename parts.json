@@ -1931,9 +1931,9 @@
     "description": "Putty 2\" FLEX KNIFE",
     "cost_center_code": "000085C314",
     "additional_cost_centers": [
-      "000085C311",
-      "000085C308"
-    ]
+      "000085C311"
+    ],
+    "image": "images/3610000685.jpg?v=1788086184600"
   },
   {
     "sap_id": "3610000686",
