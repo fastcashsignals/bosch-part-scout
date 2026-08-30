@@ -6051,12 +6051,9 @@
     "description": "Proximity Switch IE5390",
     "cost_center_code": "000085C312",
     "additional_cost_centers": [
-      "000085C309",
-      "000085C216",
-      "000085C301",
-      "000085C311",
-      "000085C217"
-    ]
+      "000085C309"
+    ],
+    "image": "images/3610003092.jpg?v=1788097486366"
   },
   {
     "sap_id": "3610003093",
