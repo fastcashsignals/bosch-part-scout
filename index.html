@@ -1231,14 +1231,44 @@
       search: document.getElementById('searchPanel'),
       submit: document.getElementById('submitPanel')
     };
+    // html and body are height:100% with overflow-x:hidden, which makes BODY
+    // the element that actually scrolls — not the window. window.scrollTo()
+    // and window.scrollY are no-ops here, so everything goes through this.
+    function scrollHost() {
+      return document.body.scrollHeight > document.body.clientHeight
+        ? document.body
+        : (document.scrollingElement || document.documentElement);
+    }
+    function scrollHostTo(top, smooth) {
+      const el = scrollHost();
+      if (smooth && el.scrollTo) el.scrollTo({ top, behavior: 'smooth' });
+      else el.scrollTop = top;
+    }
+
+    // Where the tech was in the results list, so editing a part and coming
+    // back doesn't dump them at the top of 1,300 parts again.
+    let searchScrollY = 0;
+
     document.querySelectorAll('.tab').forEach(tab => {
       tab.addEventListener('click', () => {
         const name = tab.dataset.tab;
+        if (name !== 'search' && panels.search.classList.contains('active')) {
+          searchScrollY = scrollHost().scrollTop;
+        }
         document.querySelectorAll('.tab').forEach(t => t.classList.toggle('active', t === tab));
         Object.entries(panels).forEach(([key, el]) => el.classList.toggle('active', key === name));
-        window.scrollTo(0, 0);
+
         if (name === 'search') {
-          setTimeout(() => document.getElementById('searchInput').focus(), 50);
+          // wait for the panel to lay out before restoring, or there is
+          // nothing to scroll through yet
+          requestAnimationFrame(() => scrollHostTo(searchScrollY));
+          // Only take focus when they're at the top. Mid-list, focusing pops
+          // the keyboard over the results they came back to look at.
+          if (searchScrollY < 40) {
+            setTimeout(() => document.getElementById('searchInput').focus(), 50);
+          }
+        } else {
+          scrollHostTo(0);
         }
       });
     });
@@ -1506,7 +1536,7 @@
       document.querySelector('.tab[data-tab="submit"]').click();
       sapLast4El.value = sap.slice(-4);
       autoFillFromCatalog();
-      window.scrollTo(0, 0);
+      scrollHostTo(0);
     });
 
     // Delete part: confirm, then require the PIN (validated by the Worker).
@@ -1756,7 +1786,7 @@
       statusEl.textContent = (type === 'error' ? '⚠ ' : '') + msg;
       statusEl.className = 'status ' + type + ' show';
       if (type === 'error') {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        scrollHostTo(0, true);
       }
     }
 
