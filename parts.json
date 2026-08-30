@@ -5715,13 +5715,9 @@
     "description": "Floor sticker L White Tape",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C220",
-      "000085C216",
-      "000085C221",
-      "000085C218",
-      "000085C306",
-      "000085C308"
-    ]
+      "000085C220"
+    ],
+    "image": "images/3610002858.jpg?v=1788097456500"
   },
   {
     "sap_id": "3610002860",
@@ -5774,7 +5770,8 @@
     "cost_center_code": "000085C312",
     "additional_cost_centers": [
       "000085C310"
-    ]
+    ],
+    "image": "images/3610002918.jpg?v=1788097460794"
   },
   {
     "sap_id": "3610002919",
