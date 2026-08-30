@@ -15420,12 +15420,12 @@
   {
     "sap_id": "3610008799",
     "name": "Fan TC Cells",
-    "category": "RSB Punch/Grind/Sand/Stamping",
+    "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-07-106",
     "manufacturer": null,
     "model_number": null,
     "description": "Fan TC Cells",
-    "cost_center_code": "000085C216",
+    "cost_center_code": "000085C217",
     "image": "images/3610008799.jpg?v=1788092484453"
   },
   {
