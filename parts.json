@@ -14987,11 +14987,11 @@
     "name": "Cylinder ADN-S-12-10-A-P",
     "category": "RSB Paint and Print",
     "bin": "02-17-K02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Festo",
+    "model_number": "ADN-S-12-10-A-P",
     "description": "Cylinder ADN-S-12-10-A-P",
     "cost_center_code": "000085C218",
-    "additional_cost_centers": []
+    "image": "images/3610008138.jpg?v=1788632630859"
   },
   {
     "sap_id": "3610008185",
