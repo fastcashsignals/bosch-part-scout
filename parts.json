@@ -8319,14 +8319,14 @@
     "name": "Sensor Keyence Amp LV-N11CP",
     "category": "RSB Paint and Print",
     "bin": "01-32-M02 / 03-22-J05",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Keyence",
+    "model_number": "LV-N11CP",
     "description": "Sensor Keyence Amp LV-N11CP",
     "cost_center_code": "000085C218",
     "additional_cost_centers": [
-      "000085C229",
-      "000085C217"
-    ]
+      "000085C229"
+    ],
+    "image": "images/3610003729.jpg?v=1788632878389"
   },
   {
     "sap_id": "3610003730",
