@@ -8453,11 +8453,11 @@
     "name": "angle seat valve CHILL WATER 7012761",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-39-H04",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "MC MASTER CARR SUPPLY COMPANY",
+    "model_number": "5200T41",
     "description": "angle seat valve CHILL WATER 7012761",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610003770.jpg?v=1788640261838"
   },
   {
     "sap_id": "3610003771",
