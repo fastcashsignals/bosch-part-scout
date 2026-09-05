@@ -2354,11 +2354,11 @@
     "name": "Control Valve Directional valve",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-26-A04",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Aventics",
+    "model_number": "0820 038 126",
     "description": "Control Valve Directional valve",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610001490.jpg?v=1788640073642"
   },
   {
     "sap_id": "3610001491",
