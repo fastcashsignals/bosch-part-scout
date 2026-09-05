@@ -16001,5 +16001,16 @@
     "additional_cost_centers": [
       "000085C310"
     ]
+  },
+  {
+    "sap_id": "3610007909",
+    "name": "Proximity Sensor for Algus",
+    "category": "RSB Clamshell Packaging",
+    "bin": "01-04-G16",
+    "manufacturer": "Automation Direct",
+    "model_number": "AK1-AP-2H",
+    "description": "Algus exit conveyor arm sensor",
+    "cost_center_code": "000085C220",
+    "image": "images/3610007909.jpg?v=1788622134161"
   }
 ]
