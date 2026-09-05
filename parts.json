@@ -8333,11 +8333,11 @@
     "name": "Sensor Keyence LV-NH32",
     "category": "RSB Paint and Print",
     "bin": "01-32-M03 / 03-22-K01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Keyence",
+    "model_number": "LV-NH32",
     "description": "Sensor Keyence LV-NH32",
     "cost_center_code": "000085C218",
-    "additional_cost_centers": []
+    "image": "images/3610003730.jpg?v=1788632974821"
   },
   {
     "sap_id": "3610003731",
