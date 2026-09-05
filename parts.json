@@ -12625,11 +12625,11 @@
     "name": "Measured-Value Pick-Up Staging sensorLVN",
     "category": "RSB Paint and Print",
     "bin": "01-26-M06",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Keyence",
+    "model_number": "LV-NH42",
     "description": "Measured-Value Pick-Up Staging sensorLVN",
     "cost_center_code": "000085C218",
-    "additional_cost_centers": []
+    "image": "images/3610005428.jpg?v=1788632526417"
   },
   {
     "sap_id": "3610005436",
