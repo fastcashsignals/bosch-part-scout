@@ -12183,11 +12183,11 @@
     "name": "Fuse FWP-32A14F",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-39-E05",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Grainger",
+    "model_number": "1EH96",
     "description": "Fuse FWP-32A14F",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610005190.jpg?v=1788713671345"
   },
   {
     "sap_id": "3610005214",
