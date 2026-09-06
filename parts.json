@@ -16123,11 +16123,11 @@
     "name": "Spare Part W665113525",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-28-C09",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Lincoln County Fabricators",
+    "model_number": "W 665 113 525",
     "description": "Spare Part W665113525",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610009486.jpg?v=1788718309428"
   },
   {
     "sap_id": "3610009515",
