@@ -9858,11 +9858,11 @@
     "name": "Locating element W601105472-2",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-41-M01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Lincoln County Fabricators",
+    "model_number": "W601105472-2",
     "description": "Locating element W601105472-2",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610004191.jpg?v=1788710578187"
   },
   {
     "sap_id": "3610004199",
