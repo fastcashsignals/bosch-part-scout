@@ -10291,11 +10291,11 @@
     "name": "Tool W601105431-2",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-41-N02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Lincoln County Fabricators",
+    "model_number": "W601105431-2",
     "description": "Tool W601105431-2",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610004384.jpg?v=1788710835325"
   },
   {
     "sap_id": "3610004388",
