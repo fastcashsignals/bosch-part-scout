@@ -14625,11 +14625,11 @@
     "name": "Coupling Repair Kit",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-15-A07",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Wholesale Industrial Electronics",
+    "model_number": "CLR-0131-461",
     "description": "Coupling Repair Kit",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610007454.jpg?v=1788716571274"
   },
   {
     "sap_id": "3610007457",
