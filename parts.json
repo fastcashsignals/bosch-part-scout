@@ -10910,15 +10910,14 @@
     "name": "Floor sticker Floor Tape Safety",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-35-G02 / 03-32-A02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Lean Factory America",
+    "model_number": "LG50-STRIP-RW",
     "description": "Floor sticker Floor Tape Safety",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C220",
-      "000085C308",
-      "000085C306"
-    ]
+      "000085C220"
+    ],
+    "image": "images/3610004574.jpg?v=1788712523513"
   },
   {
     "sap_id": "3610004576",
