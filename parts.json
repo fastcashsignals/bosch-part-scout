@@ -2420,9 +2420,9 @@
     "description": "Tooling Loader W685105011",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C216",
-      "000085C218"
-    ]
+      "000085C216"
+    ],
+    "image": "images/3610001509.jpg?v=1788697113801"
   },
   {
     "sap_id": "3610001563",
