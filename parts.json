@@ -3779,11 +3779,11 @@
     "name": "Keyboard Logitech K400 PLUS",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-09-L02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "CDW",
+    "model_number": "K 400 PLUS TV",
     "description": "Keyboard Logitech K400 PLUS",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610001990.jpg?v=1788705569797"
   },
   {
     "sap_id": "3610001992",
