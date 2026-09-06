@@ -14195,14 +14195,14 @@
     "name": "Safety Switch 6N000025 OMT Weld Ga",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-02-E06",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Pilz",
+    "model_number": "6N000025",
     "description": "Safety Switch 6N000025 OMT Weld Ga",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C216",
-      "000085C218"
-    ]
+      "000085C216"
+    ],
+    "image": "images/3610006988.jpg?v=1788716351116"
   },
   {
     "sap_id": "3610006992",
