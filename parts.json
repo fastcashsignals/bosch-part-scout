@@ -13541,11 +13541,11 @@
     "name": "Cable M8-F 8 Poles 10m",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-35-B03",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "PILZ AUTOMATION SAFETY LP",
+    "model_number": "533152",
     "description": "Cable M8-F 8 Poles 10m",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610006145.jpg?v=1788715808186"
   },
   {
     "sap_id": "3610006153",
