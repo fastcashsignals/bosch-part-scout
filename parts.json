@@ -7664,11 +7664,11 @@
     "name": "Tooling W601105454 Setting",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-41-A05",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Bosch Machine Shop",
+    "model_number": "W601105454",
     "description": "Tooling W601105454 Setting",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610003597.jpg?v=1788706114846"
   },
   {
     "sap_id": "3610003600",
