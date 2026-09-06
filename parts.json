@@ -13606,7 +13606,8 @@
     "model_number": null,
     "description": "Spare Part stamp-8211 tungsten",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006226.jpg?v=1788705000619"
   },
   {
     "sap_id": "3610006227",
@@ -14839,7 +14840,8 @@
     "cost_center_code": "000085C220",
     "additional_cost_centers": [
       "000085C218"
-    ]
+    ],
+    "image": "images/3610007828.jpg?v=1788705000619"
   },
   {
     "sap_id": "3610007829",
@@ -14854,7 +14856,8 @@
       "000085C221",
       "000085C229",
       "000085C308"
-    ]
+    ],
+    "image": "images/3610007829.jpg?v=1788705000619"
   },
   {
     "sap_id": "3610007837",
