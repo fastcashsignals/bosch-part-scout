@@ -3396,11 +3396,11 @@
     "name": "Blade Guide MXQ12-10",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-28-F01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "SMC Pneumatik GmbH",
+    "model_number": "MXQ12-10",
     "description": "Blade Guide MXQ12-10",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610001850.jpg?v=1788704757244"
   },
   {
     "sap_id": "3610001853",
