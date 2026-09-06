@@ -12901,11 +12901,11 @@
     "name": "Spare Part TC afag-rail bottom",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-15-E05",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Alexander Schaeff, Inc",
+    "model_number": "50478729",
     "description": "Spare Part TC afag-rail bottom",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610005511.jpg?v=1788715043368"
   },
   {
     "sap_id": "3610005512",
