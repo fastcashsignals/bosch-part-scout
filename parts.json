@@ -14588,11 +14588,11 @@
     "name": "Proximity Sensor BES 516-370-E5-C-S4",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-46-A07",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "BALLUFF",
+    "model_number": "BES00YT",
     "description": "Proximity Sensor BES 516-370-E5-C-S4",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610007373.jpg?v=1788716416371"
   },
   {
     "sap_id": "3610007374",
