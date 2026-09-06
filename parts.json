@@ -14140,11 +14140,11 @@
     "name": "Tooling TC W665114145 Pusher",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-15-A01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "James Tool Machine & Engineering",
+    "model_number": "W665114145",
     "description": "Tooling TC W665114145 Pusher",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610006852.jpg?v=1788716287974"
   },
   {
     "sap_id": "3610006885",
