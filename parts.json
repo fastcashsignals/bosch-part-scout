@@ -10341,12 +10341,12 @@
   {
     "sap_id": "3610004363",
     "name": "measuring probe New style marposs",
-    "category": "CSB Brazing",
+    "category": "CSB Grinding",
     "bin": "01-43-K04",
     "manufacturer": null,
     "model_number": null,
     "description": "measuring probe New style marposs",
-    "cost_center_code": "000085C306",
+    "cost_center_code": "000085C309",
     "image": "images/3610004363.jpg?v=1788732641110"
   },
   {
