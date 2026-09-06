@@ -3790,11 +3790,11 @@
     "name": "Linear Slide REXROTH TC CELL",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-11-301",
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Linear Slide REXROTH TC CELL",
+    "manufacturer": "Rexroth",
+    "model_number": "R055717588",
+    "description": "Z Axis stations 2,3,4",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610001992.jpg?v=1788705705307"
   },
   {
     "sap_id": "3610001993",
