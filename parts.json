@@ -1173,7 +1173,8 @@
     "manufacturer": null,
     "model_number": null,
     "description": "Sticker Hazardous Waste",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610003823.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004542",
@@ -1205,7 +1206,8 @@
     "manufacturer": null,
     "model_number": null,
     "description": "Label Flammable Liquid DOT",
-    "cost_center_code": "000085C308"
+    "cost_center_code": "000085C308",
+    "image": "images/3610006343.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610007218",
@@ -1761,7 +1763,8 @@
     "model_number": null,
     "description": "Encoder COUPLING",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610000315.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610000358",
@@ -1901,7 +1904,8 @@
     "model_number": null,
     "description": "Proximity Sensor EDGE DETECT NEW LM",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610000668.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610000674",
@@ -3291,7 +3295,8 @@
     "model_number": null,
     "description": "Connector Unit JAEGER J 4315 190 06",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610001788.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610001794",
@@ -3444,7 +3449,8 @@
       "000085C309",
       "000085C216",
       "000085C218"
-    ]
+    ],
+    "image": "images/3610001857.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610001859",
@@ -4335,7 +4341,8 @@
       "000085C309",
       "000085C218",
       "000085C301"
-    ]
+    ],
+    "image": "images/3610002227.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610002230",
@@ -4534,7 +4541,8 @@
     "model_number": null,
     "description": "Filter FT 4RA 665 X 1375 MM",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002289.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610002292",
@@ -4547,7 +4555,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C301"
-    ]
+    ],
+    "image": "images/3610002292.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610002296",
@@ -4558,7 +4567,8 @@
     "model_number": null,
     "description": "Roller Rubber CSB coating",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002296.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610002298",
@@ -4569,7 +4579,8 @@
     "model_number": null,
     "description": "Chain Link joint for 1/2\" sing",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002298.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610002303",
@@ -4580,7 +4591,8 @@
     "model_number": null,
     "description": "Plastic Bar Paint Scraper",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002303.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610002309",
@@ -4591,7 +4603,8 @@
     "model_number": null,
     "description": "Reader Bar Sick 10MM PA3",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002309.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610002353",
@@ -4775,7 +4788,8 @@
     "model_number": null,
     "description": "Stripper sleeve SURSTRIP MSS010045",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002457.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610002459",
@@ -4789,7 +4803,8 @@
     "additional_cost_centers": [
       "000085C217",
       "000085C220"
-    ]
+    ],
+    "image": "images/3610002459.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610002474",
@@ -5604,7 +5619,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C310"
-    ]
+    ],
+    "image": "images/3610002768.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610002779",
@@ -5701,7 +5717,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C310"
-    ]
+    ],
+    "image": "images/3610002831.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610002855",
@@ -5960,7 +5977,8 @@
     "model_number": null,
     "description": "O-Ring Seal black 168x5 KFM",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002988.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003027",
@@ -6402,7 +6420,8 @@
     "model_number": null,
     "description": "Filter CARTIDGE PA3",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003155.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003179",
@@ -6413,7 +6432,8 @@
     "model_number": null,
     "description": "Pressure transducer 3100B0007G01E000",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003179.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003192",
@@ -6424,7 +6444,8 @@
     "model_number": null,
     "description": "Flat-Spray Nozzle red",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003192.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003193",
@@ -7231,7 +7252,8 @@
       "000085C301",
       "000085C310",
       "000085C217"
-    ]
+    ],
+    "image": "images/3610003496.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003498",
@@ -7317,7 +7339,8 @@
       "000085C301",
       "000085C303",
       "000085C314"
-    ]
+    ],
+    "image": "images/3610003504.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003515",
@@ -8475,7 +8498,8 @@
     "model_number": null,
     "description": "Pre-Assembly UPPER SQUEEZE SHAFT",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003750.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003752",
@@ -8486,7 +8510,8 @@
     "model_number": null,
     "description": "Pre-Assembly Lower Squeegee roll",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003752.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003767",
@@ -8600,7 +8625,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C310"
-    ]
+    ],
+    "image": "images/3610003781.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003782",
@@ -8633,7 +8659,8 @@
     "model_number": null,
     "description": "Motor-gearbox assembly Coating Manipulat",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003785.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003786",
@@ -8781,7 +8808,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C311"
-    ]
+    ],
+    "image": "images/3610003803.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003804",
@@ -8792,7 +8820,8 @@
     "model_number": null,
     "description": "Filter bag Vacuum Bag",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003804.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003805",
@@ -8839,7 +8868,8 @@
     "model_number": null,
     "description": "Shaft Coupling Encoder to Motor",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003808.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003809",
@@ -8976,7 +9006,8 @@
     "model_number": null,
     "description": "Supply Pump CXM130FTT SUCTION",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003869.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003871",
@@ -8987,7 +9018,8 @@
     "model_number": null,
     "description": "Safety Switch SAFETY SWITCH TZ1",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003871.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003877",
@@ -8998,7 +9030,8 @@
     "model_number": null,
     "description": "Nozzle FOR PIPE",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003877.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003879",
@@ -9009,7 +9042,8 @@
     "model_number": null,
     "description": "O-Ring Seal HOUSING GASKET",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003879.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003890",
@@ -9037,7 +9071,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C310"
-    ]
+    ],
+    "image": "images/3610003904.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003918",
@@ -9198,7 +9233,8 @@
     "model_number": null,
     "description": "Infrared Lamp IRM 3500W",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003982.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003983",
@@ -9209,7 +9245,8 @@
     "model_number": null,
     "description": "Infrared Lamp IRS 7000W",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003983.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003992",
@@ -9297,7 +9334,8 @@
     "model_number": null,
     "description": "Belt Guide Profile Channel 2 BeltFlange",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004000.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004001",
@@ -9367,7 +9405,8 @@
     "model_number": null,
     "description": "Cap Nut Channel 2 Spindle",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004010.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004013",
@@ -9389,7 +9428,8 @@
     "model_number": null,
     "description": "Toothed Pulley 223400007",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004014.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004018",
@@ -9435,7 +9475,8 @@
     "model_number": null,
     "description": "Motor Air Blower",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004030.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004031",
@@ -9563,7 +9604,8 @@
     "model_number": null,
     "description": "Air Filter Oven Inlet 40001002",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004070.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004071",
@@ -9588,7 +9630,8 @@
     "model_number": null,
     "description": "Connecting Cable NEBUM8G3-K-2.5-LE3",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004073.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004085",
@@ -9702,7 +9745,8 @@
     "model_number": null,
     "description": "Spray nozzle Spray Gun Cap",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004102.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004109",
@@ -9755,7 +9799,8 @@
       "000085C309",
       "000085C306",
       "000085C218"
-    ]
+    ],
+    "image": "images/3610004121.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004122",
@@ -9769,7 +9814,8 @@
     "additional_cost_centers": [
       "000085C306",
       "000085C309"
-    ]
+    ],
+    "image": "images/3610004122.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004141",
@@ -9780,7 +9826,8 @@
     "model_number": null,
     "description": "Synchronous Motor 1FK70322AK711RH0",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004141.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004149",
@@ -10019,7 +10066,8 @@
     "model_number": null,
     "description": "Chain Guide Chain Guide 218 mm",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004238.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004253",
@@ -10268,7 +10316,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C309"
-    ]
+    ],
+    "image": "images/3610004373.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004376",
@@ -10283,7 +10332,8 @@
       "000085C306",
       "000085C309",
       "000085C310"
-    ]
+    ],
+    "image": "images/3610004376.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004381",
@@ -10294,7 +10344,8 @@
     "model_number": null,
     "description": "Roller Assembly Pos.6 Roller Assy",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004381.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004383",
@@ -10371,7 +10422,8 @@
       "000085C218",
       "000085C217",
       "000085C216"
-    ]
+    ],
+    "image": "images/3610004398.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004402",
@@ -10748,7 +10800,8 @@
     "model_number": null,
     "description": "Adhesive Film 3M Rail cover roll",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004510.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004527",
@@ -10783,7 +10836,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C218"
-    ]
+    ],
+    "image": "images/3610004543.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004544",
@@ -10818,7 +10872,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C309"
-    ]
+    ],
+    "image": "images/3610004553.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004566",
@@ -10879,7 +10934,8 @@
     "model_number": null,
     "description": "Centrifugal Pump Heat Exchanger Pump",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004571.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004572",
@@ -10944,7 +11000,8 @@
     "model_number": null,
     "description": "Centering Pin A15404M060",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004577.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004578",
@@ -10955,7 +11012,8 @@
     "model_number": null,
     "description": "Spanner Wrench Spanner Wrench",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004578.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004579",
@@ -10966,7 +11024,8 @@
     "model_number": null,
     "description": "Drive Motor HEFIE3 112M/2A WUX",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004579.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004581",
@@ -10977,7 +11036,8 @@
     "model_number": null,
     "description": "Filter element Sludge InsertF01.61B",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004581.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004583",
@@ -10988,7 +11048,8 @@
     "model_number": null,
     "description": "O-Ring Driver O-ring",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004583.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004586",
@@ -11010,7 +11071,8 @@
     "model_number": null,
     "description": "O-Ring Drum O-ring",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004591.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004600",
@@ -11021,7 +11083,8 @@
     "model_number": null,
     "description": "Conveyor Belt Spray Booth Belt",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004600.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004623",
@@ -11034,7 +11097,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C301"
-    ]
+    ],
+    "image": "images/3610004623.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004629",
@@ -11138,7 +11202,8 @@
     "model_number": null,
     "description": "Supporting Device Bushing Support",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004674.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004681",
@@ -11151,7 +11216,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C310"
-    ]
+    ],
+    "image": "images/3610004681.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004683",
@@ -11162,7 +11228,8 @@
     "model_number": null,
     "description": "Sensor Float AES/AP-1F",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004683.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004686",
@@ -11173,7 +11240,8 @@
     "model_number": null,
     "description": "Supporting Device Low Float Rod",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004686.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004687",
@@ -11184,7 +11252,8 @@
     "model_number": null,
     "description": "Float Float Sphere",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004687.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004692",
@@ -11195,7 +11264,8 @@
     "model_number": null,
     "description": "Spray Pipe Spray Pipe 8",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004692.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004693",
@@ -11206,7 +11276,8 @@
     "model_number": null,
     "description": "Spray Pipe 7-  3.06.802941",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004693.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004695",
@@ -11217,7 +11288,8 @@
     "model_number": null,
     "description": "Float switch Level Switch",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004695.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004698",
@@ -11228,7 +11300,8 @@
     "model_number": null,
     "description": "Spray Pipe 7 nozzle",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004698.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004699",
@@ -11239,7 +11312,8 @@
     "model_number": null,
     "description": "Spray Pipe 8 nozzle",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004699.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004702",
@@ -11250,7 +11324,8 @@
     "model_number": null,
     "description": "Supply Pump Dosing Pump",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004702.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004724",
@@ -11299,7 +11374,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C301"
-    ]
+    ],
+    "image": "images/3610004736.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004738",
@@ -11342,7 +11418,8 @@
       "000085C301",
       "000085C217",
       "000085C306"
-    ]
+    ],
+    "image": "images/3610004741.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004743",
@@ -11767,7 +11844,8 @@
     "model_number": null,
     "description": "Caster Wheel Revolv 125X40",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004948.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004949",
@@ -11778,7 +11856,8 @@
     "model_number": null,
     "description": "Caster Wheel Fixed 125 X 40",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004949.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610004956",
@@ -11823,7 +11902,8 @@
     "model_number": null,
     "description": "Motor SA37DR63M4",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004996.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005007",
@@ -11846,7 +11926,8 @@
     "model_number": null,
     "description": "Cap Blue Filter Head",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005008.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005012",
@@ -11923,7 +12004,8 @@
     "model_number": null,
     "description": "Chain Phosphate Chain SS",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005064.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005094",
@@ -11978,7 +12060,8 @@
     "model_number": null,
     "description": "Pump ETB 080-065-200 3,7",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005106.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005132",
@@ -12094,7 +12177,8 @@
     "additional_cost_centers": [
       "000085C309",
       "000085C310"
-    ]
+    ],
+    "image": "images/3610005178.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005183",
@@ -12143,7 +12227,8 @@
     "model_number": null,
     "description": "combination wrench 10mm box wrench comb",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005186.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005187",
@@ -12275,7 +12360,8 @@
     "model_number": null,
     "description": "Ball screw RDS 40pitch 10L=47mm",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005233.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005242",
@@ -12399,7 +12485,8 @@
       "000085C218",
       "000085C309",
       "000085C306"
-    ]
+    ],
+    "image": "images/3610005291.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005293",
@@ -12434,7 +12521,8 @@
     "model_number": null,
     "description": "Compact Module CKR-090-NN-1",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005322.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005324",
@@ -12623,7 +12711,8 @@
     "model_number": null,
     "description": "Roller Entry Drive",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005397.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005399",
@@ -12636,7 +12725,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C309"
-    ]
+    ],
+    "image": "images/3610005399.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005400",
@@ -12647,7 +12737,8 @@
     "model_number": null,
     "description": "Roller Drying Drive",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005400.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005405",
@@ -12812,7 +12903,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C309"
-    ]
+    ],
+    "image": "images/3610005458.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005462",
@@ -12823,7 +12915,8 @@
     "model_number": null,
     "description": "Cartridge 100micr, L=10",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005462.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005469",
@@ -12840,7 +12933,8 @@
       "000085C216",
       "000085C218",
       "000085C310"
-    ]
+    ],
+    "image": "images/3610005469.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005490",
@@ -12861,7 +12955,8 @@
       "000085C218",
       "000085C310",
       "000085C303"
-    ]
+    ],
+    "image": "images/3610005490.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005508",
@@ -13172,7 +13267,8 @@
     "model_number": null,
     "description": "Tensioner Parts Set Chain Tensioner",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005780.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610005789",
@@ -13431,7 +13527,8 @@
     "model_number": null,
     "description": "Gripper finger Centering Jaw Grippe",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005990.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610006013",
@@ -13442,7 +13539,8 @@
     "model_number": null,
     "description": "Ball Screw Assembly Control SEL/F50115 2",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006013.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610006018",
@@ -13486,7 +13584,8 @@
     "model_number": null,
     "description": "ball runner block Linear bearing",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006061.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610006074",
@@ -13567,7 +13666,8 @@
     "model_number": null,
     "description": "Coupling Centrifuge hedF01257",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006199.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610006202",
@@ -13800,7 +13900,8 @@
     "model_number": null,
     "description": "Label Toxic DOT Sticker",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006341.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610006344",
@@ -14272,7 +14373,8 @@
     "model_number": null,
     "description": "measuring stick Paint Stir",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007108.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610007109",
@@ -15634,7 +15736,8 @@
     "model_number": null,
     "description": "Filter SPRAY BOOTH PLATFORM",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008850.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610008851",
@@ -15645,7 +15748,8 @@
     "model_number": null,
     "description": "Filter Lower Grate Coating",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008851.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610008852",
@@ -15656,7 +15760,8 @@
     "model_number": null,
     "description": "Control Module Wye-delta for Coatin",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008852.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610008871",
@@ -15770,7 +15875,8 @@
     "model_number": null,
     "description": "Filter 24\" X 24\" X 2\" MERV",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009053.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610009054",
@@ -15781,7 +15887,8 @@
     "model_number": null,
     "description": "Filter 24\" X 24\" X 12\" MERV",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009054.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610009059",
@@ -15862,7 +15969,8 @@
     "model_number": null,
     "description": "Seal Kit Centrifuge",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009312.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610009314",
@@ -15873,7 +15981,8 @@
     "model_number": null,
     "description": "Combined Tools System Bearing Centrifuge",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009314.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610009325",
@@ -16006,7 +16115,8 @@
     "model_number": null,
     "description": "Air Filter 20inH 20inW Coating",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009474.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610009486",
@@ -16028,7 +16138,8 @@
     "model_number": null,
     "description": "Hose For Phosphate Blower",
     "cost_center_code": "000085C308",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009515.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610009526",
@@ -16136,7 +16247,8 @@
       "000085C217",
       "000085C230",
       "000085C309"
-    ]
+    ],
+    "image": "images/3610003454.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610003455",
@@ -16198,7 +16310,8 @@
     "cost_center_code": "000085C308",
     "additional_cost_centers": [
       "000085C310"
-    ]
+    ],
+    "image": "images/3610004118.jpg?v=1788717752973"
   },
   {
     "sap_id": "3610007909",
