@@ -13669,11 +13669,11 @@
     "name": "sealing tape Threaded Seal Tape",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-06-J11",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Grainger",
+    "model_number": "21TF19",
     "description": "sealing tape Threaded Seal Tape",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610006229.jpg?v=1788715938835"
   },
   {
     "sap_id": "3610006230",
