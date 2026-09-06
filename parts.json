@@ -7997,9 +7997,9 @@
     "description": "Tool 17x19 Wrench",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C306",
-      "000085C308"
-    ]
+      "000085C306"
+    ],
+    "image": "images/3610003644.jpg?v=1788706704220"
   },
   {
     "sap_id": "3610003645",
