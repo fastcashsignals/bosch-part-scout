@@ -10896,17 +10896,14 @@
     "name": "Floor sticker Blue Tape",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-35-G01 / 03-32-B02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Lean Factory America",
+    "model_number": "LG50-07",
     "description": "Floor sticker Blue Tape",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C311",
-      "000085C312",
-      "000085C220",
-      "000085C308",
-      "000085C218"
-    ]
+      "000085C311"
+    ],
+    "image": "images/3610004573.jpg?v=1788712444358"
   },
   {
     "sap_id": "3610004574",
