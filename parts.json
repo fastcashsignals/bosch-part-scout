@@ -6369,11 +6369,11 @@
     "name": "Bearing Clamp NATR6-X-PP-A",
     "category": "CSB Brazing",
     "bin": "01-42-D01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "MISUMI USA, INC.",
+    "model_number": "NATR6-X-PP-A",
     "description": "Bearing Clamp NATR6-X-PP-A",
     "cost_center_code": "000085C306",
-    "additional_cost_centers": []
+    "image": "images/3610003142.jpg?v=1788720955527"
   },
   {
     "sap_id": "3610003143",
