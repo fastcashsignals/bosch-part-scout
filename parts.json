@@ -10423,20 +10423,14 @@
     "name": "Cleaner Glass",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-00-CAB",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Webb Chemical",
+    "model_number": "106-00150",
     "description": "Cleaner Glass",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C309",
-      "000085C308",
-      "000085C218",
-      "000085C216",
-      "000085C301",
-      "000085C221",
-      "000085C306",
-      "000085C220"
-    ]
+      "000085C309"
+    ],
+    "image": "images/3610004416.jpg?v=1788711002558"
   },
   {
     "sap_id": "3610004450",
