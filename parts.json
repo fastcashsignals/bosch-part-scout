@@ -3275,11 +3275,11 @@
     "name": "Control Panel OP-AW3-XCAT",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-39-M01",
-    "manufacturer": null,
+    "manufacturer": "Amada",
     "model_number": null,
     "description": "Control Panel OP-AW3-XCAT",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610001782.jpg?v=1788704098512"
   },
   {
     "sap_id": "3610001788",
