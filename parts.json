@@ -3845,11 +3845,11 @@
     "name": "Servo Drive LINEAR R911339321",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-08-406",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Rexroth",
+    "model_number": "R911339321",
     "description": "Servo Drive LINEAR R911339321",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610002012.jpg?v=1788706010469"
   },
   {
     "sap_id": "3610002015",
