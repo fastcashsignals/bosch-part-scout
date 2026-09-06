@@ -14962,11 +14962,11 @@
     "name": "Software R91334747R911338542",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-29-H01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Rexroth",
+    "model_number": "R911347471 / R911338542",
     "description": "Software R91334747R911338542",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610007882.jpg?v=1788717273130"
   },
   {
     "sap_id": "3610007889",
