@@ -3757,11 +3757,11 @@
     "name": "PROFIBUS card IN-LINE COUPLER",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-28-P02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Rexroth",
+    "model_number": "R911172194",
     "description": "PROFIBUS card IN-LINE COUPLER",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610001974.jpg?v=1788705435345"
   },
   {
     "sap_id": "3610001976",
