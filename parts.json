@@ -15721,11 +15721,11 @@
     "name": "Brush Blade wash",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-27-B03",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Grainger",
+    "model_number": "5LG52",
     "description": "Brush Blade wash",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610008800.jpg?v=1788718030245"
   },
   {
     "sap_id": "3610008850",
