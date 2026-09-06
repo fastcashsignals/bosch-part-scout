@@ -15392,11 +15392,11 @@
     "name": "Holding Spring Z06-024 Main Tension",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-20-C04",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "ASSOCIATED PACKAGING INC",
+    "model_number": "Z06-024",
     "description": "Holding Spring Z06-024 Main Tension",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610008496.jpg?v=1788717501579"
   },
   {
     "sap_id": "3610008502",
