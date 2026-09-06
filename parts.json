@@ -14935,11 +14935,11 @@
     "name": "Pressure Sensor SPAU-P10R-T-R14M-L-P",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-46-C03",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Festo",
+    "model_number": "SPAU-P10R-T-R14M-L-PNLK-PNVBA-M8D",
     "description": "Pressure Sensor SPAU-P10R-T-R14M-L-P",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610007857.jpg?v=1788717209528"
   },
   {
     "sap_id": "3610007870",
