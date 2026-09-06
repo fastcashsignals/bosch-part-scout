@@ -15449,11 +15449,11 @@
     "name": "Compression Spring 20.5x5.5x4.5 dryer",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-27-A04",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "MC MASTER CARR SUPPLY COMPANY",
+    "model_number": "2006N267",
     "description": "Compression Spring 20.5x5.5x4.5 dryer",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610008620.jpg?v=1788717648802"
   },
   {
     "sap_id": "3610008625",
