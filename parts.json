@@ -11908,11 +11908,11 @@
     "name": "Pressure Gauge 9470253",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-14-G01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Faudi GmbH",
+    "model_number": "9470253",
     "description": "Pressure Gauge 9470253",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610005034.jpg?v=1788713358559"
   },
   {
     "sap_id": "3610005064",
