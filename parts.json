@@ -3735,11 +3735,11 @@
     "name": "Safety door switch GATE PILZ PT# 570500",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-09-I03",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Pilz",
+    "model_number": "570500",
     "description": "Safety door switch GATE PILZ PT# 570500",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610001956.jpg?v=1788705277321"
   },
   {
     "sap_id": "3610001973",
