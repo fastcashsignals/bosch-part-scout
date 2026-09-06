@@ -12890,11 +12890,11 @@
     "name": "Spare Part TC afag-top short",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-15-E02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Schaeff Machiney & Service LLC",
+    "model_number": "50478731",
     "description": "Spare Part TC afag-top short",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610005510.jpg?v=1788714968794"
   },
   {
     "sap_id": "3610005511",
