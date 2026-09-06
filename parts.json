@@ -1591,14 +1591,9 @@
     "description": "Spare Part SPRAY BOTTLE 32 oz",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C309",
-      "000085C308",
-      "000085C306",
-      "000085C216",
-      "000085C301",
-      "000085C218",
-      "000085C220"
-    ]
+      "000085C309"
+    ],
+    "image": "images/3610000040.jpg?v=1788696337554"
   },
   {
     "sap_id": "3610000048",
