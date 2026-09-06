@@ -12362,13 +12362,14 @@
     "name": "Lock Green lock keyed dif",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-35-K01 / 03-32-F01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "MSC",
+    "model_number": "16269573",
     "description": "Lock Green lock keyed dif",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
       "000085C309"
-    ]
+    ],
+    "image": "images/3610005289.jpg?v=1788713739313"
   },
   {
     "sap_id": "3610005290",
