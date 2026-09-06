@@ -11776,7 +11776,8 @@
     "model_number": null,
     "description": "Insert Sandblasting Insert",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005007.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610005008",
@@ -12020,7 +12021,8 @@
     "model_number": null,
     "description": "Punch W622133114",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005176.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610005178",
@@ -12435,7 +12437,8 @@
     "model_number": null,
     "description": "Dressing Wheel W512 327 700 wheel",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005347.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610005348",
@@ -12621,7 +12624,8 @@
     "cost_center_code": "000085C216",
     "additional_cost_centers": [
       "000085C217"
-    ]
+    ],
+    "image": "images/3610005408.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610005414",
@@ -12691,7 +12695,8 @@
     "model_number": null,
     "description": "Magnet 3843.CB3.659 magnet",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005441.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610005451",
@@ -13030,7 +13035,8 @@
     "model_number": null,
     "description": "Cutter head W.340.212.300",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005710.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610005715",
@@ -13569,7 +13575,8 @@
     "model_number": null,
     "description": "Spare Part stamp-9252 ti.",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006227.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610006228",
@@ -13580,7 +13587,8 @@
     "model_number": null,
     "description": "Spare Part stamp-rockhard",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006228.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610006229",
@@ -13786,7 +13794,8 @@
     "model_number": null,
     "description": "Dressing Wheel Sticks .5X.5X6",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006426.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610006428",
@@ -13797,7 +13806,8 @@
     "model_number": null,
     "description": "Ceramic Raw Material Ceramic Powder",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006428.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610006456",
@@ -13808,7 +13818,8 @@
     "model_number": null,
     "description": "Tube Silicone RTV",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006456.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610006500",
@@ -13855,7 +13866,8 @@
     "model_number": null,
     "description": "Rolling Bearing decoiler: bearing",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006556.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610006557",
@@ -13866,7 +13878,8 @@
     "model_number": null,
     "description": "Rolling Bearing decoiler- seating",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006557.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610006570",
@@ -14626,7 +14639,8 @@
     "cost_center_code": "000085C216",
     "additional_cost_centers": [
       "000085C217"
-    ]
+    ],
+    "image": "images/3610007598.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610007601",
@@ -14904,7 +14918,8 @@
     "model_number": null,
     "description": "Grinding Wheel 11K1A1 MGC",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007952.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610007965",
@@ -14945,7 +14960,8 @@
     "model_number": null,
     "description": "Grinding Wheel PrunerMGC 3610009603",
     "cost_center_code": "000085C216",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007990.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610007993",
@@ -14992,7 +15008,8 @@
     "cost_center_code": "000085C216",
     "additional_cost_centers": [
       "000085C217"
-    ]
+    ],
+    "image": "images/3610008085.jpg?v=1788700225605"
   },
   {
     "sap_id": "3610008093",
