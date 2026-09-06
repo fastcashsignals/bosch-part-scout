@@ -14973,11 +14973,11 @@
     "name": "Gripper PGN-plus-P 125-1-AS",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-33-B04",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Schunk",
+    "model_number": "318570",
     "description": "Gripper PGN-plus-P 125-1-AS",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610007889.jpg?v=1788717326972"
   },
   {
     "sap_id": "3610007938",
