@@ -3255,12 +3255,9 @@
     "description": "Stretch film 14.5X1476'",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C216",
-      "000085C221",
-      "000085C218",
-      "000085C229",
-      "000085C220"
-    ]
+      "000085C216"
+    ],
+    "image": "images/3610001771.jpg?v=1788703984256"
   },
   {
     "sap_id": "3610001781",
