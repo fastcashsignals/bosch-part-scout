@@ -12161,11 +12161,11 @@
     "name": "Reed switch Festo: 8139726",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-11-G02 / 03-57-F02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Festo",
+    "model_number": "8139726",
     "description": "Reed switch Festo: 8139726",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610005188.jpg?v=1788713537599"
   },
   {
     "sap_id": "3610005189",
