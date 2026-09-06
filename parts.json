@@ -14722,11 +14722,11 @@
     "name": "Push-Button M22-DL-W",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-55-C02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "VALLEN DISTRIBUTION, INC.",
+    "model_number": "M22-DL-W",
     "description": "Push-Button M22-DL-W",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610007553.jpg?v=1788716640080"
   },
   {
     "sap_id": "3610007598",
