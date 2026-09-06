@@ -1568,7 +1568,8 @@
     "model_number": null,
     "description": "Inductive sensor PROX M12 PNP NO",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610000022.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610000031",
@@ -3950,7 +3951,8 @@
       "000085C309",
       "000085C218",
       "000085C306"
-    ]
+    ],
+    "image": "images/3610002053.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610002054",
@@ -3963,7 +3965,8 @@
     "cost_center_code": "000085C301",
     "additional_cost_centers": [
       "000085C217"
-    ]
+    ],
+    "image": "images/3610002054.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610002057",
@@ -3998,7 +4001,8 @@
     "cost_center_code": "000085C301",
     "additional_cost_centers": [
       "000085C217"
-    ]
+    ],
+    "image": "images/3610002088.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610002090",
@@ -5521,7 +5525,8 @@
       "000085C309",
       "000085C218",
       "000085C231"
-    ]
+    ],
+    "image": "images/3610002713.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610002726",
@@ -5883,7 +5888,8 @@
     "model_number": null,
     "description": "Cutting Nozzle Laser 1.8 MM L237X",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002953.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610002956",
@@ -5931,7 +5937,8 @@
     "model_number": null,
     "description": "Pressure Regulator 5610141530",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002962.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610002975",
@@ -5964,7 +5971,8 @@
     "model_number": null,
     "description": "Thermocouple Z3320EDA.01816",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003027.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003055",
@@ -5988,7 +5996,8 @@
     "model_number": null,
     "description": "Control Valve 3MSMEC",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003058.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003072",
@@ -6096,7 +6105,8 @@
     "additional_cost_centers": [
       "000085C217",
       "000085C216"
-    ]
+    ],
+    "image": "images/3610003093.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003094",
@@ -6640,7 +6650,8 @@
     "model_number": null,
     "description": "Insulator KT B2\" CON AL495",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003292.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003305",
@@ -6662,7 +6673,8 @@
     "model_number": null,
     "description": "Battery Pack Panasonic 6V BR-2/3",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003308.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003310",
@@ -6673,7 +6685,8 @@
     "model_number": null,
     "description": "Fuse 500mA 250V 5x20",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003310.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003326",
@@ -6686,7 +6699,8 @@
     "cost_center_code": "000085C301",
     "additional_cost_centers": [
       "000085C217"
-    ]
+    ],
+    "image": "images/3610003326.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003327",
@@ -8521,7 +8535,8 @@
     "cost_center_code": "000085C301",
     "additional_cost_centers": [
       "000085C306"
-    ]
+    ],
+    "image": "images/3610003776.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003777",
@@ -8535,7 +8550,8 @@
     "additional_cost_centers": [
       "000085C309",
       "000085C306"
-    ]
+    ],
+    "image": "images/3610003777.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003778",
@@ -8546,7 +8562,8 @@
     "model_number": null,
     "description": "Holding Fixture LASER ROD COMPLETE",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003778.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003779",
@@ -8557,7 +8574,8 @@
     "model_number": null,
     "description": "Holding Fixture LASER ROD PIN",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003779.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003780",
@@ -8568,7 +8586,8 @@
     "model_number": null,
     "description": "Holding Fixture LASER ROD BASE",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003780.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003781",
@@ -8895,7 +8914,8 @@
     "model_number": null,
     "description": "Filter Cloth Laser Dust Vacuum",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003820.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003826",
@@ -9619,7 +9639,8 @@
     "additional_cost_centers": [
       "000085C308",
       "000085C217"
-    ]
+    ],
+    "image": "images/3610004091.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004093",
@@ -9630,7 +9651,8 @@
     "model_number": null,
     "description": "Inductive sensor IFS245 M12 X 1 / L 4",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004093.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004094",
@@ -9907,7 +9929,8 @@
     "model_number": null,
     "description": "Laser 6 STANDOFF FAKIR",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004208.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004220",
@@ -10114,7 +10137,8 @@
     "cost_center_code": "000085C301",
     "additional_cost_centers": [
       "000085C308"
-    ]
+    ],
+    "image": "images/3610004295.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004296",
@@ -10489,7 +10513,8 @@
     "model_number": null,
     "description": "Support Plate For Magnets AP00010P",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004456.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004457",
@@ -10500,7 +10525,8 @@
     "model_number": null,
     "description": "Support Plate Sensor AP00011P-AF",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004457.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004458",
@@ -10511,7 +10537,8 @@
     "model_number": null,
     "description": "Pressure Switch PMM10A BN 18K 48V",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004458.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004466",
@@ -10522,7 +10549,8 @@
     "model_number": null,
     "description": "Detent Pin ThreadBallSpriDetent",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004466.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004467",
@@ -10533,7 +10561,8 @@
     "model_number": null,
     "description": "Temperat.regulat.system Laser Head Chill",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004467.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004469",
@@ -10653,7 +10682,8 @@
     "model_number": null,
     "description": "Bellows Cover X & U axis bellow",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004496.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004498",
@@ -10664,7 +10694,8 @@
     "model_number": null,
     "description": "Cable Track Robot ALS  brackets",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004498.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004506",
@@ -10701,7 +10732,8 @@
     "cost_center_code": "000085C301",
     "additional_cost_centers": [
       "000085C309"
-    ]
+    ],
+    "image": "images/3610004508.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004510",
@@ -11278,7 +11310,8 @@
     "model_number": null,
     "description": "Sensor Cable V1-W-5M-PUR",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004738.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610004740",
@@ -12074,7 +12107,8 @@
     "model_number": null,
     "description": "Seal Head Chiller Seal",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005183.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610005184",
@@ -12085,7 +12119,8 @@
     "model_number": null,
     "description": "Spring Cotter Hairpin for Bellows",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005184.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610005185",
@@ -12624,7 +12659,8 @@
     "cost_center_code": "000085C301",
     "additional_cost_centers": [
       "000085C308"
-    ]
+    ],
+    "image": "images/3610005405.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610005407",
@@ -12903,7 +12939,8 @@
     "cost_center_code": "000085C301",
     "additional_cost_centers": [
       "000085C306"
-    ]
+    ],
+    "image": "images/3610005540.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610005549",
@@ -12938,7 +12975,8 @@
     "model_number": null,
     "description": "Inductive sensor PROX BES M12MI-PSC40",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005582.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610005585",
@@ -13191,7 +13229,8 @@
     "model_number": null,
     "description": "Scraper Front Steel",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005884.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610005886",
@@ -13202,7 +13241,8 @@
     "model_number": null,
     "description": "Scraper Y Axis 25",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005886.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610005893",
@@ -13279,7 +13319,8 @@
     "model_number": null,
     "description": "Grinding Wheel Monzesi DRESS WHEEL",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005926.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610005927",
@@ -13662,7 +13703,8 @@
     "model_number": null,
     "description": "Suction Valve ZK2A15K5NL3A-08-B",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006235.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610006241",
@@ -14027,7 +14069,8 @@
     "model_number": null,
     "description": "Lens Protecting",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006699.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610006711",
@@ -14177,7 +14220,8 @@
     "model_number": null,
     "description": "Laser 10in FAKIR - INNER",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007056.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007057",
@@ -14188,7 +14232,8 @@
     "model_number": null,
     "description": "Laser 10E FAKIR - END",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007057.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007058",
@@ -14199,7 +14244,8 @@
     "model_number": null,
     "description": "Laser 12in FAKIR - INNER",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007058.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007059",
@@ -14210,7 +14256,8 @@
     "model_number": null,
     "description": "Laser 12in FAKIR - END",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007059.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007108",
@@ -14296,7 +14343,8 @@
     "model_number": null,
     "description": "Retaining clip 30mm Lens Cartridge",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007198.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007199",
@@ -14307,7 +14355,8 @@
     "model_number": null,
     "description": "Seal Ring 30mm Lens Cartridge",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007199.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007200",
@@ -14318,7 +14367,8 @@
     "model_number": null,
     "description": "Locating ring 30mm Lens Press Ring",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007200.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007201",
@@ -14329,7 +14379,8 @@
     "model_number": null,
     "description": "Retaining clip 21.5mm Lens Cartridg",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007201.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007202",
@@ -14340,7 +14391,8 @@
     "model_number": null,
     "description": "Laser Cutting Head",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007202.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007203",
@@ -14351,7 +14403,8 @@
     "model_number": null,
     "description": "Laser  Adjust Box",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007203.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007209",
@@ -14396,7 +14449,8 @@
     "model_number": null,
     "description": "Filter Refrigeration Circui",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007276.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007277",
@@ -14407,7 +14461,8 @@
     "model_number": null,
     "description": "Valve Expan-Chil-HRS-S0416",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007277.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007278",
@@ -14418,7 +14473,8 @@
     "model_number": null,
     "description": "Valve Expan-Chil-HRS-S0335",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007278.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007282",
@@ -14475,7 +14531,8 @@
     "model_number": null,
     "description": "Gripper LASER Robot 12in",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007316.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610007344",
@@ -15226,7 +15283,8 @@
     "model_number": null,
     "description": "Laser cable P0492-003-20000",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008392.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610008429",
@@ -15752,7 +15810,8 @@
     "model_number": null,
     "description": "Cable Encoder Laser Head",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009082.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610009194",
@@ -15763,7 +15822,8 @@
     "model_number": null,
     "description": "suction cup ANTI ROTATE SUPPORT",
     "cost_center_code": "000085C301",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009194.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610009229",
@@ -16090,7 +16150,8 @@
       "000085C309",
       "000085C218",
       "000085C310"
-    ]
+    ],
+    "image": "images/3610003455.jpg?v=1788711305587"
   },
   {
     "sap_id": "3610003456",
