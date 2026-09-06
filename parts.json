@@ -15574,10 +15574,10 @@
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-27-A06",
     "manufacturer": null,
-    "model_number": null,
+    "model_number": "TC5040-2",
     "description": "Spare Part Picker Hold Strap",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610008626.jpg?v=1788717760075"
   },
   {
     "sap_id": "3610008627",
