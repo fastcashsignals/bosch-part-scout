@@ -9869,11 +9869,11 @@
     "name": "Flow regulator 104104-F02",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-26-O10",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "MSC Industrial Supply Co.",
+    "model_number": "80184070",
     "description": "Flow regulator 104104-F02",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610004199.jpg?v=1788710667514"
   },
   {
     "sap_id": "3610004203",
