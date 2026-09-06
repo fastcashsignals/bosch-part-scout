@@ -13832,11 +13832,11 @@
     "name": "Drive Motor TC- Bevi 3nine motor",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "04-03-403",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Wholesale Industrial Electronics",
+    "model_number": "BA2M003V4C",
     "description": "Drive Motor TC- Bevi 3nine motor",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610006411.jpg?v=1788716073839"
   },
   {
     "sap_id": "3610006412",
