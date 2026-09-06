@@ -12696,11 +12696,11 @@
     "name": "Inserted Part Faudi: bucket",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-03-506",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "ATMO",
+    "model_number": "3843.CB3.069",
     "description": "Inserted Part Faudi: bucket",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610005414.jpg?v=1788713874234"
   },
   {
     "sap_id": "3610005422",
