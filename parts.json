@@ -13179,14 +13179,14 @@
     "name": "Lubricant DRY chain",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-00-CAB",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Grainger",
+    "model_number": "456K96",
     "description": "Lubricant DRY chain",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C218",
-      "000085C308"
-    ]
+      "000085C218"
+    ],
+    "image": "images/3610005789.jpg?v=1788715521447"
   },
   {
     "sap_id": "3610005821",
