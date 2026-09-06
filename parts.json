@@ -15403,11 +15403,11 @@
     "name": "Power Supply Weld Controller",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-27-A01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "RS Americas, Inc.",
+    "model_number": "70069574",
     "description": "Power Supply Weld Controller",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610008502.jpg?v=1788717572266"
   },
   {
     "sap_id": "3610008560",
