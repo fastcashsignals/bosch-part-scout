@@ -14043,7 +14043,8 @@
     "additional_cost_centers": [
       "000085C308",
       "000085C314"
-    ]
+    ],
+    "image": "images/3610006848.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610006852",
@@ -14495,7 +14496,8 @@
     "model_number": null,
     "description": "Proximity Sensor BES 516-325-E5-C-S4",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007374.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610007442",
@@ -14834,7 +14836,8 @@
       "000085C310",
       "000085C306",
       "000085C221"
-    ]
+    ],
+    "image": "images/3610007870.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610007882",
@@ -14878,7 +14881,8 @@
     "model_number": null,
     "description": "Bearing For Silicon Slide",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007939.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610007947",
@@ -14963,7 +14967,8 @@
     "model_number": null,
     "description": "Cylinder Guided drive",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008054.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610008076",
@@ -14998,7 +15003,8 @@
     "model_number": null,
     "description": "Spacer RUBBER PAD MARKING",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008093.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610008094",
@@ -15009,7 +15015,8 @@
     "model_number": null,
     "description": "Base Plate RUBBER PAD MARKING",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008094.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610008126",
@@ -15065,7 +15072,8 @@
     "model_number": null,
     "description": "Block Paddle Cylinder",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008282.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610008289",
@@ -15122,7 +15130,8 @@
     "model_number": null,
     "description": "Pad FIXING 80X100mm",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008355.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610008374",
@@ -15166,7 +15175,8 @@
     "model_number": null,
     "description": "Compressed-Air Cylinder DSBC-63-160-PPVA",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008429.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610008433",
@@ -15177,7 +15187,8 @@
     "model_number": null,
     "description": "Air conditioning COSMOTEC Ring Pack",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008433.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610008449",
@@ -15379,7 +15390,8 @@
     "model_number": null,
     "description": "Spare Part Fume Aspirator Unit",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008642.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610008657",
@@ -15390,7 +15402,8 @@
     "model_number": null,
     "description": "Plate Demo Demon D0724D-U",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008657.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610008736",
@@ -15525,7 +15538,8 @@
     "model_number": null,
     "description": "Spring Print Head Pressure",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008871.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610008937",
@@ -15946,7 +15960,8 @@
     "model_number": null,
     "description": "Plate D0624 New CAN",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009894.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610009913",
@@ -15957,7 +15972,8 @@
     "model_number": null,
     "description": "spring unit Bayonet ink cup",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009913.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610009917",
@@ -15968,7 +15984,8 @@
     "model_number": null,
     "description": "Plate D0624 New US Demo",
     "cost_center_code": "000085C311",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009917.jpg?v=1788698957400"
   },
   {
     "sap_id": "3610003454",
@@ -16057,5 +16074,17 @@
     "description": "Algus exit conveyor arm sensor",
     "cost_center_code": "000085C220",
     "image": "images/3610007909.jpg?v=1788622134161"
+  },
+  {
+    "sap_id": "3610004451",
+    "name": "Magnet Assembly Spring Magnet Shaft",
+    "category": "RSB Shrink Tunnel",
+    "bin": "01-04-U04",
+    "manufacturer": null,
+    "model_number": "AP00018P-AF (APMDL0002)",
+    "description": "Magnet Assembly Spring Magnet Shaft",
+    "cost_center_code": "000085C231",
+    "additional_cost_centers": [],
+    "image": "images/3610004451.jpg?v=1788698957400"
   }
 ]
