@@ -13552,11 +13552,11 @@
     "name": "Cable Profibus Purple",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-35-G02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Sistech SRL",
+    "model_number": "05036649",
     "description": "Cable Profibus Purple",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610006153.jpg?v=1788715878076"
   },
   {
     "sap_id": "3610006199",
