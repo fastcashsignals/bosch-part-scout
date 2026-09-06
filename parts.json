@@ -3423,9 +3423,9 @@
     "description": "Isopropyl Alcohol DENATURED CLEANER",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C216",
-      "000085C308"
-    ]
+      "000085C216"
+    ],
+    "image": "images/3610001854.jpg?v=1788704859489"
   },
   {
     "sap_id": "3610001857",
