@@ -14861,11 +14861,11 @@
     "name": "Digital input module 56112",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-26-I07",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "MURRELEKTRONIK, INC",
+    "model_number": "56112",
     "description": "Digital input module 56112",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610007757.jpg?v=1788717125974"
   },
   {
     "sap_id": "3610007776",
