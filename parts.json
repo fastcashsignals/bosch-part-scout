@@ -11897,11 +11897,11 @@
     "name": "mist collector 200mm hose clamp",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-40-E06",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "MC MASTER CARR SUPPLY COMPANY",
+    "model_number": "5415K43",
     "description": "mist collector 200mm hose clamp",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610005020.jpg?v=1788713297316"
   },
   {
     "sap_id": "3610005034",
