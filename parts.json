@@ -1605,9 +1605,9 @@
     "description": "Wipe Sanitizing Pre-Moist",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C221",
-      "000085C309"
-    ]
+      "000085C221"
+    ],
+    "image": "images/3610000048.jpg?v=1788696407491"
   },
   {
     "sap_id": "3610000052",
