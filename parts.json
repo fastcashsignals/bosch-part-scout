@@ -1796,7 +1796,8 @@
       "000085C221",
       "000085C218",
       "000085C220"
-    ]
+    ],
+    "image": "images/3610000477.jpg?v=1788696985214"
   },
   {
     "sap_id": "3610000522",
@@ -2118,7 +2119,8 @@
     "model_number": null,
     "description": "Indicator Light RED&AMBER 250V/2W RF",
     "cost_center_code": "000085C229",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610001119.jpg?v=1788696985214"
   },
   {
     "sap_id": "3610001137",
@@ -2129,7 +2131,8 @@
     "model_number": null,
     "description": "Timer RF",
     "cost_center_code": "000085C229",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610001137.jpg?v=1788696985214"
   },
   {
     "sap_id": "3610001155",
@@ -2275,7 +2278,8 @@
     "cost_center_code": "000085C229",
     "additional_cost_centers": [
       "000085C218"
-    ]
+    ],
+    "image": "images/3610001319.jpg?v=1788696985214"
   },
   {
     "sap_id": "3610001330",
@@ -2428,7 +2432,8 @@
     "model_number": null,
     "description": "Teflon .010x36\" BLISTER",
     "cost_center_code": "000085C229",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610001563.jpg?v=1788696985214"
   },
   {
     "sap_id": "3610001564",
@@ -5063,7 +5068,8 @@
     "model_number": null,
     "description": "Rubber Pad 1\"X .5\" BLK PRECO",
     "cost_center_code": "000085C229",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002603.jpg?v=1788696985214"
   },
   {
     "sap_id": "3610002615",
@@ -7481,7 +7487,8 @@
     "model_number": null,
     "description": "Assembly RF Arc quench Unit",
     "cost_center_code": "000085C229",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003580.jpg?v=1788696985214"
   },
   {
     "sap_id": "3610003582",
@@ -8273,24 +8280,26 @@
   {
     "sap_id": "3610003717",
     "name": "Ultrasonics Unit Booster Dukane",
-    "category": "RSB RF Sealing",
+    "category": "RSB Clamshell Packaging",
     "bin": "02-22-B02 / 03-38-A03",
     "manufacturer": null,
     "model_number": null,
     "description": "Ultrasonics Unit Booster Dukane",
-    "cost_center_code": "000085C229",
-    "additional_cost_centers": []
+    "cost_center_code": "000085C220",
+    "additional_cost_centers": [],
+    "image": "images/3610003717.jpg?v=1788696985214"
   },
   {
     "sap_id": "3610003718",
     "name": "Ultrasonics Unit Transducer Dukane",
-    "category": "RSB RF Sealing",
+    "category": "RSB Clamshell Packaging",
     "bin": "02-22-B01",
     "manufacturer": null,
     "model_number": null,
     "description": "Ultrasonics Unit Transducer Dukane",
-    "cost_center_code": "000085C229",
-    "additional_cost_centers": []
+    "cost_center_code": "000085C220",
+    "additional_cost_centers": [],
+    "image": "images/3610003718.jpg?v=1788696985214"
   },
   {
     "sap_id": "3610003723",
@@ -13875,7 +13884,8 @@
     "model_number": null,
     "description": "Contactor Coil XTCE115G00B",
     "cost_center_code": "000085C229",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006576.jpg?v=1788696985214"
   },
   {
     "sap_id": "3610006629",
@@ -15764,7 +15774,8 @@
     "model_number": null,
     "description": "Spare Part Ejection Foam",
     "cost_center_code": "000085C229",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610009394.jpg?v=1788696985214"
   },
   {
     "sap_id": "3610009413",
