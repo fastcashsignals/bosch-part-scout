@@ -15461,10 +15461,10 @@
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-27-A07",
     "manufacturer": null,
-    "model_number": null,
+    "model_number": "TC5040-1",
     "description": "Spare Part Picker Body TC5040-1",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610008625.jpg?v=1788717707691"
   },
   {
     "sap_id": "3610008626",
