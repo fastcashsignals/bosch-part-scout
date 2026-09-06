@@ -15263,11 +15263,11 @@
     "name": "Compact Cylinder TC Cell Robot Door",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-27-B01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "ASCO LP",
+    "model_number": "0822122007",
     "description": "Compact Cylinder TC Cell Robot Door",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610008374.jpg?v=1788717412899"
   },
   {
     "sap_id": "3610008381",
