@@ -14780,11 +14780,11 @@
     "name": "Nut Spanner Nut",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-20-B02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "MC MASTER CARR SUPPLY COMPANY",
+    "model_number": "90078A210",
     "description": "Nut Spanner Nut",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610007604.jpg?v=1788716842005"
   },
   {
     "sap_id": "3610007605",
