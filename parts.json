@@ -14791,11 +14791,11 @@
     "name": "Vise Hollow-Body Pin",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-20-B03",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "MC MASTER CARR SUPPLY COMPANY",
+    "model_number": "8455A16",
     "description": "Vise Hollow-Body Pin",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610007605.jpg?v=1788716911416"
   },
   {
     "sap_id": "3610007617",
