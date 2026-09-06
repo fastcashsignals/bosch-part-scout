@@ -8214,11 +8214,11 @@
     "name": "3-phase motor Centrifuge Drive",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "05-02-403",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Faudi",
+    "model_number": "4045115",
     "description": "3-phase motor Centrifuge Drive",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610003670.jpg?v=1788710080656"
   },
   {
     "sap_id": "3610003675",
