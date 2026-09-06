@@ -3746,11 +3746,11 @@
     "name": "Servomotor SYNCRNOUS R911306387",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-28-N01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Rexroth",
+    "model_number": "R911306387",
     "description": "Servomotor SYNCRNOUS R911306387",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610001973.jpg?v=1788705362004"
   },
   {
     "sap_id": "3610001974",
