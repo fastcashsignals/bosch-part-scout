@@ -10666,13 +10666,14 @@
     "name": "Tooling W601105426",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-41-D01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Shrum",
+    "model_number": "W601105426",
     "description": "Tooling W601105426",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
       "000085C216"
-    ]
+    ],
+    "image": "images/3610004486.jpg?v=1788712328403"
   },
   {
     "sap_id": "3610004496",
