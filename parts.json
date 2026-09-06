@@ -14836,13 +14836,14 @@
     "name": "Cleaning Agent Dawn Detergent",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "05-04-106",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Grainger",
+    "model_number": "802FY5",
     "description": "Cleaning Agent Dawn Detergent",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
       "000085C216"
-    ]
+    ],
+    "image": "images/3610007751.jpg?v=1788717059750"
   },
   {
     "sap_id": "3610007752",
