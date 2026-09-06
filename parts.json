@@ -13110,11 +13110,11 @@
     "name": "Spare Part TC-Lolli pop lp05532",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-15-B06",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Wholesale Industrial Electronics",
+    "model_number": "LP05532",
     "description": "Spare Part TC-Lolli pop lp05532",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610005715.jpg?v=1788715385132"
   },
   {
     "sap_id": "3610005719",
