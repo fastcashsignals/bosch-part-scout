@@ -13032,11 +13032,11 @@
     "name": "Spare Part TC afag- bowl",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-15-K01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Schaeff Machiney & Service LLC",
+    "model_number": "50473803",
     "description": "Spare Part TC afag- bowl",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610005623.jpg?v=1788715249702"
   },
   {
     "sap_id": "3610005625",
