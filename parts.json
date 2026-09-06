@@ -13193,13 +13193,14 @@
     "name": "Spare Part TC-Filter Material",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-07-502",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Grainger",
+    "model_number": "6B688",
     "description": "Spare Part TC-Filter Material",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
       "000085C218"
-    ]
+    ],
+    "image": "images/3610005821.jpg?v=1788715590198"
   },
   {
     "sap_id": "3610005824",
