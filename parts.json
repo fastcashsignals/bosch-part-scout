@@ -14802,11 +14802,11 @@
     "name": "Rotary Cylinder DRRD-20-180-FH-Y12A",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-30-C01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "FESTO CORPORATION",
+    "model_number": "574400",
     "description": "Rotary Cylinder DRRD-20-180-FH-Y12A",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610007617.jpg?v=1788716995007"
   },
   {
     "sap_id": "3610007622",
