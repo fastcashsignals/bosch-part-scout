@@ -15699,11 +15699,11 @@
     "name": "Sensor IY5045",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-27-G01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "IFM Effector",
+    "model_number": "IY5045",
     "description": "Sensor IY5045",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610008796.jpg?v=1788717954419"
   },
   {
     "sap_id": "3610008799",
