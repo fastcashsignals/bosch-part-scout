@@ -1781,7 +1781,8 @@
     "model_number": null,
     "description": "Safety door switch INTERLOCK switch",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610000387.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610000477",
@@ -3479,7 +3480,8 @@
     "model_number": null,
     "description": "Sensor LL3-DM01 5308071",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610001876.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610001877",
@@ -3490,7 +3492,8 @@
     "model_number": null,
     "description": "Actuator Parker Tag Sealing",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610001877.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610001880",
@@ -3501,7 +3504,8 @@
     "model_number": null,
     "description": "vacuum ejector 10.02.01.00565",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610001880.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610001891",
@@ -3912,7 +3916,8 @@
     "model_number": null,
     "description": "Sensor Cable PHOENIX CONTACT",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002050.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610002051",
@@ -5769,7 +5774,8 @@
     "additional_cost_centers": [
       "000085C308",
       "000085C310"
-    ]
+    ],
+    "image": "images/3610002901.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610002918",
@@ -6420,7 +6426,8 @@
     "model_number": null,
     "description": "Pressure Gauge  0 - 16 Bar V/24.01",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003196.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610003219",
@@ -6448,13 +6455,14 @@
   {
     "sap_id": "3610003223",
     "name": "Toothed Gear 18670 1/2-10",
-    "category": "RSB Hangtag Packaging",
+    "category": "CSB Coating/Phosphate",
     "bin": "01-07-F01",
     "manufacturer": null,
     "model_number": null,
     "description": "Toothed Gear 18670 1/2-10",
-    "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "cost_center_code": "000085C308",
+    "additional_cost_centers": [],
+    "image": "images/3610003223.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610003224",
@@ -8985,7 +8993,8 @@
     "additional_cost_centers": [
       "000085C308",
       "000085C310"
-    ]
+    ],
+    "image": "images/3610003890.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610003904",
@@ -9647,7 +9656,8 @@
     "model_number": null,
     "description": "Drive Shaft Coating Line PA3",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004099.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610004102",
@@ -10198,7 +10208,8 @@
     "model_number": null,
     "description": "Shock Absorber DYSC-7-5-Y1F FESTO",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004371.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610004372",
@@ -10527,7 +10538,8 @@
     "cost_center_code": "000085C219",
     "additional_cost_centers": [
       "000085C311"
-    ]
+    ],
+    "image": "images/3610004469.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610004479",
@@ -11641,7 +11653,8 @@
     "model_number": null,
     "description": "Pad Scouring Pads",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004926.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610004931",
@@ -12647,7 +12660,8 @@
     "model_number": null,
     "description": "Fuse 30 A, 600V AC, 5 in",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005422.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610005425",
@@ -14717,7 +14731,8 @@
     "model_number": null,
     "description": "Sensor MZC1-4V3PS-KP0",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007622.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610007673",
@@ -15112,7 +15127,8 @@
     "model_number": null,
     "description": "Pulley Hangtag Labeler",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008301.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610008305",
@@ -15123,7 +15139,8 @@
     "model_number": null,
     "description": "Fuse Hangtag Labeler",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008305.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610008309",
@@ -15218,7 +15235,8 @@
     "cost_center_code": "000085C219",
     "additional_cost_centers": [
       "000085C218"
-    ]
+    ],
+    "image": "images/3610008449.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610008453",
@@ -15229,7 +15247,8 @@
     "model_number": null,
     "description": "Roller 5 PRE ASSY SUPPORT",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008453.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610008461",
@@ -15240,7 +15259,8 @@
     "model_number": null,
     "description": "Shock Absorber YSRW-DGC-25-KF 25mm",
     "cost_center_code": "000085C219",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008461.jpg?v=1788701110865"
   },
   {
     "sap_id": "3610008470",
