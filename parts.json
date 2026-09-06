@@ -3768,11 +3768,11 @@
     "name": "Touch panel VR2109.01-00-01-N2-N",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-15-G01",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Rexroth",
+    "model_number": "R911340051",
     "description": "Touch panel VR2109.01-00-01-N2-N",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610001976.jpg?v=1788705508820"
   },
   {
     "sap_id": "3610001990",
