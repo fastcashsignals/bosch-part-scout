@@ -12923,11 +12923,11 @@
     "name": "Spare Part TC afag-rail start",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-15-E04",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Schaeff Machiney & Service LLC",
+    "model_number": "50554255",
     "description": "Spare Part TC afag-rail start",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610005513.jpg?v=1788715178495"
   },
   {
     "sap_id": "3610005540",
