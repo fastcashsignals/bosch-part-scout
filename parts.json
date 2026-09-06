@@ -15585,10 +15585,10 @@
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-27-A05",
     "manufacturer": null,
-    "model_number": null,
+    "model_number": "TC5040-3",
     "description": "Spare Part Picker Leaf TC5040-3",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610008627.jpg?v=1788717817151"
   },
   {
     "sap_id": "3610008630",
