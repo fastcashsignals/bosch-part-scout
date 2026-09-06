@@ -10752,8 +10752,8 @@
     "name": "Directional-Control Valve 0820039116 Ave",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-41-G03",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Aventics",
+    "model_number": "0820039116",
     "description": "Directional-Control Valve 0820039116 Ave",
     "cost_center_code": "000085C217",
     "image": "images/3610004568.jpg?v=1788690061818"
