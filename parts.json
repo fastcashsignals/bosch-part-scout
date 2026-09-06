@@ -8380,10 +8380,11 @@
     "name": "Cable Keyence OP-73865",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-43-B04",
-    "manufacturer": "Keyence",
-    "model_number": "OP-73865",
+    "manufacturer": null,
+    "model_number": null,
     "description": "Cable Keyence OP-73865",
-    "cost_center_code": "000085C217"
+    "cost_center_code": "000085C217",
+    "image": "images/3610003731.jpg?v=1788710190879"
   },
   {
     "sap_id": "3610003734",
