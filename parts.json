@@ -13961,11 +13961,11 @@
     "name": "Chemicals Boll Clean",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "05-05-107",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "WIE",
+    "model_number": "9102534",
     "description": "Chemicals Boll Clean",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610006570.jpg?v=1788716202868"
   },
   {
     "sap_id": "3610006575",
