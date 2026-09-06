@@ -7747,11 +7747,11 @@
     "name": "Grinding Wheel Carbide 11-9023",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-04-402",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Ziegler",
+    "model_number": "6.035.Y05.826",
     "description": "Grinding Wheel Carbide 11-9023",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610003616.jpg?v=1788706506367"
   },
   {
     "sap_id": "3610003626",
