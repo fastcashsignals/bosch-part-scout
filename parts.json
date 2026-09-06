@@ -12912,11 +12912,10 @@
     "name": "Spare Part TC afag-bolt locator",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-15-E03",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Schaeff Machiney & Service LLC",
+    "model_number": "50554259",
     "description": "Spare Part TC afag-bolt locator",
-    "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "cost_center_code": "000085C217"
   },
   {
     "sap_id": "3610005513",
