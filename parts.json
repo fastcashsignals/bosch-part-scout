@@ -12376,13 +12376,14 @@
     "name": "Lock Out Red 3\" Safety",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-35-K02 / 03-32-F02",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "MSC",
+    "model_number": "16269573",
     "description": "Lock Out Red 3\" Safety",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
       "000085C218"
-    ]
+    ],
+    "image": "images/3610005290.jpg?v=1788713806117"
   },
   {
     "sap_id": "3610005291",
