@@ -11554,11 +11554,11 @@
     "name": "Cleaning station Plunger can",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-31-F03",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "MSC",
+    "model_number": "89848196",
     "description": "Cleaning station Plunger can",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610004863.jpg?v=1788713053903"
   },
   {
     "sap_id": "3610004864",
