@@ -15989,11 +15989,11 @@
     "name": "Mounting Plate W665134724",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "02-17-M03",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Scintilla AG",
+    "model_number": "W665134724",
     "description": "Mounting Plate W665134724",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610009325.jpg?v=1788718100384"
   },
   {
     "sap_id": "3610009327",
