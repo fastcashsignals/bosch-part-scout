@@ -13854,11 +13854,11 @@
     "name": "Grinding Wheel 12V9 125x25x20 U10X4",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-04-401",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Sotech AG",
+    "model_number": "A100603",
     "description": "Grinding Wheel 12V9 125x25x20 U10X4",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610006422.jpg?v=1788716140421"
   },
   {
     "sap_id": "3610006426",
