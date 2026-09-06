@@ -1741,7 +1741,8 @@
     "model_number": null,
     "description": "Inductive sensor 2MM FLUSH M12 PNP",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610000227.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610000248",
@@ -1827,7 +1828,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C306"
-    ]
+    ],
+    "image": "images/3610000585.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610000627",
@@ -2035,7 +2037,8 @@
     "model_number": null,
     "description": "Power contactor #3RT2016-1BB41",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610000739.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610000747",
@@ -2305,7 +2308,8 @@
     "model_number": null,
     "description": "heat protection glove M-CottonLinedHeatR",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610001330.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610001369",
@@ -3983,7 +3987,8 @@
     "model_number": null,
     "description": "Sensor Cable 5 POS M12 PLUG TC",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002057.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610002069",
@@ -4519,7 +4524,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C308"
-    ]
+    ],
+    "image": "images/3610002276.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610002286",
@@ -4530,7 +4536,8 @@
     "model_number": null,
     "description": "Connector Plug 5 pin MESISEN010",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002286.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610002289",
@@ -4615,7 +4622,8 @@
     "model_number": null,
     "description": "O-Ring washer",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002353.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610002357",
@@ -4626,7 +4634,8 @@
     "model_number": null,
     "description": "O-Ring black 2150",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002357.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610002384",
@@ -4659,7 +4668,8 @@
     "model_number": null,
     "description": "Lifting Sling 4'x1\" LACOM",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002392.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610002436",
@@ -5555,7 +5565,8 @@
     "additional_cost_centers": [
       "000085C308",
       "000085C311"
-    ]
+    ],
+    "image": "images/3610002726.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610002741",
@@ -5704,7 +5715,8 @@
     "model_number": null,
     "description": "Grinding Spindle UG# 10103995",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002823.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610002831",
@@ -5846,7 +5858,8 @@
     "model_number": null,
     "description": "Inductive Position Switch IL5020",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610002925.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610002929",
@@ -5883,7 +5896,8 @@
       "000085C308",
       "000085C311",
       "000085C306"
-    ]
+    ],
+    "image": "images/3610002932.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610002950",
@@ -5932,7 +5946,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C310"
-    ]
+    ],
+    "image": "images/3610002957.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610002960",
@@ -6026,7 +6041,8 @@
     "model_number": null,
     "description": "measuring probe TT30 Marposs",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003072.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003074",
@@ -6037,7 +6053,8 @@
     "model_number": null,
     "description": "Cable Plug 01077573 SupportTT30",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003074.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003076",
@@ -6048,7 +6065,8 @@
     "model_number": null,
     "description": "Toothed Belt Mustang B280618",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003076.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003080",
@@ -6059,7 +6077,8 @@
     "model_number": null,
     "description": "Bearing 3204B-2ZRTNG YRLN5",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003080.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003081",
@@ -6070,7 +6089,8 @@
     "model_number": null,
     "description": "Bearing 7006CTRV1VSUMP3",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003081.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003082",
@@ -6081,7 +6101,8 @@
     "model_number": null,
     "description": "Bearing 6204 DDU CM",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003082.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003083",
@@ -6095,7 +6116,8 @@
     "additional_cost_centers": [
       "000085C218",
       "000085C306"
-    ]
+    ],
+    "image": "images/3610003083.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003092",
@@ -6135,7 +6157,8 @@
     "model_number": null,
     "description": "Digital I/O bus terminal 242626000",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003094.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003101",
@@ -6146,7 +6169,8 @@
     "model_number": null,
     "description": "Pressure Regulator 561_R24_",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003101.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003102",
@@ -6168,7 +6192,8 @@
     "model_number": null,
     "description": "Valve 7020020200",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003107.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003117",
@@ -6334,7 +6359,8 @@
     "additional_cost_centers": [
       "000085C217",
       "000085C306"
-    ]
+    ],
+    "image": "images/3610003138.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003139",
@@ -6537,7 +6563,8 @@
     "model_number": null,
     "description": "Valve 3/2 SHUT-OFF",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003238.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003246",
@@ -6602,7 +6629,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C308"
-    ]
+    ],
+    "image": "images/3610003266.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003268",
@@ -6683,7 +6711,8 @@
     "model_number": null,
     "description": "Fuse set For Fanuc Robot",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003305.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003308",
@@ -6743,7 +6772,8 @@
     "model_number": null,
     "description": "Bellows drive unit",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003330.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003334",
@@ -6785,7 +6815,8 @@
     "additional_cost_centers": [
       "000085C311",
       "000085C218"
-    ]
+    ],
+    "image": "images/3610003346.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003353",
@@ -6850,7 +6881,8 @@
       "000085C219",
       "000085C308",
       "000085C306"
-    ]
+    ],
+    "image": "images/3610003367.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003368",
@@ -7272,7 +7304,8 @@
       "000085C217",
       "000085C301",
       "000085C312"
-    ]
+    ],
+    "image": "images/3610003498.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003500",
@@ -7366,7 +7399,8 @@
     "model_number": null,
     "description": "Solenoid Valve VUVGL14T32CATG181R8L",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003516.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003551",
@@ -7498,7 +7532,8 @@
     "model_number": null,
     "description": "Grease Gun SwissQ",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003569.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003570",
@@ -8384,7 +8419,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C218"
-    ]
+    ],
+    "image": "images/3610003724.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003729",
@@ -8546,7 +8582,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C308"
-    ]
+    ],
+    "image": "images/3610003771.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003776",
@@ -8647,7 +8684,8 @@
     "model_number": null,
     "description": "Rubber Profile Squeegee Material",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003783.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003785",
@@ -8761,7 +8799,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C312"
-    ]
+    ],
+    "image": "images/3610003797.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003798",
@@ -8879,7 +8918,8 @@
     "model_number": null,
     "description": "Detent GRINDER Cart stop",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003809.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003811",
@@ -8980,7 +9020,8 @@
     "model_number": null,
     "description": "Bearing B71910-E-2RSD-T-P4S",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003829.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003868",
@@ -9079,7 +9120,8 @@
     "model_number": null,
     "description": "Seal Labyrith 6006 S10",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003918.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003919",
@@ -9090,7 +9132,8 @@
     "model_number": null,
     "description": "Bearing 61902-2RS1",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003919.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003920",
@@ -9219,7 +9262,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C308"
-    ]
+    ],
+    "image": "images/3610003981.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003982",
@@ -9254,7 +9298,8 @@
     "model_number": null,
     "description": "Shaft Coupling Channel 2 Spindle",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003992.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003993",
@@ -9265,7 +9310,8 @@
     "model_number": null,
     "description": "Locking nut M20",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003993.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003994",
@@ -9276,7 +9322,8 @@
     "model_number": null,
     "description": "Ferrule Channel 2 Thrust Nut",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003994.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003996",
@@ -9287,7 +9334,8 @@
     "model_number": null,
     "description": "Washer SHAFT-END",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003996.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003997",
@@ -9298,7 +9346,8 @@
     "model_number": null,
     "description": "Flange grinding wheel flang",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003997.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003998",
@@ -9309,7 +9358,8 @@
     "model_number": null,
     "description": "Toothed Pulley Channel 2 spindle",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003998.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610003999",
@@ -9320,7 +9370,8 @@
     "model_number": null,
     "description": "Toothed Pulley Keyed Robot Gear",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610003999.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004000",
@@ -9345,7 +9396,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C306"
-    ]
+    ],
+    "image": "images/3610004001.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004002",
@@ -9356,7 +9408,8 @@
     "model_number": null,
     "description": "Drive Shaft Crankshaft",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004002.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004003",
@@ -9367,7 +9420,8 @@
     "model_number": null,
     "description": "Drive Shaft Channel 2 shaft",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004003.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004004",
@@ -9380,7 +9434,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C308"
-    ]
+    ],
+    "image": "images/3610004004.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004005",
@@ -9391,7 +9446,8 @@
     "model_number": null,
     "description": "Tensioning Bracket Channel 2",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004005.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004010",
@@ -9414,7 +9470,8 @@
     "model_number": null,
     "description": "Support Pin Pulley 207400020",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004013.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004014",
@@ -9437,7 +9494,8 @@
     "model_number": null,
     "description": "Non-Return Valve Grinding SD",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004018.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004028",
@@ -9448,7 +9506,8 @@
     "model_number": null,
     "description": "Valve Body Output Oiler Grinder",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004028.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004029",
@@ -9461,7 +9520,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C308"
-    ]
+    ],
+    "image": "images/3610004029.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004030",
@@ -9540,7 +9600,8 @@
     "model_number": null,
     "description": "Template Station 2 templates",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004038.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004048",
@@ -9553,7 +9614,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C303"
-    ]
+    ],
+    "image": "images/3610004048.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004057",
@@ -9579,7 +9641,8 @@
       "000085C217",
       "000085C216",
       "000085C306"
-    ]
+    ],
+    "image": "images/3610004058.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004069",
@@ -9654,7 +9717,8 @@
     "model_number": null,
     "description": "Grinding Spindle MOTOR 232301050",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004087.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004090",
@@ -9665,7 +9729,8 @@
     "model_number": null,
     "description": "Inductive sensor IFS247 M12 X 1/ L 4",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004090.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004091",
@@ -9781,7 +9846,8 @@
     "model_number": null,
     "description": "Top Slide channel 3 & 4 roof",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004116.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004121",
@@ -9835,7 +9901,8 @@
     "model_number": null,
     "description": "Synchronous Motor 1FK70632AF711RA0",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004149.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004165",
@@ -9985,7 +10052,8 @@
     "model_number": null,
     "description": "Positioning Pin Clamping",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004220.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004221",
@@ -10007,7 +10075,8 @@
     "model_number": null,
     "description": "Tool Flashlight charger",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004229.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004232",
@@ -10169,7 +10238,8 @@
     "model_number": null,
     "description": "Compressed Air Fitting Push-in-fitting",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004289.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004295",
@@ -10207,7 +10277,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C308"
-    ]
+    ],
+    "image": "images/3610004308.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004313",
@@ -10231,7 +10302,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C308"
-    ]
+    ],
+    "image": "images/3610004356.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004363",
@@ -10431,7 +10503,8 @@
     "model_number": null,
     "description": "Brake Assembly Air TPS060",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004402.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004408",
@@ -10442,7 +10515,8 @@
     "model_number": null,
     "description": "profile gasket Gasket for stems",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004408.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004409",
@@ -10453,7 +10527,8 @@
     "model_number": null,
     "description": "O-Ring Seal Oring 91.7x1.78",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004409.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004410",
@@ -10467,7 +10542,8 @@
     "additional_cost_centers": [
       "000085C311",
       "000085C310"
-    ]
+    ],
+    "image": "images/3610004410.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004412",
@@ -10478,7 +10554,8 @@
     "model_number": null,
     "description": "O-Ring Seal oring 9.25x1.78",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004412.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004413",
@@ -10489,7 +10566,8 @@
     "model_number": null,
     "description": "O-Ring Seal Oring 6.07x1.78",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004413.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004416",
@@ -10846,7 +10924,8 @@
     "model_number": null,
     "description": "Grinding Wheel Large Diameter Front",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004544.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004545",
@@ -10857,7 +10936,8 @@
     "model_number": null,
     "description": "Grinding Wheel Large Diameter Side",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004545.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004553",
@@ -11144,7 +11224,8 @@
     "model_number": null,
     "description": "Pipe Connection Piece Tee 25mm LI",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004641.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004643",
@@ -11155,7 +11236,8 @@
     "model_number": null,
     "description": "Pipe Connection Piece Connector 25mm LI",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004643.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004647",
@@ -11189,7 +11271,8 @@
     "model_number": null,
     "description": "Drive Motor 71B4",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004672.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004674",
@@ -11541,7 +11624,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C310"
-    ]
+    ],
+    "image": "images/3610004782.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004785",
@@ -11552,7 +11636,8 @@
     "model_number": null,
     "description": "Round Nut Robot head",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004785.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004790",
@@ -11563,7 +11648,8 @@
     "model_number": null,
     "description": "Washer Shaft Washer",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004790.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004791",
@@ -11607,7 +11693,8 @@
     "model_number": null,
     "description": "Compression Spring B1ECS176212QG",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004852.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004860",
@@ -11701,7 +11788,8 @@
     "model_number": null,
     "description": "Probe  tip Marposs Stem",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610004880.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610004891",
@@ -12070,7 +12158,8 @@
     "model_number": null,
     "description": "Ring Gasket Seal Blade scanner",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005132.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005133",
@@ -12081,7 +12170,8 @@
     "model_number": null,
     "description": "Shaft Coupling Scanner coupling",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005133.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005136",
@@ -12105,7 +12195,8 @@
     "model_number": null,
     "description": "Encoder cable 6FX80022DC101AJ0",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005145.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005155",
@@ -12281,7 +12372,8 @@
     "model_number": null,
     "description": "Scraper Unit 3/4 brass scrap",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005214.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005215",
@@ -12292,7 +12384,8 @@
     "model_number": null,
     "description": "Scraper ring",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005215.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005217",
@@ -12303,7 +12396,8 @@
     "model_number": null,
     "description": "O-Ring Gasket Channel 3/4",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005217.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005218",
@@ -12314,7 +12408,8 @@
     "model_number": null,
     "description": "Plug Insert Plugs",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005218.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005224",
@@ -12325,7 +12420,8 @@
     "model_number": null,
     "description": "groove ball bearing SEL/F030100.2RS",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005224.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005227",
@@ -12336,7 +12432,8 @@
     "model_number": null,
     "description": "Linear rail Channel 3/4 X rails",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005227.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005230",
@@ -12347,7 +12444,8 @@
     "model_number": null,
     "description": "Ball screw Y11-X21-X22-X31-X41",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005230.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005233",
@@ -12372,7 +12470,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C306"
-    ]
+    ],
+    "image": "images/3610005242.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005251",
@@ -12383,7 +12482,8 @@
     "model_number": null,
     "description": "Filter pressure regulator element kit",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005251.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005259",
@@ -12394,7 +12494,8 @@
     "model_number": null,
     "description": "Rod Cylinder assembly",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005259.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005261",
@@ -12405,7 +12506,8 @@
     "model_number": null,
     "description": "Bellows Cover Marposs Bellows",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005261.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005269",
@@ -12416,7 +12518,8 @@
     "model_number": null,
     "description": "Tool Holder Set marposs sides holder",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005269.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005270",
@@ -12427,7 +12530,8 @@
     "model_number": null,
     "description": "Motor spindle channel 3/4",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005270.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005283",
@@ -12531,7 +12635,8 @@
     "model_number": null,
     "description": "Switch T-splitter Coolant",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005324.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005336",
@@ -12542,7 +12647,8 @@
     "model_number": null,
     "description": "Spindle Top U Axis Clamping uni",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005336.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005339",
@@ -12553,7 +12659,8 @@
     "model_number": null,
     "description": "Spindle Top Blade scanner unit",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005339.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005341",
@@ -12564,7 +12671,8 @@
     "model_number": null,
     "description": "Spindle Top Channel 3/4 unit",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005341.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005346",
@@ -12642,7 +12750,8 @@
     "model_number": null,
     "description": "Pump Grinder coolant",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005358.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005360",
@@ -12653,7 +12762,8 @@
     "model_number": null,
     "description": "Milling machine arbor Station 3/4 arbor",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005360.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005363",
@@ -12888,7 +12998,8 @@
     "model_number": null,
     "description": "Encoder cable Channel 2 Encoder Ca",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005457.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005458",
@@ -13047,7 +13158,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C301"
-    ]
+    ],
+    "image": "images/3610005549.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005572",
@@ -13184,7 +13296,8 @@
     "model_number": null,
     "description": "Encoder Channel 2 Spindle",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005634.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005710",
@@ -13350,7 +13463,8 @@
     "model_number": null,
     "description": "Plug Channel 2 Spindle pl",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005893.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005894",
@@ -13361,7 +13475,8 @@
     "model_number": null,
     "description": "O-Ring Channel 2 Spindle or",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005894.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005913",
@@ -13405,7 +13520,8 @@
     "model_number": null,
     "description": "O-Ring 2 Spindle 1181162",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005917.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005926",
@@ -13470,7 +13586,8 @@
     "model_number": null,
     "description": "O-Ring Channel 2 MotorO-rin",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005970.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005975",
@@ -13481,7 +13598,8 @@
     "model_number": null,
     "description": "O-Ring Chan 2 spindle motor",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005975.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005978",
@@ -13492,7 +13610,8 @@
     "model_number": null,
     "description": "ball runner block UNIT R162372420",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005978.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005984",
@@ -13503,7 +13622,8 @@
     "model_number": null,
     "description": "O-Ring UN 55/200-D 190.18",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005984.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005987",
@@ -13514,7 +13634,8 @@
     "model_number": null,
     "description": "O-Ring Gripper Hole Bore",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610005987.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610005990",
@@ -13549,7 +13670,8 @@
     "model_number": null,
     "description": "O-Ring Control Assy D 44.17",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006018.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006030",
@@ -13560,7 +13682,8 @@
     "model_number": null,
     "description": "O-Ring D=22",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006030.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006043",
@@ -13571,7 +13694,8 @@
     "model_number": null,
     "description": "O-Ring O-ring D=228.19",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006043.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006061",
@@ -13617,7 +13741,8 @@
     "model_number": null,
     "description": "Power supply unit 6EP3437-8SB00-2AY0",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006113.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006126",
@@ -13876,7 +14001,8 @@
     "model_number": null,
     "description": "Inductive sensor BES0042",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006252.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006292",
@@ -13946,7 +14072,8 @@
     "model_number": null,
     "description": "Coolant Blaser Grindex S28",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006412.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006422",
@@ -14126,7 +14253,8 @@
     "model_number": null,
     "description": "Encoder LIKA",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006633.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006671",
@@ -14137,7 +14265,8 @@
     "model_number": null,
     "description": "Contactor 3RT2016-1BB42",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006671.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006680",
@@ -14148,7 +14277,8 @@
     "model_number": null,
     "description": "Bearing 7913A5TRV1VSULP3",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006680.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006685",
@@ -14206,7 +14336,8 @@
     "model_number": null,
     "description": "O-Ring blade scanner 2200 N",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006726.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006829",
@@ -14217,7 +14348,8 @@
     "model_number": null,
     "description": "Coolant additive FRIGOMET DP455 V 55D",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006829.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006848",
@@ -14276,7 +14408,8 @@
     "model_number": null,
     "description": "Valve Grinding coolant",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006921.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006942",
@@ -14287,7 +14420,8 @@
     "model_number": null,
     "description": "Pump Unit Immersion Pump unit",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610006942.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610006988",
@@ -14397,7 +14531,8 @@
     "model_number": null,
     "description": "Cable K661 for Old Robot",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007110.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007182",
@@ -14436,7 +14571,8 @@
     "model_number": null,
     "description": "Metal bellows Central",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007193.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007198",
@@ -14519,7 +14655,8 @@
     "model_number": null,
     "description": "Wheel Large dia.grind Back",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007209.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007213",
@@ -14530,7 +14667,8 @@
     "model_number": null,
     "description": "Seal Kit door cylinder grinde",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007213.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007273",
@@ -14647,7 +14785,8 @@
     "model_number": null,
     "description": "3-phase motor MEC71 4P 0,25KW",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007344.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007345",
@@ -14658,7 +14797,8 @@
     "model_number": null,
     "description": "Gear Motor Box",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007345.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007355",
@@ -14669,7 +14809,8 @@
     "model_number": null,
     "description": "suction cup PU30/60 G1/4M FIL",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007355.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007356",
@@ -14778,7 +14919,8 @@
     "model_number": null,
     "description": "Machine Lamp 24VDC for Grinders",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007460.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007471",
@@ -14976,7 +15118,8 @@
     "model_number": null,
     "description": "Cylinder Driven Pneumatic",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007776.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007828",
@@ -15028,7 +15171,8 @@
     "model_number": null,
     "description": "Silencer GRE-1/4 Muffler",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007843.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007857",
@@ -15111,7 +15255,8 @@
     "model_number": null,
     "description": "Digital I/O module MPN 0980 ESL 390-111",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610007947.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007952",
@@ -15140,7 +15285,8 @@
       "000085C308",
       "000085C219",
       "000085C311"
-    ]
+    ],
+    "image": "images/3610007965.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007966",
@@ -15153,7 +15299,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C218"
-    ]
+    ],
+    "image": "images/3610007966.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610007990",
@@ -15378,7 +15525,8 @@
     "model_number": null,
     "description": "Holding Pin Marposs locator",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008381.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610008392",
@@ -15542,7 +15690,8 @@
     "cost_center_code": "000085C309",
     "additional_cost_centers": [
       "000085C219"
-    ]
+    ],
+    "image": "images/3610008567.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610008620",
@@ -15597,7 +15746,8 @@
     "model_number": null,
     "description": "Spare Part CH 2-3-4 Marposs loc",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008630.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610008631",
@@ -15608,7 +15758,8 @@
     "model_number": null,
     "description": "O-Ring Flange for Grinders",
     "cost_center_code": "000085C309",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008631.jpg?v=1788724375856"
   },
   {
     "sap_id": "3610008642",
