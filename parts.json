@@ -1697,7 +1697,8 @@
       "000085C218",
       "000085C231",
       "000085C219"
-    ]
+    ],
+    "image": "images/3610000161.jpg?v=1788693924986"
   },
   {
     "sap_id": "3610000164",
@@ -1889,7 +1890,8 @@
       "000085C313",
       "000085C217",
       "000085C231"
-    ]
+    ],
+    "image": "images/3610000658.jpg?v=1788693924986"
   },
   {
     "sap_id": "3610000668",
@@ -2143,7 +2145,8 @@
     "model_number": null,
     "description": "Brass Sheet ANGLE PLATE RF",
     "cost_center_code": "000085C221",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610001155.jpg?v=1788693924986"
   },
   {
     "sap_id": "3610001242",
@@ -4783,7 +4786,8 @@
       "000085C231",
       "000085C220",
       "000085C218"
-    ]
+    ],
+    "image": "images/3610002474.jpg?v=1788693924986"
   },
   {
     "sap_id": "3610002479",
@@ -9542,7 +9546,8 @@
     "additional_cost_centers": [
       "000085C301",
       "000085C217"
-    ]
+    ],
+    "image": "images/3610004085.jpg?v=1788693924986"
   },
   {
     "sap_id": "3610004087",
@@ -9664,7 +9669,8 @@
     "cost_center_code": "000085C221",
     "additional_cost_centers": [
       "000085C219"
-    ]
+    ],
+    "image": "images/3610004114.jpg?v=1788693924986"
   },
   {
     "sap_id": "3610004116",
@@ -11294,7 +11300,8 @@
     "cost_center_code": "000085C221",
     "additional_cost_centers": [
       "000085C220"
-    ]
+    ],
+    "image": "images/3610004744.jpg?v=1788693924986"
   },
   {
     "sap_id": "3610004747",
@@ -15003,7 +15010,8 @@
     "model_number": null,
     "description": "Cutting insert 2 x 60 DRILL/C-SINK",
     "cost_center_code": "000085C303",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008185.jpg?v=1788693924986"
   },
   {
     "sap_id": "3610008261",
@@ -15383,7 +15391,8 @@
     "model_number": null,
     "description": "Connector P49790 for Annealing",
     "cost_center_code": "000085C303",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008785.jpg?v=1788693924986"
   },
   {
     "sap_id": "3610008786",
@@ -15394,7 +15403,8 @@
     "model_number": null,
     "description": "Connector P49791 for Annealing",
     "cost_center_code": "000085C303",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008786.jpg?v=1788693924986"
   },
   {
     "sap_id": "3610008787",
@@ -15405,7 +15415,8 @@
     "model_number": null,
     "description": "Connector P49792 for Annealing",
     "cost_center_code": "000085C303",
-    "additional_cost_centers": []
+    "additional_cost_centers": [],
+    "image": "images/3610008787.jpg?v=1788693924986"
   },
   {
     "sap_id": "3610008796",
