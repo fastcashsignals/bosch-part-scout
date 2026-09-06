@@ -11385,15 +11385,14 @@
     "name": "Winter toque Hard Hat",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-02-102",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Grainger",
+    "model_number": "4LN95",
     "description": "Winter toque Hard Hat",
     "cost_center_code": "000085C217",
     "additional_cost_centers": [
-      "000085C218",
-      "000085C309",
-      "000085C221"
-    ]
+      "000085C218"
+    ],
+    "image": "images/3610004747.jpg?v=1788712977212"
   },
   {
     "sap_id": "3610004756",
