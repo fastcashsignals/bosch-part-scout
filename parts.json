@@ -3812,11 +3812,11 @@
     "name": "Accumulator LINEAR SLID TC CELLL",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "03-11-201",
-    "manufacturer": null,
-    "model_number": null,
-    "description": "Accumulator LINEAR SLID TC CELLL",
+    "manufacturer": "Rexroth",
+    "model_number": "R055717590",
+    "description": "X Axis stations 2,4",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610001994.jpg?v=1788705933857"
   },
   {
     "sap_id": "3610002001",
