@@ -12879,11 +12879,11 @@
     "name": "Spare Part TC afag-rail top cap",
     "category": "RSB TC/Wash/Temper/SS",
     "bin": "01-15-E05",
-    "manufacturer": null,
-    "model_number": null,
+    "manufacturer": "Schaeff Machiney & Service LLC",
+    "model_number": "50478730",
     "description": "Spare Part TC afag-rail top cap",
     "cost_center_code": "000085C217",
-    "additional_cost_centers": []
+    "image": "images/3610005509.jpg?v=1788714874469"
   },
   {
     "sap_id": "3610005510",
