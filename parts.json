@@ -701,6 +701,9 @@
     "model_number": "#U550.STSS7-A",
     "description": "Circulating pump for paint system",
     "cost_center_code": "000085C308",
+    "additional_cost_centers": [
+      "000085C218"
+    ],
     "image": "images/3610002305.jpg?v=1785612077594"
   },
   {
