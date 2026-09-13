@@ -6387,11 +6387,9 @@
     "description": "Hexagon Socket Screw Key 2.5MM Ball End",
     "cost_center_code": "000085C306",
     "additional_cost_centers": [
-      "000085C218",
-      "000085C309",
-      "000085C311",
-      "000085C216"
-    ]
+      "000085C218"
+    ],
+    "image": "images/3610003134.jpg?v=1789300326607"
   },
   {
     "sap_id": "3610003135",
