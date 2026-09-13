@@ -6412,11 +6412,9 @@
     "description": "Hexagon Socket Screw Key 3MM Ball End Al",
     "cost_center_code": "000085C306",
     "additional_cost_centers": [
-      "000085C218",
-      "000085C309",
-      "000085C219",
-      "000085C220"
-    ]
+      "000085C218"
+    ],
+    "image": "images/3610003136.jpg?v=1789300405476"
   },
   {
     "sap_id": "3610003137",
