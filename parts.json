@@ -6373,11 +6373,9 @@
     "description": "Wire Pin Spiral Tip Cleaning",
     "cost_center_code": "000085C306",
     "additional_cost_centers": [
-      "000085C217",
-      "000085C309",
-      "000085C216",
-      "000085C308"
-    ]
+      "000085C217"
+    ],
+    "image": "images/3610003133.jpg?v=1789300303662"
   },
   {
     "sap_id": "3610003134",
