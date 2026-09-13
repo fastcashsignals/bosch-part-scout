@@ -13113,10 +13113,9 @@
     "description": "Tool Bag Brazer",
     "cost_center_code": "000085C306",
     "additional_cost_centers": [
-      "000085C217",
-      "000085C309",
-      "000085C311"
-    ]
+      "000085C217"
+    ],
+    "image": "images/3610005436.jpg?v=1789300481842"
   },
   {
     "sap_id": "3610005441",
