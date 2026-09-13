@@ -5003,10 +5003,9 @@
     "description": "Adhesive LOCTITE 243",
     "cost_center_code": "000085C306",
     "additional_cost_centers": [
-      "000085C218",
-      "000085C301",
-      "000085C311"
-    ]
+      "000085C218"
+    ],
+    "image": "images/3610002534.jpg?v=1789298580923"
   },
   {
     "sap_id": "3610002536",
