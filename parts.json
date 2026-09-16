@@ -1327,11 +1327,11 @@
     "name": "Robot Staubli",
     "category": "RSB Punch/Grind/Sand/Stamping",
     "bin": "07-01-010",
-    "manufacturer": null,
+    "manufacturer": "Staubli",
     "model_number": null,
     "description": "Robot Staubli",
     "cost_center_code": "000085C216",
-    "image": "images/3610003511.jpg?v=1784661778463"
+    "image": "images/3610003511.jpg?v=1789595282885"
   },
   {
     "sap_id": "3610002583",
