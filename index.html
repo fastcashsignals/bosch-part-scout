@@ -1959,7 +1959,12 @@
         });
         const data = await res.json().catch(() => ({}));
         if (!res.ok) {
-          throw new Error(data.error || `Server error ${res.status}`);
+          // The Worker sends a message meant to be read as-is when it knows
+          // what went wrong (an expired key, say). Pass it straight through
+          // rather than dressing it up as a technical failure.
+          const err = new Error(data.error || `Server error ${res.status}`);
+          err.fromServer = Boolean(data.error);
+          throw err;
         }
         setStatus('Submitted. It will be added to the catalog shortly.', 'success');
         form.reset();
@@ -1967,7 +1972,13 @@
         clearAutoFill();
       } catch (err) {
         console.error(err);
-        setStatus('Failed to submit: ' + err.message, 'error');
+        setStatus(
+          err.fromServer ? err.message
+            : (err instanceof TypeError
+                ? 'No connection — check your signal or Wi-Fi and try again. Nothing was lost.'
+                : 'Failed to submit: ' + err.message),
+          'error'
+        );
       } finally {
         submitBtn.disabled = false;
         submitBtn.textContent = originalText;
