@@ -1404,16 +1404,20 @@
         return;
       }
 
+      // With one machine selected, everything that survived the filter belongs
+      // under it — including parts that are on it only as an ADDITIONAL cost
+      // center. Filing those under their primary instead would drop them from
+      // the one group that gets rendered below.
       const grouped = {};
       parts.forEach(p => {
-        const cc = p.cost_center_code || 'UNKNOWN';
+        const cc = selectedCC !== 'ALL' ? selectedCC : (p.cost_center_code || 'UNKNOWN');
         if (!grouped[cc]) grouped[cc] = [];
         grouped[cc].push(p);
       });
 
       let order;
       if (selectedCC !== 'ALL') {
-        order = [selectedCC];
+        order = grouped[selectedCC] ? [selectedCC] : [];
       } else {
         order = CC_ORDER.filter(cc => grouped[cc]);
       }
